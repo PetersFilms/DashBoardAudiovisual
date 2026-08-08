@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-08T14:38:21-03:00",
+ "gerado_em": "2026-08-08T18:31:07-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -124,7 +124,7 @@
    "titulo": "[BU] INSTITUCIONAL",
    "cliente": "BU",
    "status": "Executando",
-   "fase": "Edição",
+   "fase": "Aprovação",
    "responsavel": "Petterson",
    "categoria": "Institucional",
    "complexidade": "F@)&0",
@@ -165,14 +165,14 @@
   {
    "titulo": "[JARDIM] VIDEO 02",
    "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
    "complexidade": "Básico",
    "prazo": "2026-08-06",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-08-08T17:30:00.000-03:00",
+   "ed_fim": "2026-08-08T17:41:00.000-03:00",
    "data_pub": null,
    "url": "https://app.notion.com/p/JARDIM-VIDEO-02-3b01e7f422b980f486f3fdb26d19560e"
   },
