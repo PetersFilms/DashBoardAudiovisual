@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Puxa os cards do mês corrente do banco 🎯 Tarefas — Audiovisual (Notion)
+Puxa TODOS os cards do banco 🎯 Tarefas — Audiovisual (Notion)
 e grava cards.json no formato que o gerar_dashboard.py espera.
+O histórico completo alimenta a aba "Análise por Período";
+o Painel Diário filtra sozinho o mês corrente.
 
 Usa só a biblioteca padrão do Python — nada para instalar.
 
@@ -27,9 +29,15 @@ API = "https://api.notion.com/v1"
 NOTION_VERSION = "2022-06-28"
 
 # Fallback caso a integração não tenha permissão de ler nomes de usuário.
+# Os três últimos são guests que saíram do workspace (o Notion não devolve
+# mais o nome deles) — aparecem agrupados como "Ex-editor" no histórico.
 PESSOAS = {
     "372d872b-594c-8166-bf2e-000209120c2d": "Maila",
     "e282b903-8b63-48fe-b198-ead0e2a0ad1b": "Petterson",
+    "280d872b-594c-8152-8e83-00021bbf9ea2": "Pedro",
+    "281d872b-594c-8191-8485-000236ddbf25": "Ex-editor",
+    "2f5d872b-594c-8166-b06b-000283386b5b": "Ex-editor",
+    "30c0c79e-ec7c-4cbe-aad8-29f7bf46ad96": "Ex-editor",
 }
 
 
@@ -111,15 +119,10 @@ def main():
     db = env("NOTION_DATABASE_ID")
 
     agora = datetime.now(TZ)
-    prim = date(agora.year, agora.month, 1)
-    ult = date(agora.year + (agora.month == 12), (agora.month % 12) + 1, 1) - timedelta(days=1)
 
+    # Sem filtro: o histórico inteiro alimenta a aba de análise por período.
     payload = {
         "page_size": 100,
-        "filter": {"and": [
-            {"property": "Prazo", "date": {"on_or_after": prim.isoformat()}},
-            {"property": "Prazo", "date": {"on_or_before": ult.isoformat()}},
-        ]},
         "sorts": [{"property": "Prazo", "direction": "ascending"}],
     }
 
@@ -147,9 +150,11 @@ def main():
             "categoria": p_multi(pr.get("Categoria de vídeo")),
             "complexidade": p_select(pr.get("Complexidade")),
             "prazo": p_date(pr.get("Prazo")),
-            # atenção: o nome desta propriedade tem um espaço no fim, no Notion
+            # atenção: "Edição Fim" e "Alteração Fim" têm um espaço no fim, no Notion
             "ed_ini": p_date(pr.get("Edição Início")),
             "ed_fim": p_date(pr.get("Edição Fim ")) or p_date(pr.get("Edição Fim")),
+            "alt_ini": p_date(pr.get("Alteração Início")),
+            "alt_fim": p_date(pr.get("Alteração Fim ")) or p_date(pr.get("Alteração Fim")),
             "data_pub": p_date(pr.get("Data")),
             "url": linha.get("url"),
         })
@@ -167,9 +172,8 @@ def main():
     }
 
     if not cards:
-        sys.exit("ERRO: o Notion respondeu, mas nenhum card tem Prazo em %s. "
-                 "Nada foi gravado — melhor falhar do que publicar painel vazio."
-                 % cfg["mes_ref"])
+        sys.exit("ERRO: o Notion respondeu, mas não devolveu nenhum card. "
+                 "Nada foi gravado — melhor falhar do que publicar painel vazio.")
 
     with open("cards.json", "w", encoding="utf-8") as f:
         json.dump(cfg, f, ensure_ascii=False, indent=1)
