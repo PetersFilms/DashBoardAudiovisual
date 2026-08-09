@@ -145,7 +145,7 @@ td a:hover{text-decoration:underline}
 <div class="tabs">
   <button class="tab on" id="btn-diario" onclick="showTab('diario')">Painel Diário</button>
   <button class="tab" id="btn-periodo" onclick="showTab('periodo')">Análise por Período</button>
-  <button class="tab" id="btn-pend" onclick="showTab('pend')">Sem Data de Publicação</button>
+  <button class="tab" id="btn-dados" onclick="showTab('dados')">Sem Tempo Registrado</button>
 </div>
 
 <!-- ==================== PAINEL DIÁRIO ==================== -->
@@ -174,7 +174,7 @@ td a:hover{text-decoration:underline}
     <div class="lab">Em aberto no mês</div>
     <div class="val">14</div>
     <div class="note">2 em execução · 13 a fazer.<br>
-      Antecedência agora vive na aba <b>Análise por Período</b>.</div>
+      Leitura por período fica na aba <b>Análise por Período</b>.</div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por edição</div>
@@ -210,12 +210,12 @@ td a:hover{text-decoration:underline}
 
 <div class="card" style="margin-bottom:14px">
   <h2>Alertas do dia</h2>
-  <div class="alert"><span class="ico i-crit">!</span><span class="txt"><b>1 card(s) atrasados</b>, o mais antigo há 5 dia(s).<em>[BU] INSTITUCIONAL — prazo ter 04/08</em></span></div><div class="alert"><span class="ico i-info">i</span><span class="txt"><b>1 card(s) concluídos sem Edição Início</b> — ficam fora da leitura de ciclo.<em>[LUME] NA SUA CASA</em></span></div><div class="alert"><span class="ico i-info">i</span><span class="txt"><b>23 de 33 cards sem Data de Publicação</b> — é o campo que automatiza a leitura de antecedência.<button class="btnlink" onclick="showTab('pend')">ver quais →</button><em>Preencher no ato da criação do card.</em></span></div>
+  <div class="alert"><span class="ico i-crit">!</span><span class="txt"><b>1 card(s) atrasados</b>, o mais antigo há 5 dia(s).<em>[BU] INSTITUCIONAL — prazo ter 04/08</em></span></div><div class="alert"><span class="ico i-warn">~</span><span class="txt"><b>1 card(s) sem tempo de edição</b> — falta Edição Início ou Edição Fim, então a duração não entra na média.<button class="btnlink" onclick="showTab('dados')">ver quais →</button><em>[LUME] NA SUA CASA</em></span></div><div class="alert"><span class="ico i-warn">~</span><span class="txt"><b>3 card(s) sem tempo de alteração</b> — passaram por alteração mas o par Início/Fim está incompleto.<button class="btnlink" onclick="showTab('dados')">ver quais →</button><em>[LAPIDATO] AD 02 · [JARDIM] VIDEO 01 · [LAPIDATO] AD 04</em></span></div>
 </div>
 
 <div class="card" style="margin-bottom:14px">
   <h2>Comentário</h2>
-  <p class="comment"><b>Saúde da operação: exige atenção.</b> Há 1 card(s) atrasado(s), o mais antigo há 5 dia(s) — priorizar antes de puxar coisa nova. A pontualidade preocupa: 68% das entregas do mês saíram no prazo. O ritmo está em dia: 19 entregas contra 12 esperadas até hoje, projetando 80 no fim do mês (meta 50). Seguimos operando colados no prazo (antecedência 0 de 30 dias) — isso só muda quando a Data de Publicação passar a ser preenchida.
+  <p class="comment"><b>Saúde da operação: exige atenção.</b> Há 1 card(s) atrasado(s), o mais antigo há 5 dia(s) — priorizar antes de puxar coisa nova. A pontualidade preocupa: 68% das entregas do mês saíram no prazo. 4 card(s) do mês estão sem tempo registrado (1 de edição, 3 de alteração) — cada um desses sai das médias. O ritmo está em dia: 19 entregas contra 12 esperadas até hoje, projetando 80 no fim do mês (meta 50).
   <span class="sig">— Claude · leitura automática gerada a cada atualização do painel, a partir de
   regras fixas sobre ritmo, prazo, distribuição e preenchimento.</span></p>
 </div>
@@ -272,15 +272,16 @@ td a:hover{text-decoration:underline}
     <div class="note" id="t-prz-note"></div>
   </div>
   <div class="card tile">
-    <div class="lab">Antecedência real média</div>
+    <div class="lab">Gravação → entrega</div>
     <div class="val" id="t-ant">—</div>
     <div class="note" id="t-ant-note"></div>
   </div>
   <div class="card tile">
-    <div class="lab">Antecedência hoje</div>
+    <div class="lab">Folga sobre o prazo</div>
     <div class="val">0<small> dias</small></div>
     <div class="meter"><i style="width:0.0%;background:var(--crit)"></i></div>
-    <div class="note">meta 30 dias · retrato de agora, não varia com o filtro</div>
+    <div class="note">o card pronto mais adiantado está 0 dia(s) à frente do prazo ·
+      meta 30 · retrato de agora, não varia com o filtro</div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por edição</div>
@@ -322,16 +323,29 @@ td a:hover{text-decoration:underline}
 
 </section>
 
-<!-- ==================== SEM DATA DE PUBLICAÇÃO ==================== -->
-<section id="tab-pend" hidden>
+<!-- ==================== SEM TEMPO REGISTRADO ==================== -->
+<section id="tab-dados" hidden>
+
+<p class="plabel">Cards de agosto/2026 em que não dá para medir quanto tempo o trabalho levou.
+Cada um deles fica de fora das médias de tempo do painel. Clique para abrir no Notion e preencher.</p>
+
+<div class="card" style="margin-bottom:14px">
+  <h2>Sem tempo de edição <span class="count">1</span></h2>
+  <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+  O card já saiu da edição (ou está finalizado), mas falta <b>Edição Início</b> ou
+  <b>Edição Fim</b> — sem os dois não há duração.</p>
+  <ul><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b9804aa41af3dcb161a23e" target="_blank" rel="noopener">[LUME] NA SUA CASA</a><span class="meta">Maila · falta Edição Início</span></li></ul>
+</div>
 
 <div class="card">
-  <h2>Cards de agosto/2026 sem Data de Publicação <span class="count">23</span></h2>
+  <h2>Sem tempo de alteração <span class="count">3</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
-  A Data de Publicação é o campo que permite medir a antecedência real (quantos dias antes
-  de ir ao ar o conteúdo fica pronto). Clique no card para abri-lo no Notion e preencher —
-  o campo se chama <b>Data</b>.</p>
-  <ul><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980f98f32eb0665d70b5b" target="_blank" rel="noopener">[BEA FRUET] DIÁRIO DE OBRA</a><span class="meta">Maila · prazo 03/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980c883a2c6743b49c52e" target="_blank" rel="noopener">[BEA FRUET] TECIDOS</a><span class="meta">Maila · prazo 03/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3b11e7f422b9800a84c9d131456d4704" target="_blank" rel="noopener">[CHESS] PONTO DE VISTA YT</a><span class="meta">Petterson · prazo 03/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3ae1e7f422b980c9a6d8e5e6eb5b94d7" target="_blank" rel="noopener">[JARDIM] VIDEO 01</a><span class="meta">Petterson · prazo 03/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3aa1e7f422b98006bed8fdc99e6a57d2" target="_blank" rel="noopener">[BU] INSTITUCIONAL</a><span class="meta">Petterson · prazo 04/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3b31e7f422b980b8b1c0fa750c359f9a" target="_blank" rel="noopener">[CHESS] PONTO DE VISTA INSTA</a><span class="meta">Petterson · prazo 04/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980238306d94b22804457" target="_blank" rel="noopener">[LUME] EVENTOS</a><span class="meta">Maila · prazo 04/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b9804aa41af3dcb161a23e" target="_blank" rel="noopener">[LUME] NA SUA CASA</a><span class="meta">Maila · prazo 04/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b98063907bcc42093ce068" target="_blank" rel="noopener">[LAPIDATO] AD 01</a><span class="meta">Maila · prazo 05/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980298e7be27af4a408b5" target="_blank" rel="noopener">[LAPIDATO] REELS 01</a><span class="meta">Maila · prazo 05/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980d7b228df5a81649c68" target="_blank" rel="noopener">[EMPÓRIO DAS PEDRAS] PAREDE</a><span class="meta">Maila · prazo 06/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3b01e7f422b980f486f3fdb26d19560e" target="_blank" rel="noopener">[JARDIM] VIDEO 02</a><span class="meta">Petterson · prazo 06/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b98000b2faccd8fde436b3" target="_blank" rel="noopener">[LAPIDATO] AD 02</a><span class="meta">Maila · prazo 06/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b9806a9a60d9dc88c4e956" target="_blank" rel="noopener">[LAPIDATO] AD 03</a><span class="meta">Maila · prazo 06/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980d2b4a1e614987f4745" target="_blank" rel="noopener">[LAPIDATO] AD 04</a><span class="meta">Maila · prazo 06/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980feaaf0f7aa9a7e5309" target="_blank" rel="noopener">[LAPIDATO] REELS 02</a><span class="meta">Maila · prazo 06/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3b51e7f422b9806a87faf4e0f806537a" target="_blank" rel="noopener">[GRANADA] CONVITE TORO HEAT GAMES</a><span class="meta">Petterson · prazo 07/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3b71e7f422b9808faac8cf436f49e185" target="_blank" rel="noopener">[CHESS] CORTE 01 PODCAST</a><span class="meta">Petterson · prazo 09/08</span></li><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3b01e7f422b98009b095f7a580dd5f07" target="_blank" rel="noopener">[JARDIM] VIDEO 03</a><span class="meta">Petterson · prazo 10/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3b51e7f422b9801fb1dfdc42e0115f87" target="_blank" rel="noopener">[LUME] APRENDER A DIZER NÃO</a><span class="meta">Maila · prazo 10/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3b51e7f422b980b7984ff71c4d662eb3" target="_blank" rel="noopener">[LUME] CROISSANT DE NUTELLA</a><span class="meta">Maila · prazo 10/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3b51e7f422b9802a8794e514d43ac181" target="_blank" rel="noopener">[LUME] QUEM FALA/ QUEM OUVE</a><span class="meta">Maila · prazo 10/08</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3b51e7f422b98058addbd04c172197e3" target="_blank" rel="noopener">[LUME] VOCÊ PEDIU</a><span class="meta">Maila · prazo 10/08</span></li></ul>
+  O card passou por alteração — pelo status atual ou porque um dos campos foi preenchido —
+  mas falta <b>Alteração Início</b> ou <b>Alteração Fim</b>.
+  <span style="color:var(--muted)">Observação: o painel só enxerga alteração pelo status
+  atual do card ou por campo preenchido pela metade. Uma alteração antiga, num card que já
+  voltou para outro status sem nada preenchido, passa despercebida.</span></p>
+  <ul><li class="item"><span class="dot d2"></span><a href="https://app.notion.com/3ae1e7f422b980c9a6d8e5e6eb5b94d7" target="_blank" rel="noopener">[JARDIM] VIDEO 01</a><span class="meta">Petterson · falta Alteração Início</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b98000b2faccd8fde436b3" target="_blank" rel="noopener">[LAPIDATO] AD 02</a><span class="meta">Maila · falta Alteração Fim</span></li><li class="item"><span class="dot d1"></span><a href="https://app.notion.com/3ae1e7f422b980d2b4a1e614987f4745" target="_blank" rel="noopener">[LAPIDATO] AD 04</a><span class="meta">Maila · falta Alteração Fim</span></li></ul>
 </div>
 
 </section>
@@ -349,7 +363,7 @@ function $(id){return document.getElementById(id)}
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;")
  .replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function showTab(id,btn){
- ["diario","periodo","pend"].forEach(function(k){
+ ["diario","periodo","dados"].forEach(function(k){
   $("tab-"+k).hidden = (k!==id);
   $("btn-"+k).classList.toggle("on", k===id);
  });
@@ -417,19 +431,16 @@ function render(a,b,label){
  $("t-prz").style.color=pct==null?"":(pct>=85?"var(--good)":pct>=70?"var(--warn)":"var(--crit)");
  $("t-prz-note").textContent=cp.length?np.length+" de "+cp.length+" entregas dentro do prazo":"nenhuma entrega com prazo no período";
 
- /* tile: antecedência real média (Data de Publicação − Edição Fim) */
+ /* tile: dias entre a gravação (campo Data) e o fim da edição */
  var ca=ent.filter(function(c){return c.d});
  if(ca.length){
-  var soma=0;ca.forEach(function(c){soma+=diffDays(c.f,c.d)});
+  var soma=0;ca.forEach(function(c){soma+=diffDays(c.d,c.f)});
   var med=soma/ca.length;
   $("t-ant").innerHTML=med.toFixed(0)+'<small> dias</small>';
-  $("t-ant").style.color=med<0?"var(--crit)":(med>=7?"var(--good)":"");
-  $("t-ant-note").textContent="média sobre "+ca.length+" entrega(s) com Data de Publicação"+
-   (med<0?" — negativo: a edição terminou DEPOIS da data de publicação":"");
+  $("t-ant-note").textContent="média sobre "+ca.length+" entrega(s) com data de gravação preenchida";
  }else{
-  $("t-ant").style.color="";
   $("t-ant").textContent="—";
-  $("t-ant-note").textContent="nenhuma entrega do período tem Data de Publicação preenchida";
+  $("t-ant-note").textContent="nenhuma entrega do período tem data de gravação preenchida";
  }
 
  /* tempos médios */
