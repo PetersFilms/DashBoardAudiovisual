@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-09T12:32:57-03:00",
+ "gerado_em": "2026-08-09T15:45:45-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -109,14 +109,14 @@
   {
    "titulo": "[CHESS] PODCAST",
    "cliente": "CHESS",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "PodCast",
    "complexidade": "Intermediário",
    "prazo": "2026-08-04",
    "ed_ini": "2026-08-08T19:00:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-08T23:44:00.000-03:00",
    "data_pub": "2026-07-28",
    "url": "https://app.notion.com/p/CHESS-PODCAST-3ac1e7f422b980ebb16ad67e760f55f1"
   },
@@ -249,7 +249,7 @@
   {
    "titulo": "[GRANADA] CONVITE TORO HEAT GAMES",
    "cliente": "GRANADA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -273,6 +273,20 @@
    "ed_fim": "2026-08-07T02:17:00.000-03:00",
    "data_pub": "2026-08-06",
    "url": "https://app.notion.com/p/CHESS-MANISFESTO-3b51e7f422b980fa8658d7fb3d94cc03"
+  },
+  {
+   "titulo": "[CHESS] CORTE 01 PODCAST",
+   "cliente": "CHESS",
+   "status": "Pré Aprovação",
+   "fase": "Aprovação",
+   "responsavel": "Petterson",
+   "categoria": "Corte",
+   "complexidade": null,
+   "prazo": "2026-08-09",
+   "ed_ini": "2026-08-09T14:20:00.000-03:00",
+   "ed_fim": "2026-08-09T15:43:00.000-03:00",
+   "data_pub": null,
+   "url": "https://app.notion.com/p/CHESS-CORTE-01-PODCAST-3b71e7f422b9808faac8cf436f49e185"
   },
   {
    "titulo": "[LUME] CROISSANT DE NUTELLA",
