@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-10T13:41:33-03:00",
+ "gerado_em": "2026-08-10T14:42:28-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -3765,7 +3765,7 @@
    "ed_fim": "2026-06-24T17:15:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-12",
+   "data_pub": null,
    "url": "https://app.notion.com/p/FLAVOR-HIGHNIGHT-3811e7f422b980da86fed4ef0e6b7dda"
   },
   {
@@ -4660,7 +4660,7 @@
    "ed_ini": "2026-08-04T15:10:00.000-03:00",
    "ed_fim": "2026-08-04T18:24:00.000-03:00",
    "alt_ini": null,
-   "alt_fim": "2026-08-04T18:24:00.000-03:00",
+   "alt_fim": null,
    "data_pub": null,
    "url": "https://app.notion.com/p/JARDIM-VIDEO-01-3ae1e7f422b980c9a6d8e5e6eb5b94d7"
   },
@@ -4773,7 +4773,7 @@
    "ed_fim": "2026-08-08T23:44:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-07-28",
+   "data_pub": null,
    "url": "https://app.notion.com/p/CHESS-PODCAST-3ac1e7f422b980ebb16ad67e760f55f1"
   },
   {
@@ -4949,7 +4949,7 @@
    "ed_fim": "2026-08-07T02:17:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-06",
+   "data_pub": null,
    "url": "https://app.notion.com/p/CHESS-MANISFESTO-3b51e7f422b980fa8658d7fb3d94cc03"
   },
   {
@@ -5061,7 +5061,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-03-3b51e7f422b980da8ac1c4e4b339a169"
   },
   {
@@ -5077,7 +5077,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-02-3b51e7f422b980599061c17f3b2b33f0"
   },
   {
@@ -5093,7 +5093,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-01-3b51e7f422b980c7a9cdc405798df9db"
   },
   {
@@ -5109,7 +5109,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-06-3b51e7f422b980ec970ccd72635edfa0"
   },
   {
@@ -5125,7 +5125,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-05-3b51e7f422b98035b2f4d75df77234c7"
   },
   {
@@ -5141,7 +5141,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-04-3b51e7f422b98089b7cdc1e6531fc54b"
   },
   {
@@ -5157,7 +5157,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-07-3b51e7f422b98019b885da9ee34c85f1"
   },
   {
@@ -5173,7 +5173,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-08-05",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-VIDEO-08-3b51e7f422b9806186d3f72a88ff1bc5"
   },
   {
@@ -5317,7 +5317,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-26",
+   "data_pub": null,
    "url": "https://app.notion.com/p/GATOS-E-ATOS-3801e7f422b98095af3ee5220d6f8997"
   },
   {
@@ -5349,13 +5349,13 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-17",
+   "data_pub": null,
    "url": "https://app.notion.com/p/CUNHA-CONTE-DOS-3801e7f422b980a8adbcd36171be236c"
   },
   {
    "titulo": "[VERTERE] CONTEÚDOS",
    "cliente": "VERTERE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Gravação",
    "responsavel": null,
    "categoria": null,
@@ -5381,7 +5381,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-10",
+   "data_pub": null,
    "url": "https://app.notion.com/p/CHESS-CONTE-DOS-3801e7f422b98008905dfd01db850d6a"
   },
   {
@@ -5397,7 +5397,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-04",
+   "data_pub": null,
    "url": "https://app.notion.com/p/UPLAY-CAPTA-O-3801e7f422b9806289adf6fbffd206bd"
   },
   {
@@ -5413,13 +5413,13 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-03",
+   "data_pub": null,
    "url": "https://app.notion.com/p/LAPIDATO-AN-NCIOS-3801e7f422b980be8028e9ebb0f309fa"
   },
   {
    "titulo": "[LUME]",
    "cliente": "LUME",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Gravação",
    "responsavel": null,
    "categoria": null,
@@ -5445,7 +5445,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-12",
+   "data_pub": null,
    "url": "https://app.notion.com/p/BFE-CAPTA-O-CASAR-O-3791e7f422b980a4b7c9eecae74fba07"
   },
   {
@@ -5461,7 +5461,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-09",
+   "data_pub": null,
    "url": "https://app.notion.com/p/HAGUE-IZAKAYA-CONTE-DOS-3791e7f422b980349f8de0a2c84b1134"
   },
   {
@@ -5477,7 +5477,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-11",
+   "data_pub": null,
    "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-CER-MICA-3791e7f422b9807087dee94721d71f1b"
   },
   {
@@ -5493,7 +5493,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-12",
+   "data_pub": null,
    "url": "https://app.notion.com/p/FLAVOR-BALADA-3791e7f422b980c7aba8d4b4f4cd3433"
   },
   {
@@ -5509,7 +5509,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-17",
+   "data_pub": null,
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-3791e7f422b98029b905cfc5d3c68b40"
   },
   {
@@ -5525,13 +5525,13 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-11",
+   "data_pub": null,
    "url": "https://app.notion.com/p/FLAVOR-CONTE-DO-JUNHO-3791e7f422b980b8a6b7d495b68cc628"
   },
   {
    "titulo": "[BE RAP] CONTEÚDO JULHO",
    "cliente": "BE RAP",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Gravação",
    "responsavel": "Petterson",
    "categoria": null,
@@ -5557,7 +5557,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-02",
+   "data_pub": null,
    "url": "https://app.notion.com/p/A-MARIE-DIA-DOS-NAMORADOS-3791e7f422b9809c98c5c3fc37b563a1"
   },
   {
@@ -5573,7 +5573,7 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-06-22",
+   "data_pub": null,
    "url": "https://app.notion.com/p/JARDIM-GRAVA-O-JUNHO-3791e7f422b980dba7c0dd0e5cf420e0"
   },
   {
@@ -5925,7 +5925,7 @@
    "ed_fim": "2026-04-08T10:10:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
-   "data_pub": "2026-05-14",
+   "data_pub": null,
    "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-DEPOIMENTO-GANCHOS-33c1e7f422b980b88f41c9287403edc1"
   },
   {
@@ -6155,7 +6155,7 @@
   {
    "titulo": "[Richard] Gravação Junho",
    "cliente": "Richard",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Gravação",
    "responsavel": "Petterson",
    "categoria": null,
