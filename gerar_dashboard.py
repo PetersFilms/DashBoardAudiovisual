@@ -24,6 +24,7 @@ DIAS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 FINALIZADO = {"Aprovado/Finalizado", "Drive"}
 EM_APROVACAO = {"Pré Aprovação"}
 EM_EXECUCAO = {"Executando", "Alteração", "Alterado"}
+EM_ALTERACAO = {"Alteração", "Alterado"}
 
 CORES_RESP = {"Maila": "var(--s1)", "Petterson": "var(--s2)",
               "Pedro": "var(--s3)", "Ex-editor": "var(--axis)"}
@@ -97,7 +98,10 @@ def preparar(cfg):
         c["_prazo"] = parse_d(c.get("prazo"))
         c["_ini"] = parse_dt(c.get("ed_ini"))
         c["_fim"] = parse_dt(c.get("ed_fim"))
-        c["_pub"] = parse_d(c.get("data_pub"))
+        # "Gravado" = dia da captação · "Publicação" = dia de ir ao ar.
+        # data_pub é o nome antigo da chave, mantido como fallback.
+        c["_grav"] = parse_d(c.get("gravado") or c.get("data_pub"))
+        c["_pub"] = parse_d(c.get("publicacao"))
         c["_alt_i"] = parse_dt(c.get("alt_ini"))
         c["_alt_f"] = parse_dt(c.get("alt_fim"))
         st = c.get("status") or ""
@@ -172,8 +176,17 @@ def montar(cfg, agora, hoje, todos):
     atrasados = sorted([c for c in fila if c["_prazo"] and c["_prazo"] < hoje],
                        key=lambda c: c["_prazo"])
     sem_dono = [c for c in cards if not c.get("responsavel") and not c["_final"]]
-    sem_inicio = [c for c in cards if c["_fim"] and not c["_ini"]]
-    sem_pub = [c for c in cards if not c["_pub"]]
+
+    # ---- furos de tempo: o que impede medir edição e alteração
+    # Edição: o card já saiu da edição (ou está finalizado) mas o par
+    # Início/Fim está incompleto, então a duração não é calculável.
+    sem_t_ed = [c for c in cards
+                if (c["_fim"] or c["_final"]) and c["_dur_ed"] is None]
+    # Alteração: o card passou por alteração (pelo status atual) ou tem
+    # um dos dois campos preenchido sem o par.
+    sem_t_alt = [c for c in cards
+                 if ((c.get("status") in EM_ALTERACAO) or c["_alt_i"] or c["_alt_f"])
+                 and c["_dur_alt"] is None]
 
     # ---- fluxo diário
     f_ontem = [c for c in concluidos if c["_fim"].date() == ontem]
@@ -199,7 +212,7 @@ def montar(cfg, agora, hoje, todos):
                 total_atr=total_atr, meta_dist=cfg["meta_dist"],
                 meta_antec=cfg.get("meta_antecedencia_dias", 30),
                 vence_hoje=vence_hoje, atrasados=atrasados, sem_dono=sem_dono,
-                sem_inicio=sem_inicio, sem_pub=sem_pub, f_ontem=f_ontem,
+                sem_t_ed=sem_t_ed, sem_t_alt=sem_t_alt, f_ontem=f_ontem,
                 f_hoje_ok=f_hoje_ok, f_amanha=f_amanha, f_prox=f_prox,
                 prox_data=prox_data, serie=serie, cards=cards, mes_lab=cfg["mes_ref"],
                 dur_ed=dur_ed, dur_alt=dur_alt)
@@ -248,13 +261,15 @@ def comentario(m):
         notas.append((1, "A distribuição 70/30 está torta: %s." % "; ".join(gaps)))
 
     if m["antec"] < m["meta_antec"]:
-        notas.append((0, "Seguimos operando colados no prazo (antecedência %d de %d dias) — "
-                      "isso só muda quando a Data de Publicação passar a ser preenchida."
-                      % (m["antec"], m["meta_antec"])))
+        notas.append((0, "Seguimos operando colados no prazo: nada pronto com mais de %d dia(s) "
+                      "de folga, contra a meta de %d." % (m["antec"], m["meta_antec"])))
 
-    if len(m["sem_pub"]) > len(m["cards"]) / 2:
-        notas.append((0, "%d de %d cards do mês ainda sem Data de Publicação."
-                      % (len(m["sem_pub"]), len(m["cards"]))))
+    furos = len(m["sem_t_ed"]) + len(m["sem_t_alt"])
+    if furos:
+        notas.append((1 if furos >= 4 else 0,
+                      "%d card(s) do mês estão sem tempo registrado (%d de edição, %d de "
+                      "alteração) — cada um desses sai das médias."
+                      % (furos, len(m["sem_t_ed"]), len(m["sem_t_alt"]))))
 
     sev = max(s for s, _ in notas) if notas else 0
     # o pior assunto abre o comentário; ordem estável dentro da mesma gravidade
@@ -288,7 +303,8 @@ def dados_js(cfg, hoje, todos):
             "st": st,
             "p": d10(c["_prazo"]),
             "f": d10(c["_fim"].date() if c["_fim"] else None),
-            "d": d10(c["_pub"]),
+            "d": d10(c["_grav"]),
+            "pb": d10(c["_pub"]),
             "atr": c["_atraso"],
             "de": round(c["_dur_ed"]) if c["_dur_ed"] is not None else None,
             "da": round(c["_dur_alt"]) if c["_dur_alt"] is not None else None,
@@ -437,7 +453,7 @@ function $(id){return document.getElementById(id)}
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;")
  .replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function showTab(id,btn){
- ["diario","periodo","pend"].forEach(function(k){
+ ["diario","periodo","dados"].forEach(function(k){
   $("tab-"+k).hidden = (k!==id);
   $("btn-"+k).classList.toggle("on", k===id);
  });
@@ -505,19 +521,32 @@ function render(a,b,label){
  $("t-prz").style.color=pct==null?"":(pct>=85?"var(--good)":pct>=70?"var(--warn)":"var(--crit)");
  $("t-prz-note").textContent=cp.length?np.length+" de "+cp.length+" entregas dentro do prazo":"nenhuma entrega com prazo no período";
 
- /* tile: antecedência real média (Data de Publicação − Edição Fim) */
+ /* tile: dias entre a gravação (campo Data) e o fim da edição */
  var ca=ent.filter(function(c){return c.d});
  if(ca.length){
-  var soma=0;ca.forEach(function(c){soma+=diffDays(c.f,c.d)});
+  var soma=0;ca.forEach(function(c){soma+=diffDays(c.d,c.f)});
   var med=soma/ca.length;
   $("t-ant").innerHTML=med.toFixed(0)+'<small> dias</small>';
-  $("t-ant").style.color=med<0?"var(--crit)":(med>=7?"var(--good)":"");
-  $("t-ant-note").textContent="média sobre "+ca.length+" entrega(s) com Data de Publicação"+
-   (med<0?" — negativo: a edição terminou DEPOIS da data de publicação":"");
+  $("t-ant-note").textContent="média sobre "+ca.length+" entrega(s) com data de gravação preenchida";
  }else{
-  $("t-ant").style.color="";
   $("t-ant").textContent="—";
-  $("t-ant-note").textContent="nenhuma entrega do período tem Data de Publicação preenchida";
+  $("t-ant-note").textContent="nenhuma entrega do período tem data de gravação preenchida";
+ }
+
+ /* tile: antecedência de publicação (Publicação − Edição Fim) */
+ var cp2=ent.filter(function(c){return c.pb});
+ if(cp2.length){
+  var s2=0;cp2.forEach(function(c){s2+=diffDays(c.f,c.pb)});
+  var m2=s2/cp2.length;
+  $("t-apub").innerHTML=m2.toFixed(0)+'<small> dias</small>';
+  $("t-apub").style.color=m2<0?"var(--crit)":(m2>=7?"var(--good)":"");
+  $("t-apub-note").textContent="colchão médio entre fechar a edição e ir ao ar · "+cp2.length+
+   " entrega(s)"+(m2<0?" — negativo: a edição fechou DEPOIS da data de publicação":"");
+ }else{
+  $("t-apub").style.color="";
+  $("t-apub").textContent="—";
+  $("t-apub-note").textContent="campo Publicação criado em 09/08/2026 — o número aparece "+
+   "sozinho assim que houver entregas com ele preenchido";
  }
 
  /* tempos médios */
@@ -727,16 +756,18 @@ def render(m, dados):
         al.append(('i-warn', '~', "<b>%d card(s) sem responsável</b> — não entram no cálculo do 70/30."
                    "<em>%s</em>" % (len(m["sem_dono"]),
                                     esc(" · ".join(c["titulo"] for c in m["sem_dono"][:5])))))
-    if m["sem_inicio"]:
-        al.append(('i-info', 'i', "<b>%d card(s) concluídos sem Edição Início</b> — ficam fora da "
-                   "leitura de ciclo.<em>%s</em>"
-                   % (len(m["sem_inicio"]), esc(" · ".join(c["titulo"] for c in m["sem_inicio"][:5])))))
-    if m["sem_pub"]:
-        al.append(('i-info', 'i', "<b>%d de %d cards sem Data de Publicação</b> — é o campo que "
-                   "automatiza a leitura de antecedência."
-                   '<button class="btnlink" onclick="showTab(\'pend\')">ver quais →</button>'
-                   "<em>Preencher no ato da criação do card.</em>"
-                   % (len(m["sem_pub"]), len(m["cards"]))))
+    if m["sem_t_ed"]:
+        al.append(('i-warn', '~', "<b>%d card(s) sem tempo de edição</b> — falta Edição Início "
+                   "ou Edição Fim, então a duração não entra na média."
+                   '<button class="btnlink" onclick="showTab(\'dados\')">ver quais →</button>'
+                   "<em>%s</em>"
+                   % (len(m["sem_t_ed"]), esc(" · ".join(c["titulo"] for c in m["sem_t_ed"][:5])))))
+    if m["sem_t_alt"]:
+        al.append(('i-warn', '~', "<b>%d card(s) sem tempo de alteração</b> — passaram por "
+                   "alteração mas o par Início/Fim está incompleto."
+                   '<button class="btnlink" onclick="showTab(\'dados\')">ver quais →</button>'
+                   "<em>%s</em>"
+                   % (len(m["sem_t_alt"]), esc(" · ".join(c["titulo"] for c in m["sem_t_alt"][:5])))))
     if not al:
         al.append(('i-info', '✓', "<b>Nada exigindo ação hoje.</b><em>Sem vencimentos, sem atrasos, "
                    "sem furo de preenchimento.</em>"))
@@ -761,10 +792,26 @@ def render(m, dados):
     prazo_cor = "var(--good)" if (m["pct_prazo"] or 0) >= 85 else (
         "var(--warn)" if (m["pct_prazo"] or 0) >= 70 else "var(--crit)")
 
-    # --- pendências (cards do mês sem Data de Publicação)
-    pend = sorted(m["sem_pub"], key=lambda c: (c["_prazo"] or date(2099, 1, 1), c["titulo"]))
-    pend_lista = lista(pend, "Todos os cards do mês têm Data de Publicação. 🎉",
-                       extra=lambda c: " · prazo %s" % fmt(c["_prazo"], False))
+    # --- furos de tempo
+    def _ord(cs):
+        return sorted(cs, key=lambda c: (c["_prazo"] or date(2099, 1, 1), c["titulo"]))
+
+    def _falta_ed(c):
+        if not c["_ini"] and not c["_fim"]:
+            return "falta Início e Fim"
+        return "falta Edição Início" if not c["_ini"] else "falta Edição Fim"
+
+    def _falta_alt(c):
+        if not c["_alt_i"] and not c["_alt_f"]:
+            return "falta Início e Fim"
+        return "falta Alteração Início" if not c["_alt_i"] else "falta Alteração Fim"
+
+    lista_ed = lista(_ord(m["sem_t_ed"]),
+                     "Todo card entregue no mês tem Edição Início e Fim preenchidos. 🎉",
+                     extra=lambda c: " · %s" % _falta_ed(c))
+    lista_alt = lista(_ord(m["sem_t_alt"]),
+                      "Nenhuma alteração do mês está com o par incompleto. 🎉",
+                      extra=lambda c: " · %s" % _falta_alt(c))
 
     return """<!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
@@ -786,7 +833,7 @@ def render(m, dados):
 <div class="tabs">
   <button class="tab on" id="btn-diario" onclick="showTab('diario')">Painel Diário</button>
   <button class="tab" id="btn-periodo" onclick="showTab('periodo')">Análise por Período</button>
-  <button class="tab" id="btn-pend" onclick="showTab('pend')">Sem Data de Publicação</button>
+  <button class="tab" id="btn-dados" onclick="showTab('dados')">Sem Tempo Registrado</button>
 </div>
 
 <!-- ==================== PAINEL DIÁRIO ==================== -->
@@ -815,7 +862,7 @@ def render(m, dados):
     <div class="lab">Em aberto no mês</div>
     <div class="val">%(n_fila)d</div>
     <div class="note">%(n_exec)d em execução · %(n_fazer)d a fazer.<br>
-      Antecedência agora vive na aba <b>Análise por Período</b>.</div>
+      Leitura por período fica na aba <b>Análise por Período</b>.</div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por edição</div>
@@ -913,15 +960,16 @@ def render(m, dados):
     <div class="note" id="t-prz-note"></div>
   </div>
   <div class="card tile">
-    <div class="lab">Antecedência real média</div>
+    <div class="lab">Gravação → entrega</div>
     <div class="val" id="t-ant">—</div>
     <div class="note" id="t-ant-note"></div>
   </div>
   <div class="card tile">
-    <div class="lab">Antecedência hoje</div>
+    <div class="lab">Folga sobre o prazo</div>
     <div class="val">%(antec)d<small> dias</small></div>
     <div class="meter"><i style="width:%(pct_antec).1f%%;background:%(antec_cor)s"></i></div>
-    <div class="note">meta %(meta_antec)d dias · retrato de agora, não varia com o filtro</div>
+    <div class="note">o card pronto mais adiantado está %(antec)d dia(s) à frente do prazo ·
+      meta %(meta_antec)d · retrato de agora, não varia com o filtro</div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por edição</div>
@@ -932,6 +980,11 @@ def render(m, dados):
     <div class="lab">Tempo médio por alteração</div>
     <div class="val" id="t-dal">—</div>
     <div class="note" id="t-dal-note"></div>
+  </div>
+  <div class="card tile">
+    <div class="lab">Antecedência de publicação</div>
+    <div class="val" id="t-apub">—</div>
+    <div class="note" id="t-apub-note"></div>
   </div>
 </div>
 
@@ -963,16 +1016,29 @@ def render(m, dados):
 
 </section>
 
-<!-- ==================== SEM DATA DE PUBLICAÇÃO ==================== -->
-<section id="tab-pend" hidden>
+<!-- ==================== SEM TEMPO REGISTRADO ==================== -->
+<section id="tab-dados" hidden>
+
+<p class="plabel">Cards de %(mes_nome)s em que não dá para medir quanto tempo o trabalho levou.
+Cada um deles fica de fora das médias de tempo do painel. Clique para abrir no Notion e preencher.</p>
+
+<div class="card" style="margin-bottom:14px">
+  <h2>Sem tempo de edição <span class="count">%(n_sed)d</span></h2>
+  <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+  O card já saiu da edição (ou está finalizado), mas falta <b>Edição Início</b> ou
+  <b>Edição Fim</b> — sem os dois não há duração.</p>
+  %(lista_ed)s
+</div>
 
 <div class="card">
-  <h2>Cards de %(mes_nome)s sem Data de Publicação <span class="count">%(n_pend)d</span></h2>
+  <h2>Sem tempo de alteração <span class="count">%(n_salt)d</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
-  A Data de Publicação é o campo que permite medir a antecedência real (quantos dias antes
-  de ir ao ar o conteúdo fica pronto). Clique no card para abri-lo no Notion e preencher —
-  o campo se chama <b>Data</b>.</p>
-  %(pend_lista)s
+  O card passou por alteração — pelo status atual ou porque um dos campos foi preenchido —
+  mas falta <b>Alteração Início</b> ou <b>Alteração Fim</b>.
+  <span style="color:var(--muted)">Observação: o painel só enxerga alteração pelo status
+  atual do card ou por campo preenchido pela metade. Uma alteração antiga, num card que já
+  voltou para outro status sem nada preenchido, passa despercebida.</span></p>
+  %(lista_alt)s
 </div>
 
 </section>
@@ -1016,7 +1082,8 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         n_exec=len(m["execu"]), l_exec=lista(m["execu"], "Nenhum card em execução."),
         n_hoje=len(m["f_hoje_ok"]), l_hoje=lista(m["f_hoje_ok"], "Nada concluído hoje ainda."),
         lab_amanha=fmt(m["amanha"]), n_amanha=len(m["f_amanha"]), b_amanha=bloco_amanha,
-        n_pend=len(m["sem_pub"]), pend_lista=pend_lista,
+        n_sed=len(m["sem_t_ed"]), lista_ed=lista_ed,
+        n_salt=len(m["sem_t_alt"]), lista_alt=lista_alt,
         n_cards=len(m["cards"]), n_todos=len(dados["cards"]))
 
 

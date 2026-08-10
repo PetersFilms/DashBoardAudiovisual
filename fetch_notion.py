@@ -155,7 +155,10 @@ def main():
             "ed_fim": p_date(pr.get("Edição Fim ")) or p_date(pr.get("Edição Fim")),
             "alt_ini": p_date(pr.get("Alteração Início")),
             "alt_fim": p_date(pr.get("Alteração Fim ")) or p_date(pr.get("Alteração Fim")),
-            "data_pub": p_date(pr.get("Data")),
+            # "Gravado" = dia da captação (chamava-se "Data" até 09/08/2026;
+            # o fallback cobre o caso de alguém desfazer a renomeação)
+            "gravado": p_date(pr.get("Gravado")) or p_date(pr.get("Data")),
+            "publicacao": p_date(pr.get("Publicação")),
             "url": linha.get("url"),
         })
 
