@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-10T09:41:18-03:00",
+ "gerado_em": "2026-08-10T11:11:46-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -4987,13 +4987,13 @@
   {
    "titulo": "[LUME] VOCÊ PEDIU",
    "cliente": "LUME",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
    "complexidade": "Básico",
    "prazo": "2026-08-10",
-   "ed_ini": null,
+   "ed_ini": "2026-08-10T11:06:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -5003,13 +5003,13 @@
   {
    "titulo": "[LUME] APRENDER A DIZER NÃO",
    "cliente": "LUME",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
    "complexidade": "Básico",
    "prazo": "2026-08-10",
-   "ed_ini": null,
+   "ed_ini": "2026-08-10T10:36:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
