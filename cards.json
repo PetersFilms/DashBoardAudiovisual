@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-11T11:10:59-03:00",
+ "gerado_em": "2026-08-11T12:48:32-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5128,7 +5128,7 @@
   {
    "titulo": "[JARDIM] VIDEO 02",
    "cliente": "JARDIM",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -5136,10 +5136,10 @@
    "prazo": "2026-08-06",
    "ed_ini": "2026-08-08T16:30:00.000-03:00",
    "ed_fim": "2026-08-08T17:41:00.000-03:00",
-   "alt_ini": null,
-   "alt_fim": null,
+   "alt_ini": "2026-08-11T12:06:00.000-03:00",
+   "alt_fim": "2026-08-11T12:11:00.000-03:00",
    "gravado": null,
-   "publicacao": null,
+   "publicacao": "2026-08-14",
    "url": "https://app.notion.com/p/JARDIM-VIDEO-02-3b01e7f422b980f486f3fdb26d19560e"
   },
   {
