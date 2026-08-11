@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-11T08:35:49-03:00",
+ "gerado_em": "2026-08-11T09:37:56-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5398,41 +5398,7 @@
    "url": "https://app.notion.com/p/JARDIM-VIDEO-03-3b01e7f422b98009b095f7a580dd5f07"
   },
   {
-   "titulo": "[HAGUE] VIDEO 03",
-   "cliente": "HAGUE",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "complexidade": "Básico",
-   "prazo": "2026-08-11",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-05",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-03-3b51e7f422b980da8ac1c4e4b339a169"
-  },
-  {
-   "titulo": "[HAGUE] VIDEO 02",
-   "cliente": "HAGUE",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "complexidade": "Básico",
-   "prazo": "2026-08-11",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-05",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-02-3b51e7f422b980599061c17f3b2b33f0"
-  },
-  {
-   "titulo": "[HAGUE] VIDEO 01",
+   "titulo": "[HAGUE] DIETA",
    "cliente": "HAGUE",
    "status": "Pré Aprovação",
    "fase": "Edição",
@@ -5440,13 +5406,47 @@
    "categoria": "Reels",
    "complexidade": "Básico",
    "prazo": "2026-08-11",
-   "ed_ini": null,
+   "ed_ini": "2026-08-11T08:42:00.000-03:00",
+   "ed_fim": "2026-08-11T08:52:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-05",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HAGUE-DIETA-3b51e7f422b980da8ac1c4e4b339a169"
+  },
+  {
+   "titulo": "[HAGUE] JUTSU",
+   "cliente": "HAGUE",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "complexidade": "Básico",
+   "prazo": "2026-08-11",
+   "ed_ini": "2026-08-11T08:54:00.000-03:00",
+   "ed_fim": "2026-08-11T09:01:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-05",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HAGUE-JUTSU-3b51e7f422b980599061c17f3b2b33f0"
+  },
+  {
+   "titulo": "[HAGUE] CONVITE P/ COMER",
+   "cliente": "HAGUE",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "complexidade": "Básico",
+   "prazo": "2026-08-11",
+   "ed_ini": "2026-08-11T09:01:00.000-03:00",
    "ed_fim": "2026-08-10T18:14:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-05",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-01-3b51e7f422b980c7a9cdc405798df9db"
+   "url": "https://app.notion.com/p/HAGUE-CONVITE-P-COMER-3b51e7f422b980c7a9cdc405798df9db"
   },
   {
    "titulo": "[HAGUE] VIDEO 06",
@@ -5483,7 +5483,7 @@
    "url": "https://app.notion.com/p/HAGUE-VIDEO-05-3b51e7f422b98035b2f4d75df77234c7"
   },
   {
-   "titulo": "[HAGUE] VIDEO 04",
+   "titulo": "[HAGUE] CERVEJA ASAHI",
    "cliente": "HAGUE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -5497,7 +5497,7 @@
    "alt_fim": null,
    "gravado": "2026-08-05",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-04-3b51e7f422b98089b7cdc1e6531fc54b"
+   "url": "https://app.notion.com/p/HAGUE-CERVEJA-ASAHI-3b51e7f422b98089b7cdc1e6531fc54b"
   },
   {
    "titulo": "[HAGUE] VIDEO 07",
