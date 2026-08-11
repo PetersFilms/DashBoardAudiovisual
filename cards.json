@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-11T09:37:56-03:00",
+ "gerado_em": "2026-08-11T11:10:59-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5162,7 +5162,7 @@
   {
    "titulo": "[LAPIDATO] AD 04",
    "cliente": "LAPIDATO",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -5434,14 +5434,14 @@
   {
    "titulo": "[HAGUE] CONVITE P/ COMER",
    "cliente": "HAGUE",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
    "complexidade": "Básico",
    "prazo": "2026-08-11",
    "ed_ini": "2026-08-11T09:01:00.000-03:00",
-   "ed_fim": "2026-08-10T18:14:00.000-03:00",
+   "ed_fim": "2026-08-11T10:32:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-05",
@@ -5449,7 +5449,7 @@
    "url": "https://app.notion.com/p/HAGUE-CONVITE-P-COMER-3b51e7f422b980c7a9cdc405798df9db"
   },
   {
-   "titulo": "[HAGUE] VIDEO 06",
+   "titulo": "[HAGUE] \"Está tudo certo com o pedido de vocês?”",
    "cliente": "HAGUE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -5463,10 +5463,10 @@
    "alt_fim": null,
    "gravado": "2026-08-05",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-06-3b51e7f422b980ec970ccd72635edfa0"
+   "url": "https://app.notion.com/p/HAGUE-Est-tudo-certo-com-o-pedido-de-voc-s-3b51e7f422b980ec970ccd72635edfa0"
   },
   {
-   "titulo": "[HAGUE] VIDEO 05",
+   "titulo": "[HAGUE] \"BEHING THE SCENES”",
    "cliente": "HAGUE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -5480,7 +5480,7 @@
    "alt_fim": null,
    "gravado": "2026-08-05",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-05-3b51e7f422b98035b2f4d75df77234c7"
+   "url": "https://app.notion.com/p/HAGUE-BEHING-THE-SCENES-3b51e7f422b98035b2f4d75df77234c7"
   },
   {
    "titulo": "[HAGUE] CERVEJA ASAHI",
@@ -5500,7 +5500,7 @@
    "url": "https://app.notion.com/p/HAGUE-CERVEJA-ASAHI-3b51e7f422b98089b7cdc1e6531fc54b"
   },
   {
-   "titulo": "[HAGUE] VIDEO 07",
+   "titulo": "[HAGUE] CLIENTE APROVOU",
    "cliente": "HAGUE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -5514,10 +5514,10 @@
    "alt_fim": null,
    "gravado": "2026-08-05",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-07-3b51e7f422b98019b885da9ee34c85f1"
+   "url": "https://app.notion.com/p/HAGUE-CLIENTE-APROVOU-3b51e7f422b98019b885da9ee34c85f1"
   },
   {
-   "titulo": "[HAGUE] VIDEO 08",
+   "titulo": "[HAGUE] PRATO + DRINK",
    "cliente": "HAGUE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -5531,7 +5531,7 @@
    "alt_fim": null,
    "gravado": "2026-08-05",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-VIDEO-08-3b51e7f422b9806186d3f72a88ff1bc5"
+   "url": "https://app.notion.com/p/HAGUE-PRATO-DRINK-3b51e7f422b9806186d3f72a88ff1bc5"
   },
   {
    "titulo": "[EMPÓRIO] GRAVAÇÃO AGOSTO",
