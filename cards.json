@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-12T13:44:39-03:00",
+ "gerado_em": "2026-08-12T14:49:33-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5364,23 +5364,6 @@
    "url": "https://app.notion.com/p/LUME-QUEM-FALA-QUEM-OUVE-3b51e7f422b9802a8794e514d43ac181"
   },
   {
-   "titulo": "[JARDIM] VIDEO 03",
-   "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "complexidade": "Básico",
-   "prazo": "2026-08-10",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": "2026-09-03",
-   "url": "https://app.notion.com/p/JARDIM-VIDEO-03-3b01e7f422b98009b095f7a580dd5f07"
-  },
-  {
    "titulo": "[HAGUE] DIETA",
    "cliente": "HAGUE",
    "status": "Pré Aprovação",
@@ -5430,6 +5413,57 @@
    "gravado": "2026-08-05",
    "publicacao": null,
    "url": "https://app.notion.com/p/HAGUE-CONVITE-P-COMER-3b51e7f422b980c7a9cdc405798df9db"
+  },
+  {
+   "titulo": "[CHESS] CORTE 04",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Corte",
+   "complexidade": "Básico",
+   "prazo": "2026-08-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-CORTE-04-3ba1e7f422b9801b9f8ce0c17decdce4"
+  },
+  {
+   "titulo": "[CHESS] CORTE 04",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Corte",
+   "complexidade": "Básico",
+   "prazo": "2026-08-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-CORTE-04-3ba1e7f422b980d1bfe0e030cbd53c8f"
+  },
+  {
+   "titulo": "[CHESS] CORTE 03",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Corte",
+   "complexidade": "Básico",
+   "prazo": "2026-08-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-CORTE-03-3ba1e7f422b980679ce7c2795f5af1b5"
   },
   {
    "titulo": "[CHESS] CORTE 02",
@@ -5532,6 +5566,23 @@
    "gravado": "2026-08-05",
    "publicacao": null,
    "url": "https://app.notion.com/p/HAGUE-BEHING-THE-SCENES-3b51e7f422b98035b2f4d75df77234c7"
+  },
+  {
+   "titulo": "[JARDIM] VIDEO 03",
+   "cliente": "JARDIM",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "complexidade": "Básico",
+   "prazo": "2026-08-18",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-09-03",
+   "url": "https://app.notion.com/p/JARDIM-VIDEO-03-3b01e7f422b98009b095f7a580dd5f07"
   },
   {
    "titulo": "[EMPÓRIO] GRAVAÇÃO AGOSTO",
