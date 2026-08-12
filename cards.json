@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-12T12:48:22-03:00",
+ "gerado_em": "2026-08-12T13:44:39-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5466,33 +5466,16 @@
    "url": "https://app.notion.com/p/HAGUE-Est-tudo-certo-com-o-pedido-de-voc-s-3b51e7f422b980ec970ccd72635edfa0"
   },
   {
-   "titulo": "[HAGUE] \"BEHING THE SCENES”",
-   "cliente": "HAGUE",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "complexidade": "Básico",
-   "prazo": "2026-08-12",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-05",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-BEHING-THE-SCENES-3b51e7f422b98035b2f4d75df77234c7"
-  },
-  {
    "titulo": "[HAGUE] CERVEJA ASAHI",
    "cliente": "HAGUE",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
    "complexidade": "Básico",
    "prazo": "2026-08-12",
    "ed_ini": null,
-   "ed_fim": null,
+   "ed_fim": "2026-08-12T13:18:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-05",
@@ -5532,6 +5515,23 @@
    "gravado": "2026-08-05",
    "publicacao": null,
    "url": "https://app.notion.com/p/HAGUE-PRATO-DRINK-3b51e7f422b9806186d3f72a88ff1bc5"
+  },
+  {
+   "titulo": "[HAGUE] \"BEHING THE SCENES”",
+   "cliente": "HAGUE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "complexidade": "Básico",
+   "prazo": "2026-08-13",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-05",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HAGUE-BEHING-THE-SCENES-3b51e7f422b98035b2f4d75df77234c7"
   },
   {
    "titulo": "[EMPÓRIO] GRAVAÇÃO AGOSTO",
