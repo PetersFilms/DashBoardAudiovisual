@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-12T15:45:03-03:00",
+ "gerado_em": "2026-08-12T16:55:01-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5468,13 +5468,13 @@
   {
    "titulo": "[CHESS] CORTE 02",
    "cliente": "CHESS",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Corte",
    "complexidade": "Básico",
    "prazo": "2026-08-12",
-   "ed_ini": null,
+   "ed_ini": "2026-08-12T15:15:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
