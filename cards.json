@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-12T11:11:52-03:00",
+ "gerado_em": "2026-08-12T12:48:22-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5430,6 +5430,23 @@
    "gravado": "2026-08-05",
    "publicacao": null,
    "url": "https://app.notion.com/p/HAGUE-CONVITE-P-COMER-3b51e7f422b980c7a9cdc405798df9db"
+  },
+  {
+   "titulo": "[CHESS] CORTE 02",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Corte",
+   "complexidade": "Básico",
+   "prazo": "2026-08-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-CORTE-02-3ba1e7f422b980ad92aef0604175585b"
   },
   {
    "titulo": "[HAGUE] \"Está tudo certo com o pedido de vocês?”",
