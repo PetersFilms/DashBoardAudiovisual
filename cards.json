@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-12T18:33:41-03:00",
+ "gerado_em": "2026-08-12T19:29:07-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -5230,7 +5230,7 @@
   {
    "titulo": "[CHESS] MANISFESTO",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Roteirização",
    "responsavel": "Petterson",
    "categoria": null,
@@ -5349,7 +5349,7 @@
   {
    "titulo": "[LUME] QUEM FALA/ QUEM OUVE",
    "cliente": "LUME",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -5468,14 +5468,14 @@
   {
    "titulo": "[CHESS] CORTE 02",
    "cliente": "CHESS",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Corte",
    "complexidade": "Básico",
    "prazo": "2026-08-12",
    "ed_ini": "2026-08-12T15:15:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-12T19:09:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
