@@ -93,10 +93,17 @@ def p_select(prop):
 
 
 def p_multi(prop):
-    if not prop or not prop.get("multi_select"):
-        return None
-    nomes = [x.get("name") for x in prop["multi_select"] if x.get("name")]
+    """Primeira categoria — a que aparece nas tabelas do painel."""
+    nomes = p_multi_todas(prop)
     return nomes[0] if nomes else None
+
+
+def p_multi_todas(prop):
+    """Todas as categorias. Um card pode ser Reels E Ad ao mesmo tempo, e a
+    regra de publicação depende de enxergar as duas."""
+    if not prop or not prop.get("multi_select"):
+        return []
+    return [x.get("name") for x in prop["multi_select"] if x.get("name")]
 
 
 def p_date(prop):
@@ -148,6 +155,7 @@ def main():
             "fase": p_select(pr.get("Fase")),
             "responsavel": p_person(pr.get("Responsável")),
             "categoria": p_multi(pr.get("Categoria de vídeo")),
+            "categorias": p_multi_todas(pr.get("Categoria de vídeo")),
             "complexidade": p_select(pr.get("Complexidade")),
             "prazo": p_date(pr.get("Prazo")),
             # atenção: "Edição Fim" e "Alteração Fim" têm um espaço no fim, no Notion

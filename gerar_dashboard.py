@@ -26,6 +26,38 @@ EM_APROVACAO = {"Pré Aprovação"}
 EM_EXECUCAO = {"Executando", "Alteração", "Alterado"}
 EM_ALTERACAO = {"Alteração", "Alterado"}
 
+# Complexidade vira número para permitir média. Escala de 1 a 3.
+# A opção "F@)&0" é erro de digitação no Notion e fica fora da conta.
+PESO_COMPLEX = {"Básico": 1, "Intermediário": 2, "Avançado": 3}
+NOME_COMPLEX = {1: "Básico", 2: "Intermediário", 3: "Avançado"}
+
+# Feriados nacionais (agenda "Feriados no Brasil", Google). Só os que
+# param a atividade comercial — datas comemorativas ficam de fora.
+FERIADOS = {
+    date(2026, 9, 7): "Independência",
+    date(2026, 10, 12): "N. Sra. Aparecida",
+    date(2026, 11, 2): "Finados",
+    date(2026, 11, 15): "Proclamação da República",
+    date(2026, 11, 20): "Consciência Negra",
+    date(2026, 12, 25): "Natal",
+    date(2027, 1, 1): "Confraternização Universal",
+}
+
+# Clientes que não entram no rodízio automático de publicação, e por quê.
+FORA_CADENCIA = {
+    "BEA FRUET": "captação não depende 100% da gente",
+    "BFE": "captação não depende 100% da gente",
+    "RICHARD": "captação não depende 100% da gente",
+    "HOMENZ": "ainda sem captações",
+    "PIKOLIN": "captações pausadas",
+}
+
+TETO_PUB_DIA = 3          # máximo de publicações no mesmo dia
+
+# Categorias que não passam pelo calendário de publicação: assim que ficam
+# prontas vão direto para a plataforma de anúncios, sem data de post.
+CATEGORIAS_SEM_CALENDARIO = {"Ad"}
+
 CORES_RESP = {"Maila": "var(--s1)", "Petterson": "var(--s2)",
               "Pedro": "var(--s3)", "Ex-editor": "var(--axis)"}
 
@@ -104,6 +136,15 @@ def preparar(cfg):
         c["_pub"] = parse_d(c.get("publicacao"))
         c["_alt_i"] = parse_dt(c.get("alt_ini"))
         c["_alt_f"] = parse_dt(c.get("alt_fim"))
+        c["_peso"] = PESO_COMPLEX.get(c.get("complexidade"))
+        c["_cli"] = (c.get("cliente") or "").strip().upper()
+        cats = c.get("categorias")
+        if not cats:
+            cats = [c["categoria"]] if c.get("categoria") else []
+        c["_cats"] = cats
+        c["_anuncio"] = bool(set(cats) & CATEGORIAS_SEM_CALENDARIO)
+        c["_fora"] = next((m for k, m in FORA_CADENCIA.items()
+                           if c["_cli"].startswith(k)), None)
         st = c.get("status") or ""
         c["_final"] = st in FINALIZADO
         c["_aprov"] = st in EM_APROVACAO
@@ -164,6 +205,15 @@ def montar(cfg, agora, hoje, todos):
     dur_ed = [c["_dur_ed"] for c in concluidos if c["_dur_ed"] is not None]
     dur_alt = [c["_dur_alt"] for c in cards if c["_dur_alt"] is not None]
 
+    # ---- complexidade
+    pesos = [c["_peso"] for c in cards if c["_peso"]]
+    media_cx = sum(pesos) / len(pesos) if pesos else None
+    dist_cx = {n: len([c for c in cards if c["_peso"] == p])
+               for p, n in NOME_COMPLEX.items()}
+    sem_cx = [c for c in cards if not c["_peso"]]
+    cx_quebrada = [c for c in cards if c.get("complexidade")
+                   and c.get("complexidade") not in PESO_COMPLEX]
+
     # ---- distribuição
     dist = {}
     for nome in cfg["meta_dist"]:
@@ -215,7 +265,128 @@ def montar(cfg, agora, hoje, todos):
                 sem_t_ed=sem_t_ed, sem_t_alt=sem_t_alt, f_ontem=f_ontem,
                 f_hoje_ok=f_hoje_ok, f_amanha=f_amanha, f_prox=f_prox,
                 prox_data=prox_data, serie=serie, cards=cards, mes_lab=cfg["mes_ref"],
-                dur_ed=dur_ed, dur_alt=dur_alt)
+                dur_ed=dur_ed, dur_alt=dur_alt, media_cx=media_cx, dist_cx=dist_cx,
+                sem_cx=sem_cx, cx_quebrada=cx_quebrada, pesos=pesos)
+
+
+# ------------------------------------------------------- agenda de publicação
+
+def eh_util(d):
+    return d.weekday() < 5 and d not in FERIADOS
+
+
+def prox_util(d):
+    while not eh_util(d):
+        d += timedelta(days=1)
+    return d
+
+
+def agenda_pub(todos, hoje, fim):
+    """
+    Propõe data de publicação para cada card que ainda não tem uma.
+
+    Regras, na ordem:
+      1. nada vai ao ar antes de estar pronto
+      2. teto de TETO_PUB_DIA por dia (margem para refazer)
+      3. publicações do mesmo cliente ficam espaçadas
+      4. nada em fim de semana nem feriado
+
+    Cards de clientes em FORA_CADENCIA não recebem data — a publicação
+    depende de combinar com o cliente.
+    """
+    dias = []
+    cur = hoje + timedelta(days=1)
+    while cur <= fim:
+        if eh_util(cur):
+            dias.append(cur)
+        cur += timedelta(days=1)
+
+    inicio_mes = date(hoje.year, hoje.month, 1)
+    confirmados, pendentes, fora, anuncios = [], [], [], []
+    for c in todos:
+        if c["_pub"]:
+            if inicio_mes <= c["_pub"] <= fim:
+                confirmados.append(c)
+            continue
+        ef = c["_fim"].date() if c["_fim"] else None
+        if not (ef or c["_prazo"]):
+            continue                                    # sem âncora de tempo
+        # só o que pertence ao mês corrente: card de meses anteriores já
+        # teve seu momento, e reagendá-lo agora só encheria o calendário
+        recente = max([d for d in (ef, c["_prazo"]) if d])
+        if recente < inicio_mes:
+            continue
+        if c["_anuncio"]:
+            anuncios.append(c)                          # sobe direto na plataforma
+            continue
+        if c["_fora"]:
+            fora.append(c)
+            continue
+        # primeira data possível
+        if c["_fim"]:
+            base = c["_fim"].date() + timedelta(days=1)
+        else:
+            base = c["_prazo"] + timedelta(days=2)
+        c["_cedo"] = prox_util(max(base, hoje + timedelta(days=1)))
+        pendentes.append(c)
+
+    if not dias:
+        return dias, {}, confirmados, [], fora, anuncios
+
+    carga = {d: 0 for d in dias}
+    for c in confirmados:
+        if c["_pub"] in carga:
+            carga[c["_pub"]] += 1
+
+    por_cli = {}
+    for c in pendentes:
+        por_cli.setdefault(c["_cli"] or "(sem cliente)", []).append(c)
+
+    LONGE = datetime(2099, 1, 1, tzinfo=TZ)
+
+    def ordem_entrega(c):
+        """
+        A ordem da fila é a ordem em que as coisas ficaram prontas, não a
+        numeração do título: se o VIDEO 08 é entregue antes do VIDEO 02, ele
+        pega o slot mais cedo. Critérios, em ordem:
+          1. quando o card fica publicável (para entregue, é a data de entrega)
+          2. entregue antes de não-entregue, em empate
+          3. data de entrega
+          4. título, só para desempatar de forma estável
+        """
+        return (c["_cedo"], 0 if c["_fim"] else 1, c["_fim"] or LONGE, c["titulo"])
+
+    for cli in sorted(por_cli, key=lambda k: -len(por_cli[k])):
+        fila = sorted(por_cli[cli], key=ordem_entrega)
+        n = len(fila)
+        janela = [d for d in dias if d >= min(c["_cedo"] for c in fila)] or dias[-1:]
+        # divisão real: com 8 cards em 15 dias o passo é 1,875 — arredondar
+        # para 1 empilharia os oito nos primeiros oito dias
+        passo_f = len(janela) / float(n)
+        passo = max(1, int(round(passo_f)))
+        usados = []
+        for i, c in enumerate(fila):
+            alvo = janela[min(len(janela) - 1, int(round(i * passo_f)))]
+            escolhido = None
+            for gap in (passo, max(1, passo - 1), 1):
+                for d in sorted(janela, key=lambda y: (abs((y - alvo).days), y)):
+                    if d < c["_cedo"]:
+                        continue
+                    if any(abs((d - u).days) < gap for u in usados):
+                        continue
+                    if carga.get(d, 0) < TETO_PUB_DIA:
+                        escolhido = d
+                        break
+                if escolhido:
+                    break
+            if not escolhido:
+                cand = [d for d in janela if d >= c["_cedo"]] or janela
+                escolhido = min(cand, key=lambda y: carga.get(y, 0))
+            c["_pub_prop"] = escolhido
+            usados.append(escolhido)
+            carga[escolhido] = carga.get(escolhido, 0) + 1
+
+    return dias, carga, confirmados, pendentes, fora, anuncios
 
 
 # ---------------------------------------------------------------- comentário
@@ -306,6 +477,7 @@ def dados_js(cfg, hoje, todos):
             "d": d10(c["_grav"]),
             "pb": d10(c["_pub"]),
             "atr": c["_atraso"],
+            "cx": c["_peso"],
             "de": round(c["_dur_ed"]) if c["_dur_ed"] is not None else None,
             "da": round(c["_dur_alt"]) if c["_dur_alt"] is not None else None,
             "ad": d10(c["_alt_f"].date() if c["_alt_f"] else None),
@@ -426,6 +598,31 @@ ul{list-style:none}
 .comment{font-size:14px;line-height:1.7;color:var(--ink)}
 .comment .sig{display:block;margin-top:10px;font-size:11.5px;color:var(--muted)}
 
+/* calendário da agenda */
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}
+.cal .hd{font-size:10.5px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;
+ color:var(--muted);text-align:center;padding-bottom:4px}
+.dia{border:1px solid var(--ring);border-radius:9px;padding:8px;min-height:106px;
+ background:var(--surface);display:flex;flex-direction:column;gap:4px}
+.dia.vazio-mes{background:transparent;border-color:transparent}
+.dia.off{background:var(--plane);border-style:dashed}
+.dia .num{font-size:12px;font-weight:650;font-variant-numeric:tabular-nums;color:var(--ink2);
+ display:flex;justify-content:space-between;align-items:center}
+.dia .n{font-size:10px;font-weight:650;padding:1px 6px;border-radius:10px;color:#fff;background:var(--s1)}
+.dia .n.cheio{background:var(--s2)}
+.ent{font-size:10.5px;line-height:1.3;padding:3px 5px;border-radius:5px;background:var(--plane);
+ border-left:3px solid var(--axis);color:var(--ink)}
+.ent.prop{border-left-style:dashed}
+.ent.e-entregue{border-left-color:var(--good)}
+.ent.e-aprov{border-left-color:var(--s1)}
+.ent.e-exec{border-left-color:var(--warn)}
+.ent.e-fazer{border-left-color:var(--muted)}
+.nada{font-size:10.5px;color:var(--muted);font-style:italic;margin-top:auto}
+.tag{display:inline-block;font-size:10.5px;font-weight:650;padding:1px 7px;border-radius:10px;
+ border:1px solid var(--ring)}
+.g-entregue{color:var(--good-ink)} .g-aprov{color:var(--s1)}
+.g-exec{color:var(--serious)} .g-fazer{color:var(--muted)}
+
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .chip{font:600 12px/1 system-ui;padding:7px 12px;border-radius:16px;border:1px solid var(--ring);
  background:var(--surface);color:var(--ink2);cursor:pointer}
@@ -453,7 +650,7 @@ function $(id){return document.getElementById(id)}
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;")
  .replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function showTab(id,btn){
- ["diario","periodo","dados"].forEach(function(k){
+ ["diario","periodo","agenda","dados"].forEach(function(k){
   $("tab-"+k).hidden = (k!==id);
   $("btn-"+k).classList.toggle("on", k===id);
  });
@@ -547,6 +744,23 @@ function render(a,b,label){
   $("t-apub").textContent="—";
   $("t-apub-note").textContent="campo Publicação criado em 09/08/2026 — o número aparece "+
    "sozinho assim que houver entregas com ele preenchido";
+ }
+
+ /* complexidade média — escala 1 a 3, sobre os cards com prazo no período */
+ var noPer=D.cards.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)});
+ var cxs=noPer.filter(function(c){return c.cx}).map(function(c){return c.cx});
+ if(cxs.length){
+  var sc=0;cxs.forEach(function(x){sc+=x});
+  var mc=sc/cxs.length;
+  var nb=cxs.filter(function(x){return x===1}).length;
+  var ni=cxs.filter(function(x){return x===2}).length;
+  var na=cxs.filter(function(x){return x===3}).length;
+  $("t-cx").textContent=mc.toFixed(2).replace(".",",");
+  $("t-cx-note").textContent=nb+" básico · "+ni+" intermediário · "+na+" avançado · "+
+   (noPer.length-cxs.length)+" sem preencher";
+ }else{
+  $("t-cx").textContent="—";
+  $("t-cx-note").textContent="nenhum card do período tem Complexidade preenchida";
  }
 
  /* tempos médios */
@@ -686,7 +900,149 @@ MESES_EXT = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho"
              "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
 
-def render(m, dados):
+def _est_pub(c):
+    """Estado do card para a agenda: (slug, rótulo)."""
+    if c["_final"]:
+        return "entregue", "Entregue"
+    if c["_aprov"]:
+        return "aprov", "Em aprovação"
+    if c["_exec"]:
+        return "exec", "Em execução"
+    return "fazer", "A fazer"
+
+
+def bloco_agenda(m, todos):
+    """Monta calendário, tabela e contadores da aba Agenda de Publicação."""
+    hoje, prim, ult = m["hoje"], m["prim"], m["ult"]
+    dias, carga, conf, pend, fora, anuncios = agenda_pub(todos, hoje, ult)
+
+    itens = []
+    for c in conf:
+        itens.append((c["_pub"], c, True))
+    for c in pend:
+        itens.append((c.get("_pub_prop"), c, False))
+    itens = [(d, c, fixo) for d, c, fixo in itens if d]
+
+    porta = {}
+    for d, c, fixo in itens:
+        porta.setdefault(d, []).append((c, fixo))
+
+    # calendário do mês corrente
+    cel = []
+    cur = prim - timedelta(days=prim.weekday())
+    lim = ult + timedelta(days=(6 - ult.weekday()))
+    while cur <= lim:
+        if cur.month != prim.month:
+            cel.append('<div class="dia vazio-mes"></div>')
+        else:
+            lista_d = porta.get(cur, [])
+            passou = cur <= hoje
+            off = not eh_util(cur)
+            n = len(lista_d)
+            badge = ('<span class="n%s">%d</span>' % (" cheio" if n >= TETO_PUB_DIA else "", n)) if n else ""
+            corpo = "".join(
+                '<div class="ent e-%s%s" title="%s">%s</div>'
+                % (_est_pub(c)[0], "" if fixo else " prop", esc(c["titulo"]), esc(c["titulo"]))
+                for c, fixo in lista_d)
+            if not corpo:
+                if passou:
+                    corpo = '<div class="nada">já passou</div>'
+                elif cur in FERIADOS:
+                    corpo = '<div class="nada">%s</div>' % esc(FERIADOS[cur])
+                elif off:
+                    corpo = '<div class="nada">fim de semana</div>'
+                else:
+                    corpo = '<div class="nada">livre</div>'
+            cel.append('<div class="dia%s"><div class="num"><span>%d</span>%s</div>%s</div>'
+                       % (" off" if (off or passou) else "", cur.day, badge, corpo))
+        cur += timedelta(days=1)
+
+    # tabela
+    linhas = []
+    for d, c, fixo in sorted(itens, key=lambda x: (x[0], x[1]["titulo"])):
+        slug, rot = _est_pub(c)
+        ef = c["_fim"].strftime("%d/%m") if c["_fim"] else "—"
+        origem = ('<span style="color:var(--good-ink)">no Notion</span>' if fixo
+                  else '<span style="color:var(--muted)">proposta</span>')
+        linhas.append(
+            '<tr><td class="num" style="text-align:left;white-space:nowrap">%s %s</td>'
+            '<td><a href="%s" target="_blank" rel="noopener">%s</a></td>'
+            '<td><span class="tag g-%s">%s</span></td>'
+            '<td class="num" style="text-align:left">%s</td><td>%s</td></tr>'
+            % (DIAS[d.weekday()], d.strftime("%d/%m"), esc(c.get("url") or "#"),
+               esc(c["titulo"]), slug, rot, ef, origem))
+
+    l_fora = lista(sorted(fora, key=lambda c: c["titulo"]),
+                   "Nenhum card de cliente fora da cadência neste mês.",
+                   extra=lambda c: " · %s" % c["_fora"])
+
+    def _quando_ad(c):
+        if c["_fim"]:
+            return " · pronto em %s" % c["_fim"].strftime("%d/%m")
+        return " · prazo %s" % fmt(c["_prazo"], False)
+
+    l_ads = lista(sorted(anuncios, key=lambda c: (c["_fim"] or datetime(2099, 1, 1, tzinfo=TZ),
+                                                  c["titulo"])),
+                  "Nenhum anúncio no mês.", extra=_quando_ad)
+
+    pico = max(carga.values()) if carga else 0
+    return dict(
+        ag_n=len(itens), ag_conf=len(conf), ag_prop=len([x for x in itens if not x[2]]),
+        ag_dias=len(dias), ag_media=len(itens) / len(dias) if dias else 0,
+        ag_pico=pico, ag_fora=len(fora), ag_ads=len(anuncios), ag_lads=l_ads,
+        ag_cor="var(--good)" if pico <= TETO_PUB_DIA else "var(--crit)",
+        ag_hd="".join('<div class="hd">%s</div>' % x for x in DIAS),
+        ag_cel="".join(cel), ag_tab="".join(linhas) or
+        '<tr><td colspan="5" class="empty">Nada a publicar até o fim do mês.</td></tr>',
+        ag_lfora=l_fora, teto=TETO_PUB_DIA)
+
+
+def bloco_complexidade(m):
+    """Tile, barra e linhas da complexidade média."""
+    cores = {"Básico": "var(--s3)", "Intermediário": "var(--s1)", "Avançado": "var(--s2)"}
+    total = sum(m["dist_cx"].values())
+    segs, legs, linhas = [], [], []
+    for nome in ("Básico", "Intermediário", "Avançado"):
+        n = m["dist_cx"].get(nome, 0)
+        pc = round(100 * n / total) if total else 0
+        if n:
+            segs.append('<i style="flex:%d;background:%s"><span>%d%%</span></i>'
+                        % (n, cores[nome], pc))
+        legs.append('<span><b style="background:%s"></b>%s</span>' % (cores[nome], nome))
+        linhas.append('<div class="dline"><span>%s <span style="color:var(--muted)">'
+                      '(peso %d)</span></span><b>%d de %d &nbsp;·&nbsp; %d%%</b></div>'
+                      % (nome, PESO_COMPLEX[nome], n, total, pc))
+    if not total:
+        segs.append('<i style="flex:1;background:var(--axis)"><span>sem base</span></i>')
+    if m["sem_cx"]:
+        linhas.append('<div class="dline" style="color:var(--crit)"><span>'
+                      '<b style="color:var(--crit)">%d card(s) sem Complexidade</b> '
+                      'ficam fora da média</span><b style="color:var(--crit)">%s</b></div>'
+                      % (len(m["sem_cx"]),
+                         esc(" · ".join(c["titulo"] for c in m["sem_cx"][:3]))))
+    if m["cx_quebrada"]:
+        linhas.append('<div class="dline" style="color:var(--crit)"><span>'
+                      '<b style="color:var(--crit)">%d card(s) com a opção quebrada</b> '
+                      'do select — corrigir no Notion</span><b style="color:var(--crit)">%s</b></div>'
+                      % (len(m["cx_quebrada"]),
+                         esc(" · ".join(c["titulo"] for c in m["cx_quebrada"][:3]))))
+
+    mc = m["media_cx"]
+    if mc is None:
+        cx_txt, cx_note, cx_cor, cx_pct = "—", "nenhum card do mês tem Complexidade preenchida", "", 0
+    else:
+        cx_txt = ("%.2f" % mc).replace(".", ",")
+        prox = NOME_COMPLEX[min(3, max(1, int(round(mc))))]
+        cx_note = ("escala 1 a 3 · o mês está perto de <b>%s</b> · %d de %d cards preenchidos"
+                   % (prox, len(m["pesos"]), len(m["cards"])))
+        cx_cor = ("var(--s3)" if mc < 1.5 else
+                  "var(--s1)" if mc < 2.5 else "var(--s2)")
+        cx_pct = 100 * (mc - 1) / 2.0
+    return dict(cx_txt=cx_txt, cx_note=cx_note, cx_cor=cx_cor or "var(--s1)", cx_pct=cx_pct,
+                cx_segs="".join(segs), cx_legs="".join(legs), cx_linhas="".join(linhas))
+
+
+def render(m, dados, todos):
     A = m["agora"]
     ano, mes = (int(x) for x in m["mes_lab"].split("-"))
     mes_nome = "%s/%d" % (MESES_EXT[mes - 1], ano)
@@ -833,6 +1189,7 @@ def render(m, dados):
 <div class="tabs">
   <button class="tab on" id="btn-diario" onclick="showTab('diario')">Painel Diário</button>
   <button class="tab" id="btn-periodo" onclick="showTab('periodo')">Análise por Período</button>
+  <button class="tab" id="btn-agenda" onclick="showTab('agenda')">Agenda de Publicação</button>
   <button class="tab" id="btn-dados" onclick="showTab('dados')">Sem Tempo Registrado</button>
 </div>
 
@@ -874,6 +1231,23 @@ def render(m, dados):
     <div class="val">%(dur_alt_txt)s</div>
     <div class="note">%(dur_alt_note)s</div>
   </div>
+  <div class="card tile">
+    <div class="lab">Complexidade média</div>
+    <div class="val" style="color:%(cx_cor)s">%(cx_txt)s</div>
+    <div class="meter"><i style="width:%(cx_pct).1f%%;background:%(cx_cor)s"></i></div>
+    <div class="note">%(cx_note)s</div>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:14px">
+  <h2>Complexidade das demandas do mês</h2>
+  <div class="stack">%(cx_segs)s</div>
+  <div class="legend" style="margin-bottom:10px">%(cx_legs)s</div>
+  %(cx_linhas)s
+  <p style="font-size:12.5px;color:var(--ink2);margin-top:12px;line-height:1.55">
+  A média usa a escala <b>Básico = 1 · Intermediário = 2 · Avançado = 3</b>. Serve para
+  comparar meses: um mês com a mesma quantidade de entregas mas média mais alta consumiu
+  mais do time. Cards sem Complexidade preenchida ficam fora da conta.</p>
 </div>
 
 <div class="grid g2" style="margin-bottom:14px">
@@ -986,6 +1360,11 @@ def render(m, dados):
     <div class="val" id="t-apub">—</div>
     <div class="note" id="t-apub-note"></div>
   </div>
+  <div class="card tile">
+    <div class="lab">Complexidade média</div>
+    <div class="val" id="t-cx">—</div>
+    <div class="note" id="t-cx-note"></div>
+  </div>
 </div>
 
 <div class="grid g2" style="margin-bottom:14px">
@@ -1012,6 +1391,91 @@ def render(m, dados):
   <table><thead><tr><th>Card</th><th>Responsável</th><th>Categoria</th>
     <th>Estado</th><th>Prazo</th><th>Entrega</th><th class=num>Pontualidade</th></tr></thead>
     <tbody id="p-tbody"></tbody></table>
+</div>
+
+</section>
+
+<!-- ==================== AGENDA DE PUBLICAÇÃO ==================== -->
+<section id="tab-agenda" hidden>
+
+<div class="grid g4" style="margin-bottom:14px">
+  <div class="card tile">
+    <div class="lab">A publicar até o fim do mês</div>
+    <div class="val">%(ag_n)d</div>
+    <div class="note">%(ag_conf)d com data já definida no Notion ·
+      %(ag_prop)d com data proposta aqui</div>
+  </div>
+  <div class="card tile">
+    <div class="lab">Dias úteis restantes</div>
+    <div class="val">%(ag_dias)d</div>
+    <div class="note">%(ag_media).1f publicações por dia, em média</div>
+  </div>
+  <div class="card tile">
+    <div class="lab">Pico em um dia</div>
+    <div class="val" style="color:%(ag_cor)s">%(ag_pico)d</div>
+    <div class="note">teto de %(teto)d — é a margem para quando um vídeo precisa voltar</div>
+  </div>
+  <div class="card tile">
+    <div class="lab">Fora do calendário</div>
+    <div class="val">%(ag_ads)d<small> anúncios</small></div>
+    <div class="note">%(ag_fora)d card(s) de clientes cuja captação não depende só da gente</div>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:14px">
+  <h2>%(mes_nome)s</h2>
+  <div class="cal">%(ag_hd)s%(ag_cel)s</div>
+  <div class="legend" style="margin-top:12px">
+    <span><b style="background:var(--good)"></b>Entregue</span>
+    <span><b style="background:var(--s1)"></b>Em aprovação</span>
+    <span><b style="background:var(--warn)"></b>Em execução</span>
+    <span><b style="background:var(--muted)"></b>A fazer</span>
+    <span style="color:var(--muted)">borda cheia = data já no Notion · tracejada = proposta</span>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:14px">
+  <h2>Data por card <span class="count">%(ag_n)d</span></h2>
+  <table><thead><tr><th>Publicar em</th><th>Card</th><th>Estado hoje</th>
+    <th>Edição fim</th><th>Origem</th></tr></thead>
+    <tbody>%(ag_tab)s</tbody></table>
+</div>
+
+<div class="grid g2" style="margin-bottom:14px">
+  <div class="card">
+    <h2>Anúncios · sem data de publicação <span class="count">%(ag_ads)d</span></h2>
+    <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+    Card com categoria <b>Ad</b> não entra no calendário: assim que fica pronto sobe direto
+    na plataforma de anúncios. Continua contando como entrega no Painel Diário — só não
+    disputa espaço no rodízio de publicação.</p>
+    %(ag_lads)s
+  </div>
+  <div class="card">
+    <h2>Fora da cadência automática <span class="count">%(ag_fora)d</span></h2>
+    <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+    Estes ficam sem data automática — a publicação depende de combinar com o cliente.
+    Continuam prontos, só não entram no rodízio.</p>
+    %(ag_lfora)s
+  </div>
+</div>
+
+<div class="card">
+  <h2>Como esta agenda é montada</h2>
+  <p style="font-size:13px;color:var(--ink2);line-height:1.65">
+  Parte dos <b>cards que existem no Notion</b>, não do volume de contrato.
+  Card que já tem <b>Publicação</b> preenchida aparece como está; os demais recebem a
+  primeira data possível respeitando quatro regras:<br><br>
+  <b>1.</b> Nada vai ao ar antes de estar pronto. Card com Edição Fim preenchida libera no
+  dia seguinte; card ainda em execução ou a fazer libera dois dias depois do prazo, para
+  caber a aprovação.<br>
+  <b>2.</b> Teto de <b>%(teto)d publicações por dia</b>.<br>
+  <b>3.</b> Publicações do mesmo cliente ficam espaçadas.<br>
+  <b>4.</b> Nada em fim de semana nem feriado nacional.<br>
+  <b>5.</b> A ordem da fila é a <b>ordem em que as coisas ficaram prontas</b>, não a numeração
+  do título — se o VIDEO 08 é entregue antes do VIDEO 02, ele pega o slot mais cedo.<br>
+  <b>6.</b> Card com categoria <b>Ad</b> fica fora: vai direto para a plataforma de anúncios.<br><br>
+  <span style="color:var(--muted)">A agenda é recalculada a cada atualização do painel.
+  Preencher o campo Publicação no Notion fixa a data e tira o card do cálculo.</span></p>
 </div>
 
 </section>
@@ -1084,7 +1548,8 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         lab_amanha=fmt(m["amanha"]), n_amanha=len(m["f_amanha"]), b_amanha=bloco_amanha,
         n_sed=len(m["sem_t_ed"]), lista_ed=lista_ed,
         n_salt=len(m["sem_t_alt"]), lista_alt=lista_alt,
-        n_cards=len(m["cards"]), n_todos=len(dados["cards"]))
+        n_cards=len(m["cards"]), n_todos=len(dados["cards"]),
+        **bloco_agenda(m, todos), **bloco_complexidade(m))
 
 
 if __name__ == "__main__":
@@ -1094,7 +1559,7 @@ if __name__ == "__main__":
         cfg = json.load(f)
     agora, hoje, todos = preparar(cfg)
     m = montar(cfg, agora, hoje, todos)
-    html = render(m, dados_js(cfg, hoje, todos))
+    html = render(m, dados_js(cfg, hoje, todos), todos)
     with open(dst, "w", encoding="utf-8") as f:
         f.write(html)
     print("ok ->", dst, len(html), "bytes ·", len(m["cards"]), "cards no mês ·",
