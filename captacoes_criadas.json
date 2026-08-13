@@ -6,7 +6,8 @@
    "titulo": "[EVOLVE] CAPTAÇÃO INAUGURAÇÃO",
    "gravado": "2026-08-20",
    "em": "2026-08-12 20:30",
-   "motivo": "criado manualmente na validação do script"
+   "motivo": "criado manualmente na validação do script",
+   "arquivado": "já estava na lixeira"
   },
   {
    "chave": "2026-08-13|captacao - chess",
@@ -62,6 +63,13 @@
    "chave": "2026-09-02|captacao - mabuum",
    "card": null,
    "motivo": "já existia no banco"
+  },
+  {
+   "chave": "2026-08-14|teste captacao",
+   "card": "https://app.notion.com/p/CAPTA-O-TESTE-CAPTA-O-3bb1e7f422b981baaeabea772b396395",
+   "titulo": "CAPTAÇÃO — TESTE CAPTAÇÃO",
+   "gravado": "2026-08-14",
+   "em": "2026-08-13 19:49"
   }
  ]
 }

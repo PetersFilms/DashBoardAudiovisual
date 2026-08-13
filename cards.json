@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-13T19:36:20-03:00",
+ "gerado_em": "2026-08-13T19:49:11-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6767,7 +6767,7 @@
   {
    "titulo": "[BFE] CAPTAÇÃO",
    "cliente": "BFE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -6781,42 +6781,6 @@
    "gravado": "2026-08-13",
    "publicacao": null,
    "url": "https://app.notion.com/p/BFE-CAPTA-O-3bb1e7f422b981b2acb0e3b134cde8e1"
-  },
-  {
-   "titulo": "[LUME] CAPTAÇÃO CAFETERIA",
-   "cliente": "LUME",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-12",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/LUME-CAPTA-O-CAFETERIA-3bb1e7f422b9811abcb2fe70214259e6"
-  },
-  {
-   "titulo": "CAPTAÇÃO — Gravação - Ponto de vista",
-   "cliente": null,
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-10",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CAPTA-O-Grava-o-Ponto-de-vista-3bb1e7f422b981c89812fdf8ddb4bce1"
   },
   {
    "titulo": "[CHESS]",
@@ -6835,24 +6799,6 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/CHESS-3bb1e7f422b98006bf62f2f67b87ef42"
-  },
-  {
-   "titulo": "[EVOLVE] CAPTAÇÃO INAUGURAÇÃO",
-   "cliente": "EVOLVE",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-20",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-INAUGURA-O-3bb1e7f422b98108b9bdc39e5ad4470f"
   },
   {
    "titulo": "[EMPÓRIO] GRAVAÇÃO AGOSTO",
