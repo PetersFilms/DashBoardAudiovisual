@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-13T19:49:57-03:00",
+ "gerado_em": "2026-08-13T20:30:13-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6513,6 +6513,26 @@
    "gravado": "2026-08-05",
    "publicacao": null,
    "url": "https://app.notion.com/p/HAGUE-BEHIND-THE-SCENES-3b51e7f422b98035b2f4d75df77234c7"
+  },
+  {
+   "titulo": "[BEA FRUET] YEARBOOK",
+   "cliente": "BEA FRUET",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-14",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-13",
+   "publicacao": "2026-08-14",
+   "url": "https://app.notion.com/p/BEA-FRUET-YEARBOOK-3bb1e7f422b980d4ae26daf2625e00be"
   },
   {
    "titulo": "[CHESS] AD 04",
