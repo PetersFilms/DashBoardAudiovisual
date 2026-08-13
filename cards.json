@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-12T22:00:02-03:00",
+ "gerado_em": "2026-08-13T00:27:27-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6144,7 +6144,7 @@
    "categorias": [
     "Corte"
    ],
-   "complexidade": null,
+   "complexidade": "Intermediário",
    "prazo": "2026-08-09",
    "ed_ini": "2026-08-09T14:20:00.000-03:00",
    "ed_fim": "2026-08-09T15:43:00.000-03:00",
@@ -6397,14 +6397,14 @@
   {
    "titulo": "[CHESS] CORTE 02",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Corte",
    "categorias": [
     "Corte"
    ],
-   "complexidade": "Básico",
+   "complexidade": "Intermediário",
    "prazo": "2026-08-12",
    "ed_ini": "2026-08-12T15:15:00.000-03:00",
    "ed_fim": "2026-08-12T19:09:00.000-03:00",
@@ -6513,6 +6513,86 @@
    "gravado": "2026-08-05",
    "publicacao": null,
    "url": "https://app.notion.com/p/HAGUE-BEHING-THE-SCENES-3b51e7f422b98035b2f4d75df77234c7"
+  },
+  {
+   "titulo": "[CHESS] AD 04",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-17",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-12",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-AD-04-3bb1e7f422b9807ca390ecb7094c8ab4"
+  },
+  {
+   "titulo": "[CHESS] AD 03",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-17",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-12",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-AD-03-3bb1e7f422b980e69cfffce2eb6b330c"
+  },
+  {
+   "titulo": "[CHESS] AD 02",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-17",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-12",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-AD-02-3bb1e7f422b9803a8817e30fdba3125b"
+  },
+  {
+   "titulo": "[CHESS] AD 01",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-17",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-12",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-AD-01-3bb1e7f422b980ee8d90e855f2aebf62"
   },
   {
    "titulo": "[JARDIM] VIDEO 03",
