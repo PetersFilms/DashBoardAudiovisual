@@ -58,6 +58,25 @@ TETO_PUB_DIA = 3          # máximo de publicações no mesmo dia
 # prontas vão direto para a plataforma de anúncios, sem data de post.
 CATEGORIAS_SEM_CALENDARIO = {"Ad"}
 
+# Da captação até a entrega: 3 dias ÚTEIS, mais 1 dia útil a cada 3 cards
+# da mesma leva — para os prazos não caírem todos no mesmo dia.
+DIAS_ATE_ENTREGA = 3
+CARDS_POR_DIA_DE_PRAZO = 3
+
+
+def soma_uteis(d, n):
+    """Avança n dias úteis a partir de d, pulando fim de semana e feriado."""
+    while n > 0:
+        d += timedelta(days=1)
+        if d.weekday() < 5 and d not in FERIADOS:
+            n -= 1
+    return d
+
+
+def prazo_de_gravacao(gravado, indice):
+    """Prazo previsto para o i-ésimo card de uma mesma captação."""
+    return soma_uteis(gravado, DIAS_ATE_ENTREGA + indice // CARDS_POR_DIA_DE_PRAZO)
+
 CORES_RESP = {"Maila": "var(--s1)", "Petterson": "var(--s2)",
               "Pedro": "var(--s3)", "Ex-editor": "var(--axis)"}
 
@@ -162,6 +181,23 @@ def preparar(cfg):
         else:
             c["_atraso"] = None
         todos.append(c)
+
+    # Prazo previsto a partir da captação, para os cards que ainda não têm
+    # prazo definido. A leva é o conjunto de cards do mesmo cliente gravados
+    # no mesmo dia; dentro dela, 3 cards por dia de prazo.
+    levas = {}
+    for c in todos:
+        if c["_grav"] and not c["_prazo"]:
+            levas.setdefault((c["_cli"], c["_grav"]), []).append(c)
+    for chave, fila in levas.items():
+        for i, c in enumerate(sorted(fila, key=lambda x: x.get("titulo") or "")):
+            c["_prazo_prev"] = prazo_de_gravacao(chave[1], i)
+
+    for c in todos:
+        c.setdefault("_prazo_prev", None)
+        # prazo efetivo: o definido no Notion, ou o projetado pela captação
+        c["_prazo_ef"] = c["_prazo"] or c["_prazo_prev"]
+
     return agora, hoje, todos
 
 
@@ -309,11 +345,12 @@ def agenda_pub(todos, hoje, fim):
                 confirmados.append(c)
             continue
         ef = c["_fim"].date() if c["_fim"] else None
-        if not (ef or c["_prazo"]):
+        prazo = c["_prazo_ef"]                          # inclui o previsto pela captação
+        if not (ef or prazo):
             continue                                    # sem âncora de tempo
         # só o que pertence ao mês corrente: card de meses anteriores já
         # teve seu momento, e reagendá-lo agora só encheria o calendário
-        recente = max([d for d in (ef, c["_prazo"]) if d])
+        recente = max([d for d in (ef, prazo) if d])
         if recente < inicio_mes:
             continue
         if c["_anuncio"]:
@@ -326,7 +363,7 @@ def agenda_pub(todos, hoje, fim):
         if c["_fim"]:
             base = c["_fim"].date() + timedelta(days=1)
         else:
-            base = c["_prazo"] + timedelta(days=2)
+            base = prazo + timedelta(days=2)
         c["_cedo"] = prox_util(max(base, hoje + timedelta(days=1)))
         pendentes.append(c)
 
@@ -911,6 +948,47 @@ def _est_pub(c):
     return "fazer", "A fazer"
 
 
+def carregar_captacoes(caminho="captacoes.json"):
+    """Captações vindas da agenda do Google. Ausente = painel sem o bloco."""
+    try:
+        with open(caminho, encoding="utf-8") as f:
+            return json.load(f).get("captacoes", [])
+    except (IOError, OSError, ValueError):
+        return []
+
+
+def bloco_captacoes(caps, hoje, todos):
+    """
+    Captações futuras da agenda, com a entrega e a publicação já projetadas
+    pela regra gravação + 7 dias. Serve para enxergar a carga que vem antes
+    de o card existir no Notion.
+    """
+    grav_existentes = {c["_grav"] for c in todos if c["_grav"]}
+    futuras = [c for c in caps if c["data"] >= hoje.isoformat()]
+    if not futuras:
+        return dict(cap_n=0, cap_lista='<p class="empty">Nenhuma captação '
+                    'agendada daqui para a frente — ou a agenda do Google '
+                    'ainda não foi conectada (ver AGENDA_ICAL_URL).</p>')
+    linhas = []
+    for c in futuras[:12]:
+        d = parse_d(c["data"])
+        entrega = prazo_de_gravacao(d, 0)
+        pub = prox_util(entrega + timedelta(days=2))
+        ja = "já tem card com esta data" if d in grav_existentes else "sem card ainda"
+        linhas.append(
+            "<tr><td class=num style='text-align:left;white-space:nowrap'>%s %s</td>"
+            "<td>%s</td><td class=num style='text-align:left'>%s</td>"
+            "<td class=num style='text-align:left'>%s</td>"
+            "<td style='color:var(--muted)'>%s</td></tr>"
+            % (DIAS[d.weekday()], d.strftime("%d/%m"), esc(c["titulo"]),
+               entrega.strftime("%d/%m"), pub.strftime("%d/%m"), ja))
+    return dict(cap_n=len(futuras),
+                cap_lista="<table><thead><tr><th>Captação</th><th>Evento na agenda</th>"
+                          "<th>Entrega prevista</th><th>Publicação a partir de</th>"
+                          "<th>No Notion</th></tr></thead><tbody>%s</tbody></table>"
+                          % "".join(linhas))
+
+
 def bloco_agenda(m, todos):
     """Monta calendário, tabela e contadores da aba Agenda de Publicação."""
     hoje, prim, ult = m["hoje"], m["prim"], m["ult"]
@@ -1441,6 +1519,16 @@ def render(m, dados, todos):
     <tbody>%(ag_tab)s</tbody></table>
 </div>
 
+<div class="card" style="margin-bottom:14px">
+  <h2>Captações que vêm por aí <span class="count">%(cap_n)d</span></h2>
+  <p style="font-size:13px;color:var(--ink2);margin-bottom:12px;line-height:1.55">
+  Lidas direto da agenda do Google. A entrega é projetada pela regra
+  <b>captação + %(dias_entrega)d dias úteis</b>, e a publicação abre dois dias depois disso.
+  Serve para enxergar a carga que vem <b>antes</b> de o card existir no Notion — quando
+  ele for criado e ganhar o campo Gravado, entra sozinho no calendário acima.</p>
+  %(cap_lista)s
+</div>
+
 <div class="grid g2" style="margin-bottom:14px">
   <div class="card">
     <h2>Anúncios · sem data de publicação <span class="count">%(ag_ads)d</span></h2>
@@ -1473,7 +1561,10 @@ def render(m, dados, todos):
   <b>4.</b> Nada em fim de semana nem feriado nacional.<br>
   <b>5.</b> A ordem da fila é a <b>ordem em que as coisas ficaram prontas</b>, não a numeração
   do título — se o VIDEO 08 é entregue antes do VIDEO 02, ele pega o slot mais cedo.<br>
-  <b>6.</b> Card com categoria <b>Ad</b> fica fora: vai direto para a plataforma de anúncios.<br><br>
+  <b>6.</b> Card com categoria <b>Ad</b> fica fora: vai direto para a plataforma de anúncios.<br>
+  <b>7.</b> Card <b>gravado mas ainda sem prazo</b> entra assim mesmo: o prazo é projetado
+  em captação + %(dias_entrega)d dias úteis, mais 1 dia útil a cada 3 cards da mesma leva. Preencher
+  o campo <b>Gravado</b> já remodela o calendário inteiro, sem precisar definir prazo.<br><br>
   <span style="color:var(--muted)">A agenda é recalculada a cada atualização do painel.
   Preencher o campo Publicação no Notion fixa a data e tira o card do cálculo.</span></p>
 </div>
@@ -1549,7 +1640,9 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         n_sed=len(m["sem_t_ed"]), lista_ed=lista_ed,
         n_salt=len(m["sem_t_alt"]), lista_alt=lista_alt,
         n_cards=len(m["cards"]), n_todos=len(dados["cards"]),
-        **bloco_agenda(m, todos), **bloco_complexidade(m))
+        dias_entrega=DIAS_ATE_ENTREGA,
+        **bloco_agenda(m, todos), **bloco_complexidade(m),
+        **bloco_captacoes(carregar_captacoes(), m["hoje"], todos))
 
 
 if __name__ == "__main__":
