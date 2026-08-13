@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-13T19:49:10-03:00",
+ "gerado_em": "2026-08-13T19:49:56-03:00",
  "captacoes": [
   {
    "data": "2026-06-29",
@@ -204,12 +204,6 @@
    "hora": "19:30",
    "titulo": "Captação - Lume",
    "cliente": "LUME"
-  },
-  {
-   "data": "2026-08-14",
-   "hora": "20:00",
-   "titulo": "TESTE CAPTAÇÃO",
-   "cliente": "TESTE CAPTAÇÃO"
   },
   {
    "data": "2026-08-18",
