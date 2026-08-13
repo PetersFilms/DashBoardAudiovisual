@@ -37,13 +37,18 @@ jobs:
           META_ANTECEDENCIA: '30'
         run: python fetch_notion.py
 
+      # Os dois passos abaixo são melhorias: se a agenda do Google ou a
+      # permissão de escrita no Notion falharem, o passo fica vermelho mas
+      # o painel continua sendo gerado e publicado.
       - name: Ler as captações da agenda do Google
+        continue-on-error: true
         env:
           AGENDA_ICAL_URL: ${{ secrets.AGENDA_ICAL_URL }}
           AGENDA_ICAL_URL_2: ${{ secrets.AGENDA_ICAL_URL_2 }}
         run: python fetch_agenda.py
 
       - name: Criar card de captação nova
+        continue-on-error: true
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
@@ -66,7 +71,20 @@ jobs:
           git add index.html cards.json captacoes.json captacoes_criadas.json
           if git diff --staged --quiet; then
             echo "Nada mudou desde a última rodada — sem commit."
-          else
-            git commit -m "Painel atualizado: $(TZ=America/Sao_Paulo date '+%d/%m/%Y às %H:%M')"
-            git push
+            exit 0
           fi
+          git commit -m "Painel atualizado: $(TZ=America/Sao_Paulo date '+%d/%m/%Y às %H:%M')"
+          # Alguém pode ter commitado pelo site do GitHub enquanto esta rodada
+          # corria — aí o push é recusado porque o remoto andou. Nesse caso,
+          # rebase em cima do que chegou e tenta de novo.
+          for tentativa in 1 2 3; do
+            if git push; then
+              echo "publicado na tentativa $tentativa"
+              exit 0
+            fi
+            echo "push recusado; trazendo o que mudou no repositório e tentando de novo"
+            git pull --rebase --autostash origin main || true
+            sleep 5
+          done
+          echo "não consegui publicar depois de 3 tentativas"
+          exit 1
