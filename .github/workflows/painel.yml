@@ -2,13 +2,14 @@ name: Atualizar painel
 
 on:
   schedule:
-    # Horários em UTC. O Brasil está em UTC-3, então:
-    #   11:00 UTC = 08h · 15:00 UTC = 12h · 21:00 UTC = 18h
-   - cron: '0 * * * *'
-  workflow_dispatch:
+    # De hora em hora, nas 24 horas do dia. Como roda toda hora cheia,
+    # não há conversão de fuso a fazer (o cron do GitHub é sempre UTC).
+    # Se nada mudou no Notion, a rodada termina sem commit.
+    - cron: '0 * * * *'
+  workflow_dispatch:        # permite rodar na mão pelo botão "Run workflow"
 
 permissions:
-  contents: write
+  contents: write           # necessário para o commit do index.html
 
 concurrency:
   group: painel
@@ -36,6 +37,25 @@ jobs:
           META_ANTECEDENCIA: '30'
         run: python fetch_notion.py
 
+      - name: Ler as captações da agenda do Google
+        env:
+          AGENDA_ICAL_URL: ${{ secrets.AGENDA_ICAL_URL }}
+          AGENDA_ICAL_URL_2: ${{ secrets.AGENDA_ICAL_URL_2 }}
+        run: python fetch_agenda.py
+
+      - name: Criar card de captação nova
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          CRIAR_CARDS: '1'          # troque para '0' para só simular
+        run: python criar_cards_captacao.py
+
+      - name: Recarregar os cards, já com os recém-criados
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python fetch_notion.py
+
       - name: Gerar o painel
         run: python gerar_dashboard.py cards.json index.html
 
@@ -43,7 +63,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html cards.json
+          git add index.html cards.json captacoes.json captacoes_criadas.json
           if git diff --staged --quiet; then
             echo "Nada mudou desde a última rodada — sem commit."
           else
