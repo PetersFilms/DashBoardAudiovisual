@@ -7,6 +7,46 @@
    "gravado": "2026-08-20",
    "em": "2026-08-12 20:30",
    "motivo": "criado manualmente na validação do script"
+  },
+  {
+   "chave": "2026-08-13|captacao - chess",
+   "card": null,
+   "motivo": "já existia no banco"
+  },
+  {
+   "chave": "2026-08-10|gravacao - ponto de vista",
+   "card": "https://app.notion.com/p/CAPTA-O-Grava-o-Ponto-de-vista-3bb1e7f422b981c89812fdf8ddb4bce1",
+   "titulo": "CAPTAÇÃO — Gravação - Ponto de vista",
+   "gravado": "2026-08-10",
+   "em": "2026-08-13 19:29"
+  },
+  {
+   "chave": "2026-08-12|captacao video - lume cafeteria",
+   "card": "https://app.notion.com/p/LUME-CAPTA-O-CAFETERIA-3bb1e7f422b9811abcb2fe70214259e6",
+   "titulo": "[LUME] CAPTAÇÃO CAFETERIA",
+   "gravado": "2026-08-12",
+   "em": "2026-08-13 19:29"
+  },
+  {
+   "chave": "2026-08-13|captacao - bfe",
+   "card": "https://app.notion.com/p/BFE-CAPTA-O-3bb1e7f422b981b2acb0e3b134cde8e1",
+   "titulo": "[BFE] CAPTAÇÃO",
+   "gravado": "2026-08-13",
+   "em": "2026-08-13 19:29"
+  },
+  {
+   "chave": "2026-08-14|captacao - lume",
+   "card": "https://app.notion.com/p/LUME-CAPTA-O-3bb1e7f422b981779c9ad6ea78baa6e9",
+   "titulo": "[LUME] CAPTAÇÃO",
+   "gravado": "2026-08-14",
+   "em": "2026-08-13 19:29"
+  },
+  {
+   "chave": "2026-08-18|captacao - vertere",
+   "card": "https://app.notion.com/p/VERTERE-CAPTA-O-3bb1e7f422b98115a4c3e0e09c7cb0cd",
+   "titulo": "[VERTERE] CAPTAÇÃO",
+   "gravado": "2026-08-18",
+   "em": "2026-08-13 19:29"
   }
  ]
 }
