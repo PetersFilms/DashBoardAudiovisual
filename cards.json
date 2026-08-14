@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-13T20:30:13-03:00",
+ "gerado_em": "2026-08-13T21:59:19-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6695,6 +6695,60 @@
    "url": "https://app.notion.com/p/JARDIM-VIDEO-03-3b01e7f422b98009b095f7a580dd5f07"
   },
   {
+   "titulo": "[CHESS] VÍDEO PEDRO/AMAZON",
+   "cliente": "CHESS",
+   "status": null,
+   "fase": "Roteirização",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-V-DEO-PEDRO-AMAZON-3bb1e7f422b980f5afd4f6af9c3c0e0a"
+  },
+  {
+   "titulo": "[CHESS] VOCÊ VÊ 60 SEGUNDOS, NÓS VEMO",
+   "cliente": "CHESS",
+   "status": null,
+   "fase": "Roteirização",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-VOC-V-60-SEGUNDOS-N-S-VEMO-3bb1e7f422b9807ca677f6badaccf0be"
+  },
+  {
+   "titulo": "[CHESS] VÍDEO VICTÓRIA",
+   "cliente": "CHESS",
+   "status": null,
+   "fase": "Roteirização",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-V-DEO-VICT-RIA-3bb1e7f422b9800f9f3df036230ab1ea"
+  },
+  {
    "titulo": "[BU] CAPTAÇÃO MAUM",
    "cliente": "BU",
    "status": null,
@@ -6803,11 +6857,11 @@
    "url": "https://app.notion.com/p/BFE-CAPTA-O-3bb1e7f422b981b2acb0e3b134cde8e1"
   },
   {
-   "titulo": "[CHESS]",
+   "titulo": "[CHESS] O PODER DO COLOR GRADING",
    "cliente": "CHESS",
    "status": null,
    "fase": "Roteirização",
-   "responsavel": null,
+   "responsavel": "Petterson",
    "categoria": null,
    "categorias": [],
    "complexidade": null,
@@ -6818,7 +6872,7 @@
    "alt_fim": null,
    "gravado": null,
    "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-3bb1e7f422b98006bf62f2f67b87ef42"
+   "url": "https://app.notion.com/p/CHESS-O-PODER-DO-COLOR-GRADING-3bb1e7f422b98006bf62f2f67b87ef42"
   },
   {
    "titulo": "[EMPÓRIO] GRAVAÇÃO AGOSTO",
