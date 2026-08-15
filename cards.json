@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-15T14:11:14-03:00",
+ "gerado_em": "2026-08-15T15:12:42-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6535,6 +6535,27 @@
    "url": "https://app.notion.com/p/BEA-FRUET-YEARBOOK-3bb1e7f422b980d4ae26daf2625e00be"
   },
   {
+   "titulo": "[LUME] ANIMAÇÃO CARDÁPIO",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Cardápio",
+   "categorias": [
+    "Cardápio",
+    "Motion"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-17",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LUME-ANIMA-O-CARD-PIO-3bd1e7f422b980cf88c0d23c6b21094e"
+  },
+  {
    "titulo": "[CHESS] AD 04",
    "cliente": "CHESS",
    "status": "Executando",
@@ -6841,7 +6862,7 @@
   {
    "titulo": "[LUME] CAPTAÇÃO",
    "cliente": "LUME",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
