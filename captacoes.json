@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-14T20:11:01-03:00",
+ "gerado_em": "2026-08-14T21:34:44-03:00",
  "captacoes": [
   {
    "data": "2026-07-01",
@@ -198,6 +198,12 @@
    "hora": "19:30",
    "titulo": "Captação - Lume",
    "cliente": "LUME"
+  },
+  {
+   "data": "2026-08-16",
+   "hora": "07:45",
+   "titulo": "Captação - Granada",
+   "cliente": "GRANADA"
   },
   {
    "data": "2026-08-18",
