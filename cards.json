@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-15T00:29:30-03:00",
+ "gerado_em": "2026-08-15T01:19:23-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6277,7 +6277,7 @@
   {
    "titulo": "[HAGUE] DIETA",
    "cliente": "HAGUE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6457,7 +6457,7 @@
   {
    "titulo": "[HAGUE] CLIENTE APROVOU",
    "cliente": "HAGUE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6477,7 +6477,7 @@
   {
    "titulo": "[HAGUE] PRATO + DRINK",
    "cliente": "HAGUE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6497,7 +6497,7 @@
   {
    "titulo": "[HAGUE] \"BEHIND THE SCENES”",
    "cliente": "HAGUE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6517,7 +6517,7 @@
   {
    "titulo": "[BEA FRUET] YEARBOOK",
    "cliente": "BEA FRUET",
-   "status": "À Fazer Peterson",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -6526,8 +6526,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-08-14",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-08-15T09:30:00.000-03:00",
+   "ed_fim": "2026-08-15T11:30:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-13",
@@ -6557,7 +6557,7 @@
   {
    "titulo": "[CHESS] AD 03",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6577,7 +6577,7 @@
   {
    "titulo": "[CHESS] AD 02",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6597,7 +6597,7 @@
   {
    "titulo": "[CHESS] AD 01",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
