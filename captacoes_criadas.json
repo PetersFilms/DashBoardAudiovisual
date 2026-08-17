@@ -48,7 +48,9 @@
    "card": "https://app.notion.com/p/VERTERE-CAPTA-O-3bb1e7f422b98115a4c3e0e09c7cb0cd",
    "titulo": "[VERTERE] CAPTAÇÃO",
    "gravado": "2026-08-18",
-   "em": "2026-08-13 19:29"
+   "em": "2026-08-13 19:29",
+   "arquivado": "2026-08-17 20:12",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-08-19|podcast insidhess - fernanda e monique",
@@ -108,6 +110,11 @@
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "gravado": "2026-08-21",
    "em": "2026-08-17 11:06"
+  },
+  {
+   "chave": "2026-08-20|captacao glar - malwee",
+   "card": null,
+   "motivo": "já existia no banco"
   }
  ]
 }
