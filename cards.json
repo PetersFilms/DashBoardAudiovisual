@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-17T00:39:27-03:00",
+ "gerado_em": "2026-08-17T01:30:28-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6714,6 +6714,24 @@
    "gravado": null,
    "publicacao": "2026-09-03",
    "url": "https://app.notion.com/p/JARDIM-VIDEO-03-3b01e7f422b98009b095f7a580dd5f07"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] CAPTAÇÃO",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-25",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CAPTA-O-3bf1e7f422b98178bd57c2077bfcc90d"
   },
   {
    "titulo": "[GRANADA] CAPTAÇÃO",
