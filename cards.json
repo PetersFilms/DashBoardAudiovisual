@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-17T15:20:52-03:00",
+ "gerado_em": "2026-08-17T16:19:40-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6598,7 +6598,7 @@
   {
    "titulo": "[CHESS] AD 07",
    "cliente": "CHESS",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6608,7 +6608,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-08-18",
    "ed_ini": "2026-08-17T14:15:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-17T15:50:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-13",
