@@ -115,6 +115,13 @@
    "chave": "2026-08-20|captacao glar - malwee",
    "card": null,
    "motivo": "já existia no banco"
+  },
+  {
+   "chave": "2026-08-18|captacao chess",
+   "card": "https://app.notion.com/p/CHESS-CAPTA-O-3c01e7f422b98188a710f9025ba91fdf",
+   "titulo": "[CHESS] CAPTAÇÃO",
+   "gravado": "2026-08-18",
+   "em": "2026-08-18 00:35"
   }
  ]
 }
