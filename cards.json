@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-18T13:18:07-03:00",
+ "gerado_em": "2026-08-18T14:17:15-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6698,7 +6698,7 @@
   {
    "titulo": "[LUME] ADHONEP",
    "cliente": "LUME",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Highlight",
@@ -6708,7 +6708,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-08-19",
    "ed_ini": "2026-08-18T09:44:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-18T14:10:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-14",
