@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-18T11:21:29-03:00",
+ "gerado_em": "2026-08-18T12:20:32-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6518,7 +6518,7 @@
   {
    "titulo": "[CHESS] AD 04",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6596,9 +6596,29 @@
    "url": "https://app.notion.com/p/CHESS-AD-01-3bb1e7f422b980ee8d90e855f2aebf62"
   },
   {
-   "titulo": "[CHESS] AD 07",
+   "titulo": "[CHESS] PONTO DE VISTA INSTA",
    "cliente": "CHESS",
    "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-18",
+   "ed_ini": "2026-08-18T10:00:00.000-03:00",
+   "ed_fim": "2026-08-18T12:17:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-18",
+   "publicacao": "2026-08-18",
+   "url": "https://app.notion.com/p/CHESS-PONTO-DE-VISTA-INSTA-3c01e7f422b980b0b7decf113de07f13"
+  },
+  {
+   "titulo": "[CHESS] AD 07",
+   "cliente": "CHESS",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6618,7 +6638,7 @@
   {
    "titulo": "[CHESS] AD 06",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6638,7 +6658,7 @@
   {
    "titulo": "[CHESS] AD 05",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
