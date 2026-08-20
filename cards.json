@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-20T14:18:40-03:00",
+ "gerado_em": "2026-08-20T15:21:20-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6718,7 +6718,7 @@
   {
    "titulo": "[BEA FRUET] BATE BOLA",
    "cliente": "BEA FRUET",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": null,
@@ -6726,7 +6726,7 @@
    "complexidade": null,
    "prazo": "2026-08-21",
    "ed_ini": "2026-08-20T14:09:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-20T14:38:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
