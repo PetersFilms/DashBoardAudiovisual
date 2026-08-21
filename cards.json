@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-21T12:21:58-03:00",
+ "gerado_em": "2026-08-21T13:18:45-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6718,7 +6718,7 @@
   {
    "titulo": "[CHESS] FEIRA",
    "cliente": "CHESS",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6728,7 +6728,7 @@
    "complexidade": "Básico",
    "prazo": "2026-08-21",
    "ed_ini": null,
-   "ed_fim": null,
+   "ed_fim": "2026-08-21T13:00:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
