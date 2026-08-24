@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-24T11:31:07-03:00",
+ "gerado_em": "2026-08-24T12:27:59-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6795,7 +6795,7 @@
   {
    "titulo": "[GLAR] MALWEE VISITA",
    "cliente": "GLAR",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6805,7 +6805,7 @@
    "complexidade": "Básico",
    "prazo": "2026-08-24",
    "ed_ini": "2026-08-24T10:28:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-24T12:11:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
