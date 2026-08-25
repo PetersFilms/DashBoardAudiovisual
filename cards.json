@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T10:39:42-03:00",
+ "gerado_em": "2026-08-25T11:33:46-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6815,7 +6815,7 @@
   {
    "titulo": "[MAlWEE] FEBRATEX",
    "cliente": "MAlWEE",
-   "status": "Alteração",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6826,7 +6826,7 @@
    "complexidade": "Básico",
    "prazo": "2026-08-25",
    "ed_ini": null,
-   "ed_fim": null,
+   "ed_fim": "2026-08-25T11:19:00.000-03:00",
    "alt_ini": "2026-08-25T09:22:00.000-03:00",
    "alt_fim": null,
    "gravado": null,
