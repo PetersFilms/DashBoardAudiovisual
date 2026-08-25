@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T14:21:58-03:00",
+ "gerado_em": "2026-08-25T15:21:52-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6834,6 +6834,26 @@
    "url": "https://app.notion.com/p/MAlWEE-FEBRATEX-3c71e7f422b98084829ee1cac1c45148"
   },
   {
+   "titulo": "[HOMENZ] Boné",
+   "cliente": "HOMENZ",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": "2026-08-25T15:10:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-Bon-3c71e7f422b9804bb150d8844f10fb89"
+  },
+  {
    "titulo": "[HOMENZ] Deixa eu adivinhar (versão emagrecimento)",
    "cliente": "HOMENZ",
    "status": "Pré Aprovação",
@@ -6936,7 +6956,7 @@
   {
    "titulo": "[HOMENZ] DEIXA EU ADIVINHAR",
    "cliente": "HOMENZ",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6945,8 +6965,8 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-08-25T14:22:00.000-03:00",
+   "ed_fim": "2026-08-25T14:57:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-19",
