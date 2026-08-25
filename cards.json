@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T08:16:11-03:00",
+ "gerado_em": "2026-08-25T09:23:54-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6785,7 +6785,7 @@
    "complexidade": "Básico",
    "prazo": "2026-08-24",
    "ed_ini": null,
-   "ed_fim": null,
+   "ed_fim": "2026-08-25T09:02:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
@@ -6811,6 +6811,27 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/GLAR-MALWEE-VISITA-3c31e7f422b9804191efde9c5a1af024"
+  },
+  {
+   "titulo": "[MAlWEE] FEBRATEX",
+   "cliente": "MAlWEE",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels",
+    "Highlight"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-25",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": "2026-08-25T09:22:00.000-03:00",
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/MAlWEE-FEBRATEX-3c71e7f422b98084829ee1cac1c45148"
   },
   {
    "titulo": "[RICHARD] CAPTAÇÃO (PIÇARRAS)",
@@ -6851,7 +6872,7 @@
   {
    "titulo": "[MALWEE] FEBRATEX",
    "cliente": "MALWEE",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6861,7 +6882,7 @@
    "complexidade": null,
    "prazo": null,
    "ed_ini": null,
-   "ed_fim": null,
+   "ed_fim": "2026-08-25T09:03:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
