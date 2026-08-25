@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T15:21:52-03:00",
+ "gerado_em": "2026-08-25T16:22:15-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6836,7 +6836,7 @@
   {
    "titulo": "[HOMENZ] Boné",
    "cliente": "HOMENZ",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6846,7 +6846,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
    "ed_ini": "2026-08-25T15:10:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-25T15:44:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-19",
