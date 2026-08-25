@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T09:23:54-03:00",
+ "gerado_em": "2026-08-25T10:39:42-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6672,7 +6672,7 @@
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
-   "publicacao": "2026-09-03",
+   "publicacao": "2026-09-02",
    "url": "https://app.notion.com/p/JARDIM-VIDEO-03-3b01e7f422b98009b095f7a580dd5f07"
   },
   {
@@ -6775,7 +6775,7 @@
   {
    "titulo": "[GLAR] FEBRATEX",
    "cliente": "GLAR",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6784,8 +6784,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-08-24",
-   "ed_ini": null,
-   "ed_fim": "2026-08-25T09:02:00.000-03:00",
+   "ed_ini": "2026-08-25T09:59:00.000-03:00",
+   "ed_fim": "2026-08-25T10:22:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
@@ -6832,6 +6832,122 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/MAlWEE-FEBRATEX-3c71e7f422b98084829ee1cac1c45148"
+  },
+  {
+   "titulo": "[HOMENZ] AD 01",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-AD-01-3c71e7f422b9802ba3b2f4e8496887c4"
+  },
+  {
+   "titulo": "[EVOLVE] ENTREGA",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-27",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-21",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-ENTREGA-3c71e7f422b980fcbcd0e7e165b54e0c"
+  },
+  {
+   "titulo": "[CHESS] PODCAST LAPIDATO",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "PodCast",
+   "categorias": [
+    "PodCast"
+   ],
+   "complexidade": "Avançado",
+   "prazo": "2026-08-27",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": "2026-08-28",
+   "url": "https://app.notion.com/p/CHESS-PODCAST-LAPIDATO-3c71e7f422b980a6b2a2c0264c08ebd1"
+  },
+  {
+   "titulo": "[JARDIM] TERRA ALTA",
+   "cliente": "JARDIM",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-28",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-21",
+   "publicacao": "2026-09-15",
+   "url": "https://app.notion.com/p/JARDIM-TERRA-ALTA-3c71e7f422b98043aba9c03268c94534"
+  },
+  {
+   "titulo": "[EVOLVE] CUBAS",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-28",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-21",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-CUBAS-3bf1e7f422b981479215e236a1aca2dc"
+  },
+  {
+   "titulo": "[LAPIDATO] CAPTAÇÃO",
+   "cliente": "LAPIDATO",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-09",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3c71e7f422b981f19104fed2273c7a5e"
   },
   {
    "titulo": "[RICHARD] CAPTAÇÃO (PIÇARRAS)",
@@ -6924,24 +7040,6 @@
    "gravado": "2026-08-18",
    "publicacao": null,
    "url": "https://app.notion.com/p/CHESS-CAPTA-O-3c01e7f422b98188a710f9025ba91fdf"
-  },
-  {
-   "titulo": "[EVOLVE] CAPTAÇÃO",
-   "cliente": "EVOLVE",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-21",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-3bf1e7f422b981479215e236a1aca2dc"
   },
   {
    "titulo": "CAPTAÇÃO — Captação Glar - Febratex",
@@ -7108,7 +7206,7 @@
   {
    "titulo": "CAPTAÇÃO — Podcast Insidhess - Fernanda e Monique",
    "cliente": null,
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
