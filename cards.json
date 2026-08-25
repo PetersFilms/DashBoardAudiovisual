@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T12:32:39-03:00",
+ "gerado_em": "2026-08-25T13:22:50-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6834,13 +6834,15 @@
    "url": "https://app.notion.com/p/MAlWEE-FEBRATEX-3c71e7f422b98084829ee1cac1c45148"
   },
   {
-   "titulo": "[HOMENZ] AD 01",
+   "titulo": "[HOMENZ] Deixa eu adivinhar (versão emagrecimento)",
    "cliente": "HOMENZ",
    "status": "À Fazer Maila",
    "fase": "Edição",
    "responsavel": "Maila",
-   "categoria": null,
-   "categorias": [],
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
    "ed_ini": null,
@@ -6849,7 +6851,127 @@
    "alt_fim": null,
    "gravado": "2026-08-19",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HOMENZ-AD-01-3c71e7f422b9802ba3b2f4e8496887c4"
+   "url": "https://app.notion.com/p/HOMENZ-Deixa-eu-adivinhar-vers-o-emagrecimento-3c71e7f422b980649a59de722a6b89a7"
+  },
+  {
+   "titulo": "[HOMENZ] O corpo trava numa região específica",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-O-corpo-trava-numa-regi-o-espec-fica-3c71e7f422b980a3b49bcfc6fc78eb86"
+  },
+  {
+   "titulo": "[HOMENZ]  Existe janela de tempo para tratar",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-Existe-janela-de-tempo-para-tratar-3c71e7f422b9800d9aa7d31526712a29"
+  },
+  {
+   "titulo": "[HOMENZ] TRATAMENTO X IMPLANTE",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-TRATAMENTO-X-IMPLANTE-3c71e7f422b98050a0a6dece6a2ea697"
+  },
+  {
+   "titulo": "[HOMENZ] Não é sorte, é acompanhamento",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-N-o-sorte-acompanhamento-3c71e7f422b980c89897d07e30f38546"
+  },
+  {
+   "titulo": "[HOMENZ] DEIXA EU ADIVINHAR",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-DEIXA-EU-ADIVINHAR-3c71e7f422b9802b95adf43783a1c703"
+  },
+  {
+   "titulo": "[HOMENZ] VOCÊ FARIA ESSE PROCEDIMENTO",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-VOC-FARIA-ESSE-PROCEDIMENTO-3c71e7f422b9802ba3b2f4e8496887c4"
   },
   {
    "titulo": "[EVOLVE] ENTREGA",
