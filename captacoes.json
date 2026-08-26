@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-26T13:08:33-03:00",
+ "gerado_em": "2026-08-26T15:48:58-03:00",
  "captacoes": [
   {
    "data": "2026-07-13",
@@ -240,6 +240,12 @@
    "hora": "13:00",
    "titulo": "Captação - Richard (piçarras)",
    "cliente": "RICHARD (PIÇARRAS)"
+  },
+  {
+   "data": "2026-08-28",
+   "hora": "09:00",
+   "titulo": "Gravação - HomenZ",
+   "cliente": "HOMENZ"
   },
   {
    "data": "2026-09-02",
