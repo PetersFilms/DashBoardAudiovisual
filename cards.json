@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-26T10:44:03-03:00",
+ "gerado_em": "2026-08-26T11:33:38-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6992,29 +6992,9 @@
    "url": "https://app.notion.com/p/HOMENZ-DEIXA-EU-ADIVINHAR-3c71e7f422b9802b95adf43783a1c703"
   },
   {
-   "titulo": "[HOMENZ] VOCÊ FARIA ESSE PROCEDIMENTO",
-   "cliente": "HOMENZ",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Ad",
-   "categorias": [
-    "Ad"
-   ],
-   "complexidade": "Intermediário",
-   "prazo": "2026-08-26",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-19",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HOMENZ-VOC-FARIA-ESSE-PROCEDIMENTO-3c71e7f422b9802ba3b2f4e8496887c4"
-  },
-  {
    "titulo": "[EVOLVE] Móveis Jadrilar chegando",
    "cliente": "EVOLVE",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7023,7 +7003,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-08-27",
-   "ed_ini": null,
+   "ed_ini": "2026-08-26T10:45:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
