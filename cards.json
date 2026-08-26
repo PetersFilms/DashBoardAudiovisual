@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-26T11:33:38-03:00",
+ "gerado_em": "2026-08-26T13:08:34-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6813,24 +6813,6 @@
    "url": "https://app.notion.com/p/GLAR-MALWEE-VISITA-3c31e7f422b9804191efde9c5a1af024"
   },
   {
-   "titulo": "[CHESS]",
-   "cliente": "CHESS",
-   "status": "À Fazer Peterson",
-   "fase": null,
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": "2026-08-25",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-3c81e7f422b980e4b162c244622cbf74"
-  },
-  {
    "titulo": "[MAlWEE] FEBRATEX",
    "cliente": "MAlWEE",
    "status": "Aprovado/Finalizado",
@@ -6850,6 +6832,26 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/MAlWEE-FEBRATEX-3c71e7f422b98084829ee1cac1c45148"
+  },
+  {
+   "titulo": "[CHESS] PODER DO COLOR GRADING",
+   "cliente": "CHESS",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-26",
+   "ed_ini": "2026-08-26T12:37:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-PODER-DO-COLOR-GRADING-3c81e7f422b980e4b162c244622cbf74"
   },
   {
    "titulo": "[HOMENZ] Boné",
