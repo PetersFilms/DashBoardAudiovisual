@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-25T21:36:16-03:00",
+ "gerado_em": "2026-08-25T23:17:45-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6477,7 +6477,7 @@
   {
    "titulo": "[LUME] ANIMAÇÃO CARDÁPIO",
    "cliente": "LUME",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Cardápio",
@@ -6578,7 +6578,7 @@
   {
    "titulo": "[CHESS] PONTO DE VISTA INSTA",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -6678,7 +6678,7 @@
   {
    "titulo": "[LUME] ADHONEP",
    "cliente": "LUME",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Highlight",
@@ -6698,7 +6698,7 @@
   {
    "titulo": "[CHESS] FEIRA",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6718,7 +6718,7 @@
   {
    "titulo": "[BEA FRUET] BATE BOLA",
    "cliente": "BEA FRUET",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": null,
@@ -6736,7 +6736,7 @@
   {
    "titulo": "[BEA FRUET] TOUR ESCRITÓRIO",
    "cliente": "BEA FRUET",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": null,
@@ -6754,7 +6754,7 @@
   {
    "titulo": "[GRANADA] GRANADA RUN",
    "cliente": "GRANADA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6775,7 +6775,7 @@
   {
    "titulo": "[GLAR] FEBRATEX",
    "cliente": "GLAR",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6795,7 +6795,7 @@
   {
    "titulo": "[GLAR] MALWEE VISITA",
    "cliente": "GLAR",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6813,9 +6813,27 @@
    "url": "https://app.notion.com/p/GLAR-MALWEE-VISITA-3c31e7f422b9804191efde9c5a1af024"
   },
   {
+   "titulo": "[CHESS]",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-08-25",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-3c81e7f422b980e4b162c244622cbf74"
+  },
+  {
    "titulo": "[MAlWEE] FEBRATEX",
    "cliente": "MAlWEE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -6994,7 +7012,7 @@
    "url": "https://app.notion.com/p/HOMENZ-VOC-FARIA-ESSE-PROCEDIMENTO-3c71e7f422b9802ba3b2f4e8496887c4"
   },
   {
-   "titulo": "[EVOLVE] ENTREGA",
+   "titulo": "[EVOLVE] Móveis Jadrilar chegando",
    "cliente": "EVOLVE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -7011,7 +7029,7 @@
    "alt_fim": null,
    "gravado": "2026-08-21",
    "publicacao": null,
-   "url": "https://app.notion.com/p/EVOLVE-ENTREGA-3c71e7f422b980fcbcd0e7e165b54e0c"
+   "url": "https://app.notion.com/p/EVOLVE-M-veis-Jadrilar-chegando-3c71e7f422b980fcbcd0e7e165b54e0c"
   },
   {
    "titulo": "[CHESS] PODCAST LAPIDATO",
@@ -7054,7 +7072,7 @@
    "url": "https://app.notion.com/p/JARDIM-TERRA-ALTA-3c71e7f422b98043aba9c03268c94534"
   },
   {
-   "titulo": "[EVOLVE] CUBAS",
+   "titulo": "[EVOLVE]  A torneira que não cabe",
    "cliente": "EVOLVE",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -7071,7 +7089,7 @@
    "alt_fim": null,
    "gravado": "2026-08-21",
    "publicacao": null,
-   "url": "https://app.notion.com/p/EVOLVE-CUBAS-3bf1e7f422b981479215e236a1aca2dc"
+   "url": "https://app.notion.com/p/EVOLVE-A-torneira-que-n-o-cabe-3bf1e7f422b981479215e236a1aca2dc"
   },
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
