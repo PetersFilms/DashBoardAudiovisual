@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-26T15:48:59-03:00",
+ "gerado_em": "2026-08-26T18:25:35-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6834,9 +6834,49 @@
    "url": "https://app.notion.com/p/MAlWEE-FEBRATEX-3c71e7f422b98084829ee1cac1c45148"
   },
   {
+   "titulo": "[CHESS] VOCÊ VÊ 60 SEGUNDOS",
+   "cliente": "CHESS",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-26",
+   "ed_ini": "2026-08-26T17:32:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-VOC-V-60-SEGUNDOS-3c81e7f422b980b1a2dcd50e240aee84"
+  },
+  {
    "titulo": "[CHESS] PODER DO COLOR GRADING",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-08-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-PODER-DO-COLOR-GRADING-3c81e7f422b980329b53f0427b753e74"
+  },
+  {
+   "titulo": "[CHESS] PODER DO COLOR GRADING",
+   "cliente": "CHESS",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -6856,7 +6896,7 @@
   {
    "titulo": "[HOMENZ] Boné",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6867,7 +6907,7 @@
    "prazo": "2026-08-26",
    "ed_ini": "2026-08-25T15:10:00.000-03:00",
    "ed_fim": "2026-08-25T15:44:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-08-26T16:04:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-08-19",
    "publicacao": null,
@@ -6876,7 +6916,7 @@
   {
    "titulo": "[HOMENZ] Deixa eu adivinhar (versão emagrecimento)",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6896,7 +6936,7 @@
   {
    "titulo": "[HOMENZ] Aquela calça que já foi confortável",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6916,7 +6956,7 @@
   {
    "titulo": "[HOMENZ]  Existe janela de tempo para tratar",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6927,7 +6967,7 @@
    "prazo": "2026-08-26",
    "ed_ini": "2026-08-25T17:22:00.000-03:00",
    "ed_fim": "2026-08-26T09:29:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-08-26T16:04:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-08-19",
    "publicacao": null,
@@ -6936,7 +6976,7 @@
   {
    "titulo": "[HOMENZ] TRATAMENTO X IMPLANTE",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6956,7 +6996,7 @@
   {
    "titulo": "[HOMENZ] Não é sorte, é acompanhamento",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6974,9 +7014,9 @@
    "url": "https://app.notion.com/p/HOMENZ-N-o-sorte-acompanhamento-3c71e7f422b980c89897d07e30f38546"
   },
   {
-   "titulo": "[HOMENZ] DEIXA EU ADIVINHAR",
+   "titulo": "[HOMENZ] DEIXA EU ADIVINHA",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6987,11 +7027,11 @@
    "prazo": "2026-08-26",
    "ed_ini": "2026-08-25T14:22:00.000-03:00",
    "ed_fim": "2026-08-25T14:57:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-08-26T16:05:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-08-19",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HOMENZ-DEIXA-EU-ADIVINHAR-3c71e7f422b9802b95adf43783a1c703"
+   "url": "https://app.notion.com/p/HOMENZ-DEIXA-EU-ADIVINHA-3c71e7f422b9802b95adf43783a1c703"
   },
   {
    "titulo": "[EVOLVE] Móveis Jadrilar chegando",
@@ -7034,6 +7074,24 @@
    "url": "https://app.notion.com/p/CHESS-PODCAST-LAPIDATO-3c71e7f422b980a6b2a2c0264c08ebd1"
   },
   {
+   "titulo": "[CHESS] THE ART OF DETAILS",
+   "cliente": "CHESS",
+   "status": null,
+   "fase": "Roteirização",
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-08-28",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-THE-ART-OF-DETAILS-3c81e7f422b980668584f51f0724a76f"
+  },
+  {
    "titulo": "[JARDIM] TERRA ALTA",
    "cliente": "JARDIM",
    "status": "À Fazer Peterson",
@@ -7072,6 +7130,62 @@
    "gravado": "2026-08-21",
    "publicacao": null,
    "url": "https://app.notion.com/p/EVOLVE-A-torneira-que-n-o-cabe-3bf1e7f422b981479215e236a1aca2dc"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] PEDRA FERRO + MOLEDO BLACK",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-01",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-25",
+   "publicacao": "2026-09-04",
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-PEDRA-FERRO-MOLEDO-BLACK-3c81e7f422b9807d8deaeb904542f1fb"
+  },
+  {
+   "titulo": "[HOMENZ] CAPTAÇÃO",
+   "cliente": "HOMENZ",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-28",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-CAPTA-O-3c81e7f422b9818f880aefb22caaa4b6"
+  },
+  {
+   "titulo": "(sem título)",
+   "cliente": null,
+   "status": null,
+   "fase": null,
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/3c81e7f422b9800a8179e06cf20d021b"
   },
   {
    "titulo": "[LUME] CAPTAÇÃO",
