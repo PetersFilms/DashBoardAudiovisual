@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-26T09:26:59-03:00",
+ "gerado_em": "2026-08-26T10:44:03-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6892,9 +6892,9 @@
    "url": "https://app.notion.com/p/HOMENZ-Deixa-eu-adivinhar-vers-o-emagrecimento-3c71e7f422b980649a59de722a6b89a7"
   },
   {
-   "titulo": "[HOMENZ] O corpo trava numa região específica",
+   "titulo": "[HOMENZ] Aquela calça que já foi confortável",
    "cliente": "HOMENZ",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6903,18 +6903,18 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-08-26T09:30:00.000-03:00",
+   "ed_fim": "2026-08-26T10:01:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-19",
    "publicacao": null,
-   "url": "https://app.notion.com/p/HOMENZ-O-corpo-trava-numa-regi-o-espec-fica-3c71e7f422b980a3b49bcfc6fc78eb86"
+   "url": "https://app.notion.com/p/HOMENZ-Aquela-cal-a-que-j-foi-confort-vel-3c71e7f422b980a3b49bcfc6fc78eb86"
   },
   {
    "titulo": "[HOMENZ]  Existe janela de tempo para tratar",
    "cliente": "HOMENZ",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6924,7 +6924,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
    "ed_ini": "2026-08-25T17:22:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-08-26T09:29:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-19",
@@ -6943,7 +6943,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
-   "ed_ini": null,
+   "ed_ini": "2026-08-26T10:06:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -6963,7 +6963,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-26",
-   "ed_ini": null,
+   "ed_ini": "2026-08-26T10:07:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
