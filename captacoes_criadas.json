@@ -128,7 +128,9 @@
    "card": "https://app.notion.com/p/EVOLVE-CAPTA-O-3c31e7f422b9811096e1f1be640ba368",
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "gravado": "2026-08-27",
-   "em": "2026-08-21 10:36"
+   "em": "2026-08-21 10:36",
+   "arquivado": "2026-08-27 10:16",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-08-26|captacao chess",
@@ -164,6 +166,13 @@
    "titulo": "[HOMENZ] CAPTAÇÃO",
    "gravado": "2026-08-28",
    "em": "2026-08-26 18:25"
+  },
+  {
+   "chave": "2026-08-28|captacao evolve",
+   "card": "https://app.notion.com/p/EVOLVE-CAPTA-O-3c91e7f422b98156ad85c1952a436cc3",
+   "titulo": "[EVOLVE] CAPTAÇÃO",
+   "gravado": "2026-08-28",
+   "em": "2026-08-27 10:16"
   }
  ]
 }
