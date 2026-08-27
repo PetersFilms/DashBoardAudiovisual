@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-27T10:16:11-03:00",
+ "gerado_em": "2026-08-27T20:19:17-03:00",
  "captacoes": [
   {
    "data": "2026-07-13",
@@ -237,13 +237,7 @@
   },
   {
    "data": "2026-08-28",
-   "hora": "09:00",
-   "titulo": "Gravação - HomenZ",
-   "cliente": "HOMENZ"
-  },
-  {
-   "data": "2026-08-28",
-   "hora": "14:00",
+   "hora": "15:00",
    "titulo": "Captação evolve",
    "cliente": "EVOLVE"
   },
@@ -252,6 +246,12 @@
    "hora": "07:10",
    "titulo": "Captação - Mabuum",
    "cliente": "MABUUM"
+  },
+  {
+   "data": "2026-09-03",
+   "hora": "09:00",
+   "titulo": "Captação - Pikolin",
+   "cliente": "PIKOLIN"
   },
   {
    "data": "2026-09-09",

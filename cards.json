@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-27T10:16:14-03:00",
+ "gerado_em": "2026-08-27T20:19:20-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -7034,6 +7034,66 @@
    "url": "https://app.notion.com/p/HOMENZ-DEIXA-EU-ADIVINHA-3c71e7f422b9802b95adf43783a1c703"
   },
   {
+   "titulo": "[CHESS] AD 03",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-27",
+   "ed_ini": "2026-08-27T09:50:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-26",
+   "publicacao": "2026-08-27",
+   "url": "https://app.notion.com/p/CHESS-AD-03-3c91e7f422b9808ca840c3e9978f43e7"
+  },
+  {
+   "titulo": "[CHESS] AD 02",
+   "cliente": "CHESS",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-27",
+   "ed_ini": "2026-08-27T09:50:00.000-03:00",
+   "ed_fim": "2026-08-27T12:05:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-26",
+   "publicacao": "2026-08-27",
+   "url": "https://app.notion.com/p/CHESS-AD-02-3c91e7f422b98051a3ebdf0e16a25191"
+  },
+  {
+   "titulo": "[CHESS] AD 01",
+   "cliente": "CHESS",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-27",
+   "ed_ini": "2026-08-27T09:50:00.000-03:00",
+   "ed_fim": "2026-08-27T12:05:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-26",
+   "publicacao": "2026-08-27",
+   "url": "https://app.notion.com/p/CHESS-AD-01-3c91e7f422b9802cadb6c1fb460e2bc8"
+  },
+  {
    "titulo": "[EVOLVE] Móveis Jadrilar chegando",
    "cliente": "EVOLVE",
    "status": "Alteração",
@@ -7152,6 +7212,24 @@
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-PEDRA-FERRO-MOLEDO-BLACK-3c81e7f422b9807d8deaeb904542f1fb"
   },
   {
+   "titulo": "[PIKOLIN] CAPTAÇÃO",
+   "cliente": "PIKOLIN",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-03",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/PIKOLIN-CAPTA-O-3c91e7f422b9814fb69cee380dd92f03"
+  },
+  {
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "cliente": "EVOLVE",
    "status": null,
@@ -7168,24 +7246,6 @@
    "gravado": "2026-08-28",
    "publicacao": null,
    "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-3c91e7f422b98156ad85c1952a436cc3"
-  },
-  {
-   "titulo": "[HOMENZ] CAPTAÇÃO",
-   "cliente": "HOMENZ",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-08-28",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HOMENZ-CAPTA-O-3c81e7f422b9818f880aefb22caaa4b6"
   },
   {
    "titulo": "(sem título)",
