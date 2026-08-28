@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-28T04:28:33-03:00",
+ "gerado_em": "2026-08-28T16:43:53-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6896,7 +6896,7 @@
   {
    "titulo": "[HOMENZ] Boné",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6908,7 +6908,7 @@
    "ed_ini": "2026-08-25T15:10:00.000-03:00",
    "ed_fim": "2026-08-25T15:44:00.000-03:00",
    "alt_ini": "2026-08-26T16:04:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-08-28T08:53:00.000-03:00",
    "gravado": "2026-08-19",
    "publicacao": null,
    "url": "https://app.notion.com/p/HOMENZ-Bon-3c71e7f422b9804bb150d8844f10fb89"
@@ -6956,7 +6956,7 @@
   {
    "titulo": "[HOMENZ]  Existe janela de tempo para tratar",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6968,7 +6968,7 @@
    "ed_ini": "2026-08-25T17:22:00.000-03:00",
    "ed_fim": "2026-08-26T09:29:00.000-03:00",
    "alt_ini": "2026-08-26T16:04:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-08-28T08:55:00.000-03:00",
    "gravado": "2026-08-19",
    "publicacao": null,
    "url": "https://app.notion.com/p/HOMENZ-Existe-janela-de-tempo-para-tratar-3c71e7f422b9800d9aa7d31526712a29"
@@ -7016,7 +7016,7 @@
   {
    "titulo": "[HOMENZ] DEIXA EU ADIVINHA",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7028,7 +7028,7 @@
    "ed_ini": "2026-08-25T14:22:00.000-03:00",
    "ed_fim": "2026-08-25T14:57:00.000-03:00",
    "alt_ini": "2026-08-26T16:05:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-08-28T08:53:00.000-03:00",
    "gravado": "2026-08-19",
    "publicacao": null,
    "url": "https://app.notion.com/p/HOMENZ-DEIXA-EU-ADIVINHA-3c71e7f422b9802b95adf43783a1c703"
@@ -7094,9 +7094,9 @@
    "url": "https://app.notion.com/p/CHESS-AD-01-3c91e7f422b9802cadb6c1fb460e2bc8"
   },
   {
-   "titulo": "[EVOLVE] Móveis Jadrilar chegando",
+   "titulo": "[EVOLVE] Móveis Jadrilar chegandox",
    "cliente": "EVOLVE",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7108,10 +7108,10 @@
    "ed_ini": "2026-08-26T10:45:00.000-03:00",
    "ed_fim": "2026-08-26T14:06:00.000-03:00",
    "alt_ini": "2026-08-26T15:06:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-08-28T09:30:00.000-03:00",
    "gravado": "2026-08-21",
    "publicacao": null,
-   "url": "https://app.notion.com/p/EVOLVE-M-veis-Jadrilar-chegando-3c71e7f422b980fcbcd0e7e165b54e0c"
+   "url": "https://app.notion.com/p/EVOLVE-M-veis-Jadrilar-chegandox-3c71e7f422b980fcbcd0e7e165b54e0c"
   },
   {
    "titulo": "[CHESS] PODCAST LAPIDATO",
@@ -7174,7 +7174,7 @@
   {
    "titulo": "[EVOLVE]  A torneira que não cabe",
    "cliente": "EVOLVE",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7183,13 +7183,33 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-08-28",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-08-28T09:40:00.000-03:00",
+   "ed_fim": "2026-08-28T10:22:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-21",
    "publicacao": null,
    "url": "https://app.notion.com/p/EVOLVE-A-torneira-que-n-o-cabe-3bf1e7f422b981479215e236a1aca2dc"
+  },
+  {
+   "titulo": "[RICHARD] APTO PIÇARRAS",
+   "cliente": "RICHARD",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-08-31",
+   "ed_ini": "2026-08-28T11:53:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-27",
+   "publicacao": "2026-09-01",
+   "url": "https://app.notion.com/p/RICHARD-APTO-PI-ARRAS-3ca1e7f422b980d297f3f1439354332f"
   },
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] PEDRA FERRO + MOLEDO BLACK",
