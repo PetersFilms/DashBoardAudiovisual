@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-27T20:19:20-03:00",
+ "gerado_em": "2026-08-28T04:28:33-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6836,7 +6836,7 @@
   {
    "titulo": "[CHESS] VOCÊ VÊ 60 SEGUNDOS",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -6847,8 +6847,8 @@
    "prazo": "2026-08-26",
    "ed_ini": "2026-08-26T17:32:00.000-03:00",
    "ed_fim": "2026-08-26T23:30:00.000-03:00",
-   "alt_ini": null,
-   "alt_fim": null,
+   "alt_ini": "2026-08-28T00:00:00.000-03:00",
+   "alt_fim": "2026-08-28T01:28:00.000-03:00",
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/CHESS-VOC-V-60-SEGUNDOS-3c81e7f422b980b1a2dcd50e240aee84"
@@ -7036,7 +7036,7 @@
   {
    "titulo": "[CHESS] AD 03",
    "cliente": "CHESS",
-   "status": "À Fazer Peterson",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
@@ -7045,8 +7045,8 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-27",
-   "ed_ini": "2026-08-27T09:50:00.000-03:00",
-   "ed_fim": null,
+   "ed_ini": "2026-08-27T22:11:00.000-03:00",
+   "ed_fim": "2026-08-27T23:33:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-26",
