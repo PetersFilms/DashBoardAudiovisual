@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-31T12:37:10-03:00",
+ "gerado_em": "2026-08-31T18:11:16-03:00",
  "captacoes": [
   {
    "data": "2026-07-21",
@@ -225,6 +225,12 @@
   },
   {
    "data": "2026-09-01",
+   "hora": "10:30",
+   "titulo": "Captação Chess",
+   "cliente": "CHESS"
+  },
+  {
+   "data": "2026-09-01",
    "hora": "14:00",
    "titulo": "Captação Hague",
    "cliente": "HAGUE"
@@ -240,6 +246,12 @@
    "hora": "09:00",
    "titulo": "Captação - Pikolin",
    "cliente": "PIKOLIN"
+  },
+  {
+   "data": "2026-09-04",
+   "hora": "09:00",
+   "titulo": "Captação - HomenZ - Conteúdos de Setembro",
+   "cliente": "HOMENZ"
   },
   {
    "data": "2026-09-09",
