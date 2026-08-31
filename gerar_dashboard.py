@@ -686,12 +686,16 @@ JS = r"""
 function $(id){return document.getElementById(id)}
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;")
  .replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
-function showTab(id,btn){
+function showTab(id,ancora){
  ["diario","periodo","agenda","dados"].forEach(function(k){
   $("tab-"+k).hidden = (k!==id);
   $("btn-"+k).classList.toggle("on", k===id);
  });
  window.scrollTo(0,0);
+ if(ancora){
+  var el=document.getElementById(ancora);
+  if(el){setTimeout(function(){el.scrollIntoView({behavior:"smooth",block:"start"})},60)}
+ }
 }
 /* ---------- datas (strings YYYY-MM-DD, comparação lexicográfica) ---------- */
 function toD(s){var p=s.split("-");return new Date(Date.UTC(+p[0],+p[1]-1,+p[2]))}
@@ -1095,15 +1099,15 @@ def bloco_complexidade(m):
     if m["sem_cx"]:
         linhas.append('<div class="dline" style="color:var(--crit)"><span>'
                       '<b style="color:var(--crit)">%d card(s) sem Complexidade</b> '
-                      'ficam fora da média</span><b style="color:var(--crit)">%s</b></div>'
-                      % (len(m["sem_cx"]),
-                         esc(" · ".join(c["titulo"] for c in m["sem_cx"][:3]))))
+                      'ficam fora da média'
+                      '<button class="btnlink" onclick="showTab(\'dados\',\'sec-complex\')">ver quais →</button>'
+                      '</span></div>' % len(m["sem_cx"]))
     if m["cx_quebrada"]:
         linhas.append('<div class="dline" style="color:var(--crit)"><span>'
                       '<b style="color:var(--crit)">%d card(s) com a opção quebrada</b> '
-                      'do select — corrigir no Notion</span><b style="color:var(--crit)">%s</b></div>'
-                      % (len(m["cx_quebrada"]),
-                         esc(" · ".join(c["titulo"] for c in m["cx_quebrada"][:3]))))
+                      'do select — corrigir no Notion'
+                      '<button class="btnlink" onclick="showTab(\'dados\',\'sec-complex\')">ver quais →</button>'
+                      '</span></div>' % len(m["cx_quebrada"]))
 
     mc = m["media_cx"]
     if mc is None:
@@ -1183,6 +1187,7 @@ def render(m, dados, todos):
     if m["atrasados"]:
         pior = m["atrasados"][0]
         al.append(('i-crit', '!', "<b>%d card(s) atrasados</b>, o mais antigo há %d dia(s)."
+                   '<button class="btnlink" onclick="showTab(\'dados\',\'sec-atraso\')">ver quais →</button>'
                    "<em>%s — prazo %s</em>" % (len(m["atrasados"]),
                                                (m["hoje"] - pior["_prazo"]).days,
                                                esc(pior["titulo"]), fmt(pior["_prazo"]))))
@@ -1193,13 +1198,13 @@ def render(m, dados, todos):
     if m["sem_t_ed"]:
         al.append(('i-warn', '~', "<b>%d card(s) sem tempo de edição</b> — falta Edição Início "
                    "ou Edição Fim, então a duração não entra na média."
-                   '<button class="btnlink" onclick="showTab(\'dados\')">ver quais →</button>'
+                   '<button class="btnlink" onclick="showTab(\'dados\',\'sec-ted\')">ver quais →</button>'
                    "<em>%s</em>"
                    % (len(m["sem_t_ed"]), esc(" · ".join(c["titulo"] for c in m["sem_t_ed"][:5])))))
     if m["sem_t_alt"]:
         al.append(('i-warn', '~', "<b>%d card(s) sem tempo de alteração</b> — passaram por "
                    "alteração mas o par Início/Fim está incompleto."
-                   '<button class="btnlink" onclick="showTab(\'dados\')">ver quais →</button>'
+                   '<button class="btnlink" onclick="showTab(\'dados\',\'sec-tal\')">ver quais →</button>'
                    "<em>%s</em>"
                    % (len(m["sem_t_alt"]), esc(" · ".join(c["titulo"] for c in m["sem_t_alt"][:5])))))
     if not al:
@@ -1247,6 +1252,20 @@ def render(m, dados, todos):
                       "Nenhuma alteração do mês está com o par incompleto. 🎉",
                       extra=lambda c: " · %s" % _falta_alt(c))
 
+    # atrasados: do mais antigo para o mais novo, com o tamanho do atraso
+    lista_atras = lista(m["atrasados"], "Nenhum card atrasado. 🎉",
+                        extra=lambda c: " · prazo %s · <b style='color:var(--crit)'>+%d d</b>"
+                        % (fmt(c["_prazo"], False), (m["hoje"] - c["_prazo"]).days))
+
+    # sem complexidade válida: campo vazio e opção quebrada, juntos
+    def _falta_cx(c):
+        if c.get("complexidade"):
+            return " · opção quebrada: %s" % esc(c["complexidade"])
+        return " · campo vazio"
+    lista_cx = lista(_ord(m["sem_cx"] + m["cx_quebrada"]),
+                     "Todos os cards do mês têm Complexidade válida. 🎉",
+                     extra=_falta_cx)
+
     return """<!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1268,7 +1287,7 @@ def render(m, dados, todos):
   <button class="tab on" id="btn-diario" onclick="showTab('diario')">Painel Diário</button>
   <button class="tab" id="btn-periodo" onclick="showTab('periodo')">Análise por Período</button>
   <button class="tab" id="btn-agenda" onclick="showTab('agenda')">Agenda de Publicação</button>
-  <button class="tab" id="btn-dados" onclick="showTab('dados')">Sem Tempo Registrado</button>
+  <button class="tab" id="btn-dados" onclick="showTab('dados')">Pendências</button>
 </div>
 
 <!-- ==================== PAINEL DIÁRIO ==================== -->
@@ -1571,13 +1590,29 @@ def render(m, dados, todos):
 
 </section>
 
-<!-- ==================== SEM TEMPO REGISTRADO ==================== -->
+<!-- ==================== PENDÊNCIAS ==================== -->
 <section id="tab-dados" hidden>
 
-<p class="plabel">Cards de %(mes_nome)s em que não dá para medir quanto tempo o trabalho levou.
-Cada um deles fica de fora das médias de tempo do painel. Clique para abrir no Notion e preencher.</p>
+<p class="plabel">Tudo o que está pedindo ação em %(mes_nome)s, num lugar só: atrasos e
+campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 
-<div class="card" style="margin-bottom:14px">
+<div class="card" id="sec-atraso" style="margin-bottom:14px">
+  <h2>Cards atrasados <span class="count">%(n_atras)d</span></h2>
+  <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+  Passaram do Prazo e ainda não saíram da edição. Do mais antigo para o mais novo —
+  o de cima é o que mais precisa de atenção.</p>
+  %(lista_atras)s
+</div>
+
+<div class="card" id="sec-complex" style="margin-bottom:14px">
+  <h2>Sem Complexidade válida <span class="count">%(n_cx_pend)d</span></h2>
+  <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+  Ficam fora da média de complexidade — e sem eles a leitura de "quanto o mês pesou"
+  sai distorcida. Campo vazio ou com a opção quebrada do select.</p>
+  %(lista_cx)s
+</div>
+
+<div class="card" id="sec-ted" style="margin-bottom:14px">
   <h2>Sem tempo de edição <span class="count">%(n_sed)d</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
   O card já saiu da edição (ou está finalizado), mas falta <b>Edição Início</b> ou
@@ -1585,7 +1620,7 @@ Cada um deles fica de fora das médias de tempo do painel. Clique para abrir no 
   %(lista_ed)s
 </div>
 
-<div class="card">
+<div class="card" id="sec-tal">
   <h2>Sem tempo de alteração <span class="count">%(n_salt)d</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
   O card passou por alteração — pelo status atual ou porque um dos campos foi preenchido —
@@ -1639,6 +1674,8 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         lab_amanha=fmt(m["amanha"]), n_amanha=len(m["f_amanha"]), b_amanha=bloco_amanha,
         n_sed=len(m["sem_t_ed"]), lista_ed=lista_ed,
         n_salt=len(m["sem_t_alt"]), lista_alt=lista_alt,
+        n_atras=len(m["atrasados"]), lista_atras=lista_atras,
+        n_cx_pend=len(m["sem_cx"]) + len(m["cx_quebrada"]), lista_cx=lista_cx,
         n_cards=len(m["cards"]), n_todos=len(dados["cards"]),
         dias_entrega=DIAS_ATE_ENTREGA,
         **bloco_agenda(m, todos), **bloco_complexidade(m),
