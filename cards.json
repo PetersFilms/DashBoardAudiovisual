@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-01T07:41:24-03:00",
+ "gerado_em": "2026-09-01T12:16:50-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7194,7 +7194,7 @@
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] PEDRA FERRO + MOLEDO BLACK",
    "cliente": "EMPÓRIO DAS PEDRAS",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7203,8 +7203,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-01",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-09-01T10:16:00.000-03:00",
+   "ed_fim": "2026-09-01T11:57:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-25",
@@ -7230,6 +7230,24 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/CHESS-PODER-DO-COLOR-GRADING-3c81e7f422b980329b53f0427b753e74"
+  },
+  {
+   "titulo": "[CHESS] Vídeo Barretos",
+   "cliente": "CHESS",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-V-deo-Barretos-3ce1e7f422b980a092b9c1b1814d3104"
   },
   {
    "titulo": "[HOMENZ] CAPTAÇÃO CONTEÚDOS DE SETEMBRO",
