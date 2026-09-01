@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-08-31T18:11:18-03:00",
+ "gerado_em": "2026-08-31T21:52:15-03:00",
  "mes_ref": "2026-08",
  "meta_mes": 50,
  "meta_dist": {
@@ -6856,26 +6856,6 @@
   {
    "titulo": "[CHESS] PODER DO COLOR GRADING",
    "cliente": "CHESS",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-08-26",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-PODER-DO-COLOR-GRADING-3c81e7f422b980329b53f0427b753e74"
-  },
-  {
-   "titulo": "[CHESS] PODER DO COLOR GRADING",
-   "cliente": "CHESS",
    "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Petterson",
@@ -7230,6 +7210,26 @@
    "gravado": "2026-08-25",
    "publicacao": "2026-09-04",
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-PEDRA-FERRO-MOLEDO-BLACK-3c81e7f422b9807d8deaeb904542f1fb"
+  },
+  {
+   "titulo": "[CHESS] PODER DO COLOR GRADING",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-02",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-PODER-DO-COLOR-GRADING-3c81e7f422b980329b53f0427b753e74"
   },
   {
    "titulo": "[HOMENZ] CAPTAÇÃO CONTEÚDOS DE SETEMBRO",
