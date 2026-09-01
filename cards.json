@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-08-31T21:52:15-03:00",
- "mes_ref": "2026-08",
+ "gerado_em": "2026-09-01T02:49:54-03:00",
+ "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
   "Maila": 70,
@@ -7134,7 +7134,7 @@
   {
    "titulo": "[JARDIM] TERRA ALTA",
    "cliente": "JARDIM",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -7143,8 +7143,8 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-08-28",
-   "ed_ini": "2026-08-31T16:37:00.000-03:00",
-   "ed_fim": null,
+   "ed_ini": "2026-08-31T19:37:00.000-03:00",
+   "ed_fim": "2026-09-01T00:40:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-21",
