@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-01T15:57:06-03:00",
+ "gerado_em": "2026-09-01T18:32:07-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7212,6 +7212,26 @@
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-PEDRA-FERRO-MOLEDO-BLACK-3c81e7f422b9807d8deaeb904542f1fb"
   },
   {
+   "titulo": "[EVOLVE] DEPÓSITO",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-02",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-28",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-DEP-SITO-3ce1e7f422b98060a728c8051b4636b9"
+  },
+  {
    "titulo": "[CHESS] PODER DO COLOR GRADING",
    "cliente": "CHESS",
    "status": "Pré Aprovação",
@@ -7230,6 +7250,66 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/CHESS-PODER-DO-COLOR-GRADING-3c81e7f422b980329b53f0427b753e74"
+  },
+  {
+   "titulo": "[CHESS] VÍDEO PEDRO/AMAZON",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-02",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-08-31",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-V-DEO-PEDRO-AMAZON-3bb1e7f422b980f5afd4f6af9c3c0e0a"
+  },
+  {
+   "titulo": "[HAGUE] BOTECO ASIÁTICO",
+   "cliente": "HAGUE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-03",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-01",
+   "publicacao": "2026-09-07",
+   "url": "https://app.notion.com/p/HAGUE-BOTECO-ASI-TICO-3ce1e7f422b9808ab800fba7d736889c"
+  },
+  {
+   "titulo": "[CHESS] EDUCAÇÃO MERCADO",
+   "cliente": "CHESS",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-03",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-01",
+   "publicacao": "2026-09-07",
+   "url": "https://app.notion.com/p/CHESS-EDUCA-O-MERCADO-3bb1e7f422b9800f9f3df036230ab1ea"
   },
   {
    "titulo": "[CHESS] Vídeo Barretos",
@@ -7540,24 +7620,6 @@
    "url": "https://app.notion.com/p/GRANADA-CAPTA-O-3bd1e7f422b98184a6bbd6231f5c6fd1"
   },
   {
-   "titulo": "[CHESS] VÍDEO PEDRO/AMAZON",
-   "cliente": "CHESS",
-   "status": null,
-   "fase": "Roteirização",
-   "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-V-DEO-PEDRO-AMAZON-3bb1e7f422b980f5afd4f6af9c3c0e0a"
-  },
-  {
    "titulo": "[CHESS] VOCÊ VÊ 60 SEGUNDOS, NÓS VEMO",
    "cliente": "CHESS",
    "status": null,
@@ -7574,24 +7636,6 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/CHESS-VOC-V-60-SEGUNDOS-N-S-VEMO-3bb1e7f422b9807ca677f6badaccf0be"
-  },
-  {
-   "titulo": "[CHESS] VÍDEO VICTÓRIA",
-   "cliente": "CHESS",
-   "status": null,
-   "fase": "Roteirização",
-   "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-V-DEO-VICT-RIA-3bb1e7f422b9800f9f3df036230ab1ea"
   },
   {
    "titulo": "[BU] CAPTAÇÃO MAUM",
