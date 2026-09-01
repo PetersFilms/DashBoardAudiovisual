@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-01T12:16:50-03:00",
+ "gerado_em": "2026-09-01T15:57:06-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7214,7 +7214,7 @@
   {
    "titulo": "[CHESS] PODER DO COLOR GRADING",
    "cliente": "CHESS",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7223,8 +7223,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-02",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-09-01T13:14:00.000-03:00",
+   "ed_fim": "2026-09-01T13:49:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
