@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-03T18:28:51-03:00",
+ "gerado_em": "2026-09-03T20:38:48-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -5636,26 +5636,6 @@
    "url": "https://app.notion.com/p/LUME-CARD-PIO-3ac1e7f422b980969f3dfa7e16f1898d"
   },
   {
-   "titulo": "[VERTERE] VIDEO 03",
-   "cliente": "VERTERE",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Intermediário",
-   "prazo": "2026-07-30",
-   "ed_ini": "2026-07-29T11:17:00.000-03:00",
-   "ed_fim": "2026-07-30T12:02:00.000-03:00",
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/VERTERE-VIDEO-03-3ab1e7f422b98056ac8bfa0f9069aa71"
-  },
-  {
    "titulo": "[LUME] VIDEO 02",
    "cliente": "LUME",
    "status": "Aprovado/Finalizado",
@@ -7274,7 +7254,7 @@
   {
    "titulo": "[HAGUE] BOTECO ASIÁTICO",
    "cliente": "HAGUE",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7284,7 +7264,7 @@
    "complexidade": "Básico",
    "prazo": "2026-09-03",
    "ed_ini": "2026-09-03T13:01:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-09-03T19:16:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-01",
@@ -7310,6 +7290,26 @@
    "gravado": "2026-09-01",
    "publicacao": "2026-09-07",
    "url": "https://app.notion.com/p/CHESS-EDUCA-O-MERCADO-3bb1e7f422b9800f9f3df036230ab1ea"
+  },
+  {
+   "titulo": "[VERTERE] VIDEO 03",
+   "cliente": "VERTERE",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-04",
+   "ed_ini": "2026-07-29T11:17:00.000-03:00",
+   "ed_fim": "2026-09-03T20:18:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/VERTERE-VIDEO-03-3ab1e7f422b98056ac8bfa0f9069aa71"
   },
   {
    "titulo": "[PIKOLIN] FEIRÃO",
