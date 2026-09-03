@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-02T21:48:48-03:00",
+ "gerado_em": "2026-09-03T02:17:49-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -6876,7 +6876,7 @@
   {
    "titulo": "[HOMENZ] Boné",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6936,7 +6936,7 @@
   {
    "titulo": "[HOMENZ]  Existe janela de tempo para tratar",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -6996,7 +6996,7 @@
   {
    "titulo": "[HOMENZ] DEIXA EU ADIVINHA",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7096,7 +7096,7 @@
   {
    "titulo": "[CHESS] PODCAST LAPIDATO",
    "cliente": "CHESS",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "PodCast",
@@ -7105,7 +7105,7 @@
    ],
    "complexidade": "Avançado",
    "prazo": "2026-08-27",
-   "ed_ini": null,
+   "ed_ini": "2026-09-02T22:02:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
