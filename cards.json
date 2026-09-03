@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-03T11:46:39-03:00",
+ "gerado_em": "2026-09-03T15:11:28-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7096,7 +7096,7 @@
   {
    "titulo": "[CHESS] PODCAST LAPIDATO",
    "cliente": "CHESS",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "PodCast",
@@ -7106,7 +7106,7 @@
    "complexidade": "Avançado",
    "prazo": "2026-08-27",
    "ed_ini": "2026-09-02T22:02:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-09-03T13:35:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-08-19",
@@ -7274,7 +7274,7 @@
   {
    "titulo": "[HAGUE] BOTECO ASIÁTICO",
    "cliente": "HAGUE",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7283,7 +7283,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-03",
-   "ed_ini": null,
+   "ed_ini": "2026-09-03T13:01:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -7310,6 +7310,44 @@
    "gravado": "2026-09-01",
    "publicacao": "2026-09-07",
    "url": "https://app.notion.com/p/CHESS-EDUCA-O-MERCADO-3bb1e7f422b9800f9f3df036230ab1ea"
+  },
+  {
+   "titulo": "[PIKOLIN] FEIRÃO",
+   "cliente": "PIKOLIN",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-07",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-03",
+   "publicacao": "2026-09-10",
+   "url": "https://app.notion.com/p/PIKOLIN-FEIR-O-3d01e7f422b980b68ef2c73369663c58"
+  },
+  {
+   "titulo": "[MABOOH]",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": null,
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/MABOOH-3d01e7f422b980cab4e2e342d699ef39"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO (AMBIENTE)",
