@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-04T12:20:58-03:00",
+ "gerado_em": "2026-09-04T15:39:51-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7254,7 +7254,7 @@
   {
    "titulo": "[HAGUE] BOTECO ASIÁTICO",
    "cliente": "HAGUE",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7265,7 +7265,7 @@
    "prazo": "2026-09-03",
    "ed_ini": "2026-09-03T13:01:00.000-03:00",
    "ed_fim": "2026-09-03T19:16:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-04T14:45:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-01",
    "publicacao": "2026-09-07",
@@ -7292,6 +7292,27 @@
    "url": "https://app.notion.com/p/CHESS-EDUCA-O-MERCADO-3bb1e7f422b9800f9f3df036230ab1ea"
   },
   {
+   "titulo": "[EVOLVE] SHOWROOM INAUGURAÇÃO",
+   "cliente": "EVOLVE",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels",
+    "Highlight"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-04",
+   "ed_ini": "2026-09-04T15:01:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-03",
+   "publicacao": "2026-09-04",
+   "url": "https://app.notion.com/p/EVOLVE-SHOWROOM-INAUGURA-O-3d11e7f422b98023a096f8e8ce0da448"
+  },
+  {
    "titulo": "[VERTERE] VIDEO 03",
    "cliente": "VERTERE",
    "status": "Pré Aprovação",
@@ -7314,7 +7335,7 @@
   {
    "titulo": "[EVOLVE] SHOWROOM",
    "cliente": "EVOLVE",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7323,7 +7344,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-07",
-   "ed_ini": null,
+   "ed_ini": "2026-09-04T14:49:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -7334,7 +7355,7 @@
   {
    "titulo": "[PIKOLIN] FEIRÃO",
    "cliente": "PIKOLIN",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7344,12 +7365,53 @@
    "complexidade": "Intermediário",
    "prazo": "2026-09-07",
    "ed_ini": "2026-09-04T11:21:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-09-04T13:55:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-03",
    "publicacao": "2026-09-10",
    "url": "https://app.notion.com/p/PIKOLIN-FEIR-O-3d01e7f422b980b68ef2c73369663c58"
+  },
+  {
+   "titulo": "[MABOOH] LOOK COMING SOON",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-16",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-17",
+   "url": "https://app.notion.com/p/MABOOH-LOOK-COMING-SOON-3d11e7f422b98027907cf7f8a49c6a78"
+  },
+  {
+   "titulo": "[MABOOH] LOOKS VERTICAIS ONE TAKE - COLEÇÃO RAIZES",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Site",
+   "categorias": [
+    "Site",
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-16",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-18",
+   "url": "https://app.notion.com/p/MABOOH-LOOKS-VERTICAIS-ONE-TAKE-COLE-O-RAIZES-3d11e7f422b98019bfabe439bf1ad099"
   },
   {
    "titulo": "[MABOOH] LOOKS HORIZONTAIS",
@@ -7394,7 +7456,7 @@
    "url": "https://app.notion.com/p/MABOOH-DESFILE-HORIZONTAL-3d11e7f422b980daa990d2133d66027d"
   },
   {
-   "titulo": "[MABOOH] LOOKS VERTICAIS",
+   "titulo": "[MABOOH] LOOKS VERTICAIS ONE TAKE - COLEÇÃO BASE",
    "cliente": "MABOOH",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -7412,10 +7474,10 @@
    "alt_fim": null,
    "gravado": "2026-09-02",
    "publicacao": "2026-09-18",
-   "url": "https://app.notion.com/p/MABOOH-LOOKS-VERTICAIS-3d11e7f422b98038bad2dba40a4769c7"
+   "url": "https://app.notion.com/p/MABOOH-LOOKS-VERTICAIS-ONE-TAKE-COLE-O-BASE-3d11e7f422b98038bad2dba40a4769c7"
   },
   {
-   "titulo": "[MABOOH] LOOK PRIORIDADE",
+   "titulo": "[MABOOH] LOOK NOVO",
    "cliente": "MABOOH",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -7432,7 +7494,7 @@
    "alt_fim": null,
    "gravado": "2026-09-02",
    "publicacao": "2026-09-17",
-   "url": "https://app.notion.com/p/MABOOH-LOOK-PRIORIDADE-3d11e7f422b98097916ccbef1f490073"
+   "url": "https://app.notion.com/p/MABOOH-LOOK-NOVO-3d11e7f422b98097916ccbef1f490073"
   },
   {
    "titulo": "[MABOOH] BACKSTAGE",
