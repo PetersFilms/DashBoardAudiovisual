@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-04T08:51:05-03:00",
+ "gerado_em": "2026-09-04T12:20:58-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7312,9 +7312,29 @@
    "url": "https://app.notion.com/p/VERTERE-VIDEO-03-3ab1e7f422b98056ac8bfa0f9069aa71"
   },
   {
+   "titulo": "[EVOLVE] SHOWROOM",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-07",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-03",
+   "publicacao": "2026-09-08",
+   "url": "https://app.notion.com/p/EVOLVE-SHOWROOM-3d11e7f422b980f388e3d8bca0d9646a"
+  },
+  {
    "titulo": "[PIKOLIN] FEIRÃO",
    "cliente": "PIKOLIN",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7323,7 +7343,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-09-07",
-   "ed_ini": null,
+   "ed_ini": "2026-09-04T11:21:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -7332,22 +7352,107 @@
    "url": "https://app.notion.com/p/PIKOLIN-FEIR-O-3d01e7f422b980b68ef2c73369663c58"
   },
   {
-   "titulo": "[MABOOH]",
+   "titulo": "[MABOOH] LOOKS HORIZONTAIS",
    "cliente": "MABOOH",
    "status": "À Fazer Maila",
    "fase": null,
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
+   "responsavel": "Maila",
+   "categoria": "Site",
+   "categorias": [
+    "Site",
+    "Banner"
+   ],
    "complexidade": null,
-   "prazo": null,
+   "prazo": "2026-09-16",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/MABOOH-3d01e7f422b980cab4e2e342d699ef39"
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-22",
+   "url": "https://app.notion.com/p/MABOOH-LOOKS-HORIZONTAIS-3d11e7f422b980498bb1fbee52939000"
+  },
+  {
+   "titulo": "[MABOOH] DESFILE HORIZONTAL",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": null,
+   "responsavel": "Maila",
+   "categoria": "Banner",
+   "categorias": [
+    "Banner",
+    "Site"
+   ],
+   "complexidade": null,
+   "prazo": "2026-09-16",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-21",
+   "url": "https://app.notion.com/p/MABOOH-DESFILE-HORIZONTAL-3d11e7f422b980daa990d2133d66027d"
+  },
+  {
+   "titulo": "[MABOOH] LOOKS VERTICAIS",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Site",
+   "categorias": [
+    "Site",
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-16",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-18",
+   "url": "https://app.notion.com/p/MABOOH-LOOKS-VERTICAIS-3d11e7f422b98038bad2dba40a4769c7"
+  },
+  {
+   "titulo": "[MABOOH] LOOK PRIORIDADE",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-16",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-17",
+   "url": "https://app.notion.com/p/MABOOH-LOOK-PRIORIDADE-3d11e7f422b98097916ccbef1f490073"
+  },
+  {
+   "titulo": "[MABOOH] BACKSTAGE",
+   "cliente": "MABOOH",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-16",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-02",
+   "publicacao": "2026-09-17",
+   "url": "https://app.notion.com/p/MABOOH-BACKSTAGE-3d01e7f422b980cab4e2e342d699ef39"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO (AMBIENTE)",
