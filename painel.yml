@@ -1,0 +1,100 @@
+name: Atualizar painel
+
+on:
+  schedule:
+    # De hora em hora, nas 24 horas do dia. Como roda toda hora cheia,
+    # não há conversão de fuso a fazer (o cron do GitHub é sempre UTC).
+    # Se nada mudou no Notion, a rodada termina sem commit.
+    - cron: '0 * * * *'
+  workflow_dispatch:        # permite rodar na mão pelo botão "Run workflow"
+
+permissions:
+  contents: write           # necessário para o commit do index.html
+
+concurrency:
+  group: painel
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Puxar dados do Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          META_MES: '50'
+          META_MAILA: '70'
+          META_PETTERSON: '30'
+          META_ANTECEDENCIA: '30'
+        run: python fetch_notion.py
+
+      # Os dois passos abaixo são melhorias: se a agenda do Google ou a
+      # permissão de escrita no Notion falharem, o passo fica vermelho mas
+      # o painel continua sendo gerado e publicado.
+      - name: Ler as captações da agenda do Google
+        continue-on-error: true
+        env:
+          AGENDA_ICAL_URL: ${{ secrets.AGENDA_ICAL_URL }}
+          AGENDA_ICAL_URL_2: ${{ secrets.AGENDA_ICAL_URL_2 }}
+        run: python fetch_agenda.py
+
+      - name: Sincronizar captações com o Notion (cria novas, arquiva canceladas)
+        continue-on-error: true
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          CRIAR_CARDS: '1'          # troque para '0' para só simular
+          SYNC_A_CADA_HORAS: '2'    # sincroniza nas horas pares
+          # rodada manual pelo botão sincroniza na hora, sem esperar o relógio
+          FORCAR_SYNC: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+        run: python criar_cards_captacao.py
+
+      - name: Ler o LOG do Notion
+        continue-on-error: true
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_LOG_DB: ${{ secrets.NOTION_LOG_DB }}
+        run: python fetch_logs.py
+
+      - name: Recarregar os cards, já com os recém-criados
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python fetch_notion.py
+
+      - name: Gerar o painel
+        run: python gerar_dashboard.py cards.json index.html
+
+      - name: Commitar se algo mudou
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html cards.json captacoes.json captacoes_criadas.json logs.json
+          if git diff --staged --quiet; then
+            echo "Nada mudou desde a última rodada — sem commit."
+            exit 0
+          fi
+          git commit -m "Painel atualizado: $(TZ=America/Sao_Paulo date '+%d/%m/%Y às %H:%M')"
+          # Alguém pode ter commitado pelo site do GitHub enquanto esta rodada
+          # corria — aí o push é recusado porque o remoto andou. Nesse caso,
+          # rebase em cima do que chegou e tenta de novo.
+          for tentativa in 1 2 3; do
+            if git push; then
+              echo "publicado na tentativa $tentativa"
+              exit 0
+            fi
+            echo "push recusado; trazendo o que mudou no repositório e tentando de novo"
+            git pull --rebase --autostash origin main || true
+            sleep 5
+          done
+          echo "não consegui publicar depois de 3 tentativas"
+          exit 1

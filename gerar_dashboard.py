@@ -25,6 +25,9 @@ FINALIZADO = {"Aprovado/Finalizado", "Drive"}
 EM_APROVACAO = {"Pré Aprovação"}
 EM_EXECUCAO = {"Executando", "Alteração", "Alterado"}
 EM_ALTERACAO = {"Alteração", "Alterado"}
+# Reprovado = voltou da aprovação e precisa de nova versão. Não é entregue
+# nem está "em execução" — é uma fila própria, que pede ação.
+REPROVADO = {"Reprovado"}
 
 # Complexidade vira número para permitir média. Escala de 1 a 3.
 # A opção "F@)&0" é erro de digitação no Notion e fica fora da conta.
@@ -167,7 +170,9 @@ def preparar(cfg):
         st = c.get("status") or ""
         c["_final"] = st in FINALIZADO
         c["_aprov"] = st in EM_APROVACAO
-        c["_exec"] = st in EM_EXECUCAO or (c["_ini"] and not c["_fim"] and not c["_final"])
+        c["_reprov"] = st in REPROVADO
+        c["_exec"] = (st in EM_EXECUCAO or
+                      (c["_ini"] and not c["_fim"] and not c["_final"] and not c["_reprov"]))
         # durações em minutos (abs: se alguém preencheu na ordem trocada,
         # os dois horários ainda delimitam o trabalho)
         c["_dur_ed"] = (abs((c["_fim"] - c["_ini"]).total_seconds()) / 60
@@ -216,8 +221,12 @@ def montar(cfg, agora, hoje, todos):
     du_corridos = dias_uteis(prim, min(hoje, ult))
 
     execu = [c for c in cards if c["_exec"] and not c["_final"]]
-    concluidos = [c for c in cards if c["_fim"]]
-    fila = [c for c in cards if not c["_fim"] and not c["_final"]]
+    # Reprovado não é entrega: mesmo com Edição Fim preenchida, o vídeo
+    # voltou e precisa de nova versão — sai dos entregues e conta como aberto.
+    reprovados = sorted([c for c in cards if c["_reprov"]],
+                        key=lambda c: (c["_prazo"] or date(2099, 1, 1), c["titulo"]))
+    concluidos = [c for c in cards if c["_fim"] and not c["_reprov"]]
+    fila = [c for c in cards if not c["_fim"] and not c["_final"] and not c["_reprov"]]
 
     # ---- ritmo
     meta = cfg.get("meta_mes", 50)
@@ -298,6 +307,7 @@ def montar(cfg, agora, hoje, todos):
                 total_atr=total_atr, meta_dist=cfg["meta_dist"],
                 meta_antec=cfg.get("meta_antecedencia_dias", 30),
                 vence_hoje=vence_hoje, atrasados=atrasados, sem_dono=sem_dono,
+                reprovados=reprovados,
                 sem_t_ed=sem_t_ed, sem_t_alt=sem_t_alt, f_ontem=f_ontem,
                 f_hoje_ok=f_hoje_ok, f_amanha=f_amanha, f_prox=f_prox,
                 prox_data=prox_data, serie=serie, cards=cards, mes_lab=cfg["mes_ref"],
@@ -453,6 +463,12 @@ def comentario(m):
                       "Há %d card(s) atrasado(s), o mais antigo há %d dia(s) — "
                       "priorizar antes de puxar coisa nova." % (n, idade)))
 
+    if m["reprovados"]:
+        n = len(m["reprovados"])
+        notas.append((2 if n >= 3 else 1,
+                      "%d card(s) reprovado(s) esperando nova versão — cada um deles "
+                      "é uma entrega que saiu da conta até ser refeita." % n))
+
     if m["pct_prazo"] is not None and m["pct_prazo"] < 85:
         notas.append((2 if m["pct_prazo"] < 60 else 1,
                       "A pontualidade preocupa: %d%% das entregas do mês saíram no prazo."
@@ -497,6 +513,8 @@ def dados_js(cfg, hoje, todos):
     for c in todos:
         if c["_final"]:
             st = "fin"
+        elif c["_reprov"]:
+            st = "rep"
         elif c["_aprov"]:
             st = "apr"
         elif c["_exec"]:
@@ -654,11 +672,12 @@ ul{list-style:none}
 .ent.e-aprov{border-left-color:var(--s1)}
 .ent.e-exec{border-left-color:var(--warn)}
 .ent.e-fazer{border-left-color:var(--muted)}
+.ent.e-reprov{border-left-color:var(--crit)}
 .nada{font-size:10.5px;color:var(--muted);font-style:italic;margin-top:auto}
 .tag{display:inline-block;font-size:10.5px;font-weight:650;padding:1px 7px;border-radius:10px;
  border:1px solid var(--ring)}
 .g-entregue{color:var(--good-ink)} .g-aprov{color:var(--s1)}
-.g-exec{color:var(--serious)} .g-fazer{color:var(--muted)}
+.g-exec{color:var(--serious)} .g-fazer{color:var(--muted)} .g-reprov{color:var(--crit)}
 
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .chip{font:600 12px/1 system-ui;padding:7px 12px;border-radius:16px;border:1px solid var(--ring);
@@ -672,6 +691,37 @@ ul{list-style:none}
  background:var(--surface);cursor:pointer;color:var(--ink)}
 .range .btn:hover{background:var(--grid)}
 .plabel{font-size:12.5px;color:var(--muted);margin:0 0 14px}
+
+/* aba LOG — bloco de notas */
+.logs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.logs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.logs{grid-template-columns:1fr}}
+.logbox{background:var(--surface);border:1px solid var(--ring);border-radius:12px;
+ padding:16px 18px;cursor:pointer;transition:border-color .12s,transform .12s;
+ display:flex;flex-direction:column;gap:6px;min-height:110px;text-align:left;
+ font:inherit;color:var(--ink)}
+.logbox:hover{border-color:var(--s1);transform:translateY(-1px)}
+.logbox .ld{font-size:11px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;
+ color:var(--muted);font-variant-numeric:tabular-nums}
+.logbox .lt{font-size:14.5px;font-weight:650;line-height:1.35}
+.logbox .lp{font-size:12.5px;color:var(--ink2);line-height:1.45;overflow:hidden;
+ display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;
+ align-items:flex-start;justify-content:center;padding:6vh 16px;z-index:50}
+.modal[hidden]{display:none}
+.mbox{background:var(--surface);border:1px solid var(--ring);border-radius:14px;
+ max-width:680px;width:100%;max-height:82vh;display:flex;flex-direction:column}
+.mhead{display:flex;align-items:flex-start;gap:12px;padding:18px 20px 12px;
+ border-bottom:1px solid var(--grid)}
+.mhead .mt{flex:1;font-size:16px;font-weight:650;line-height:1.35}
+.mhead .md{font-size:11.5px;color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
+.mx{font:600 14px/1 system-ui;width:30px;height:30px;border-radius:50%;border:1px solid var(--ring);
+ background:var(--surface);color:var(--ink2);cursor:pointer;flex:none}
+.mx:hover{background:var(--grid)}
+.mbody{padding:16px 20px;overflow-y:auto;font-size:14px;line-height:1.7;white-space:pre-wrap}
+.mfoot{padding:12px 20px 16px;border-top:1px solid var(--grid)}
+.mfoot a{font:600 12.5px/1 system-ui;color:var(--s1);text-decoration:none}
+.mfoot a:hover{text-decoration:underline}
 
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--grid)}
@@ -687,7 +737,7 @@ function $(id){return document.getElementById(id)}
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;")
  .replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function showTab(id,ancora){
- ["diario","periodo","agenda","dados"].forEach(function(k){
+ ["diario","periodo","agenda","dados","log"].forEach(function(k){
   $("tab-"+k).hidden = (k!==id);
   $("btn-"+k).classList.toggle("on", k===id);
  });
@@ -744,8 +794,11 @@ function inR(x,a,b){return x&&x>=a&&x<=b}
 
 function render(a,b,label){
  $("p-label").textContent="Período: "+fmtBR(a)+" a "+fmtBR(b)+" — "+label+".";
- var ent=D.cards.filter(function(c){return inR(c.f,a,b)});
+ /* Reprovado não conta como entrega: voltou da aprovação e precisa de nova versão */
+ var ent=D.cards.filter(function(c){return inR(c.f,a,b)&&c.st!=="rep"});
  var du=Math.max(1,diasUteis(a,b));
+ /* cards que pertencem ao período (por prazo ou por entrega) */
+ var noPer=D.cards.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)});
 
  /* tile: entregues */
  $("t-ent").textContent=ent.length;
@@ -787,8 +840,21 @@ function render(a,b,label){
    "sozinho assim que houver entregas com ele preenchido";
  }
 
+ /* em aberto e reprovados — retrato de agora, sobre os cards do período */
+ var abertos=noPer.filter(function(c){return c.st==="rep"||(!c.f&&c.st!=="fin")});
+ var nExe=abertos.filter(function(c){return c.st==="exe"}).length;
+ var nRep=abertos.filter(function(c){return c.st==="rep"}).length;
+ var nAtrHoje=abertos.filter(function(c){return c.p&&c.p<HOJE}).length;
+ $("t-abe").textContent=abertos.length;
+ $("t-abe-note").textContent=nExe+" em execução · "+(abertos.length-nExe-nRep)+
+  " a fazer · retrato de agora"+(nAtrHoje?" · "+nAtrHoje+" já passaram do prazo":"");
+ $("t-rep").textContent=nRep;
+ $("t-rep").style.color=nRep?"var(--crit)":"";
+ $("t-rep-note").textContent=nRep?
+  "voltaram da aprovação e precisam de nova versão — não contam como entregues":
+  "nenhum card do período está reprovado";
+
  /* complexidade média — escala 1 a 3, sobre os cards com prazo no período */
- var noPer=D.cards.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)});
  var cxs=noPer.filter(function(c){return c.cx}).map(function(c){return c.cx});
  if(cxs.length){
   var sc=0;cxs.forEach(function(x){sc+=x});
@@ -823,7 +889,12 @@ function render(a,b,label){
   legs+='<span><b style="background:'+cor+'"></b>'+esc(n)+'</span>';
   var alvo=D.metaDist[n];
   var metaTxt=alvo!=null?' <span style="color:var(--muted);font-weight:400">/ meta '+alvo+'%</span>':'';
-  lins+='<div class="dline"><span>'+esc(n)+'</span><b>'+v+' de '+base+' &nbsp;·&nbsp; '+pc+'%'+metaTxt+'</b></div>';
+  var pill="";
+  if(alvo!=null){
+   var gap=pc-alvo,cls=Math.abs(gap)<=8?"p-good":(Math.abs(gap)<=18?"p-warn":"p-crit");
+   pill=' <span class="pill '+cls+'">'+(gap>=0?"+":"")+gap+' p.p.</span>';
+  }
+  lins+='<div class="dline"><span>'+esc(n)+pill+'</span><b>'+v+' de '+base+' &nbsp;·&nbsp; '+pc+'%'+metaTxt+'</b></div>';
  });
  if(!base){segs='<i style="flex:1;background:var(--axis)"><span>sem base</span></i>'}
  if(semR){lins+='<div class="dline" style="color:var(--crit)"><span><b style="color:var(--crit)">'+semR+
@@ -849,13 +920,14 @@ function render(a,b,label){
  /* tabela */
  var rows=D.cards.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)||inR(c.d,a,b)});
  rows.sort(function(x,y){return (x.p||x.f||"9999")<(y.p||y.f||"9999")?-1:1});
- var EST={fin:"Finalizado",apr:"Em aprovação",exe:"Em execução",todo:"A fazer"};
+ var EST={fin:"Finalizado",apr:"Em aprovação",exe:"Em execução",todo:"A fazer",rep:"Reprovado"};
  var html="";
  rows.forEach(function(c){
   var at=c.atr,atx=at==null?"—":(at<=0?"no prazo":"+"+at+" d");
   var cor=(at!=null&&at>0)?' style="color:var(--crit);font-weight:600"':'';
+  var est=c.st==="rep"?'<span style="color:var(--crit);font-weight:600">Reprovado</span>':EST[c.st];
   html+="<tr><td><a href=\""+esc(c.u||"#")+"\" target=\"_blank\" rel=\"noopener\">"+esc(c.t)+"</a></td><td>"+
-   esc(c.r||"—")+"</td><td>"+esc(c.c||"—")+"</td><td>"+EST[c.st]+"</td><td>"+fmtBR(c.p)+"</td><td>"+
+   esc(c.r||"—")+"</td><td>"+esc(c.c||"—")+"</td><td>"+est+"</td><td>"+fmtBR(c.p)+"</td><td>"+
    fmtBR(c.f)+"</td><td class=num"+cor+">"+atx+"</td></tr>";
  });
  $("p-tbody").innerHTML=html||'<tr><td colspan="7" class="empty">Nenhum card no período.</td></tr>';
@@ -917,6 +989,24 @@ function grafico(ent,a,b){
  $("p-xaxis").innerHTML=xs;
 }
 
+/* ---------- aba LOG: caixinhas que abrem em modal ---------- */
+function abrirLog(i){
+ var l=(window.LOGS||[])[i];
+ if(!l)return;
+ $("m-titulo").textContent=l.t;
+ $("m-data").textContent=l.d?fmtBR(l.d):"";
+ $("m-texto").textContent=l.x||"(nota sem conteúdo — o texto fica no corpo da página do Notion)";
+ var a=$("m-link");
+ if(l.u){a.href=l.u;a.hidden=false}else{a.hidden=true}
+ $("m-log").hidden=false;
+ document.body.style.overflow="hidden";
+}
+function fecharLog(){
+ $("m-log").hidden=true;
+ document.body.style.overflow="";
+}
+document.addEventListener("keydown",function(e){if(e.key==="Escape")fecharLog()});
+
 document.addEventListener("DOMContentLoaded",function(){aplicarPeriodo("mes")});
 """
 
@@ -945,6 +1035,8 @@ def _est_pub(c):
     """Estado do card para a agenda: (slug, rótulo)."""
     if c["_final"]:
         return "entregue", "Entregue"
+    if c["_reprov"]:
+        return "reprov", "Reprovado"
     if c["_aprov"]:
         return "aprov", "Em aprovação"
     if c["_exec"]:
@@ -959,6 +1051,40 @@ def carregar_captacoes(caminho="captacoes.json"):
             return json.load(f).get("captacoes", [])
     except (IOError, OSError, ValueError):
         return []
+
+
+def carregar_logs(caminho="logs.json"):
+    """Notas do banco 📓 LOG (Notion). Ausente = aba LOG vazia."""
+    try:
+        with open(caminho, encoding="utf-8") as f:
+            return json.load(f).get("logs", [])
+    except (IOError, OSError, ValueError):
+        return []
+
+
+def bloco_logs(logs):
+    """Caixinhas da aba LOG + JSON com os textos para o modal."""
+    if not logs:
+        caixas = ('<p class="empty">Nenhum log ainda. Para criar o primeiro, abra o banco '
+                  '<b>📓 LOG — Audiovisual</b> no Notion e adicione uma página: o título '
+                  'vira o nome da caixinha e o texto da página aparece ao clicar nela. '
+                  'O painel atualiza sozinho na rodada seguinte.</p>')
+    else:
+        partes = []
+        for i, l in enumerate(logs):
+            d = parse_d(l.get("data"))
+            preview = (l.get("texto") or "").replace("\n", " ").strip()
+            partes.append(
+                '<button class="logbox" onclick="abrirLog(%d)">'
+                '<span class="ld">%s</span><span class="lt">%s</span>'
+                '<span class="lp">%s</span></button>'
+                % (i, fmt(d) if d else "sem data", esc(l.get("titulo")),
+                   esc(preview[:180]) or '<i style="color:var(--muted)">sem texto</i>'))
+        caixas = '<div class="logs">%s</div>' % "".join(partes)
+    dados = [{"t": l.get("titulo") or "(sem título)", "d": l.get("data"),
+              "u": l.get("url"), "x": l.get("texto") or ""} for l in logs]
+    return dict(log_n=len(logs), log_caixas=caixas,
+                logs_json=json.dumps(dados, ensure_ascii=False, separators=(",", ":")))
 
 
 def bloco_captacoes(caps, hoje, todos):
@@ -1191,6 +1317,12 @@ def render(m, dados, todos):
                    "<em>%s — prazo %s</em>" % (len(m["atrasados"]),
                                                (m["hoje"] - pior["_prazo"]).days,
                                                esc(pior["titulo"]), fmt(pior["_prazo"]))))
+    if m["reprovados"]:
+        al.append(('i-crit', '!', "<b>%d card(s) reprovados</b> — voltaram da aprovação e "
+                   "precisam de nova versão."
+                   '<button class="btnlink" onclick="showTab(\'dados\',\'sec-reprov\')">ver quais →</button>'
+                   "<em>%s</em>" % (len(m["reprovados"]),
+                                    esc(" · ".join(c["titulo"] for c in m["reprovados"][:5])))))
     if m["sem_dono"]:
         al.append(('i-warn', '~', "<b>%d card(s) sem responsável</b> — não entram no cálculo do 70/30."
                    "<em>%s</em>" % (len(m["sem_dono"]),
@@ -1257,6 +1389,11 @@ def render(m, dados, todos):
                         extra=lambda c: " · prazo %s · <b style='color:var(--crit)'>+%d d</b>"
                         % (fmt(c["_prazo"], False), (m["hoje"] - c["_prazo"]).days))
 
+    # reprovados: com o prazo original, para dar noção da urgência
+    lista_reprov = lista(m["reprovados"], "Nenhum card reprovado no momento. 🎉",
+                         extra=lambda c: " · prazo %s" % fmt(c["_prazo"], False)
+                         if c["_prazo"] else "")
+
     # sem complexidade válida: campo vazio e opção quebrada, juntos
     def _falta_cx(c):
         if c.get("complexidade"):
@@ -1288,6 +1425,7 @@ def render(m, dados, todos):
   <button class="tab" id="btn-periodo" onclick="showTab('periodo')">Análise por Período</button>
   <button class="tab" id="btn-agenda" onclick="showTab('agenda')">Agenda de Publicação</button>
   <button class="tab" id="btn-dados" onclick="showTab('dados')">Pendências</button>
+  <button class="tab" id="btn-log" onclick="showTab('log')">LOG</button>
 </div>
 
 <!-- ==================== PAINEL DIÁRIO ==================== -->
@@ -1314,8 +1452,8 @@ def render(m, dados, todos):
   </div>
   <div class="card tile">
     <div class="lab">Em aberto no mês</div>
-    <div class="val">%(n_fila)d</div>
-    <div class="note">%(n_exec)d em execução · %(n_fazer)d a fazer.<br>
+    <div class="val">%(n_aberto)d</div>
+    <div class="note">%(n_exec_ab)d em execução · %(n_fazer)d a fazer · %(n_reprov)d reprovado(s).<br>
       Leitura por período fica na aba <b>Análise por Período</b>.</div>
   </div>
   <div class="card tile">
@@ -1429,6 +1567,16 @@ def render(m, dados, todos):
     <div class="lab">Entregas no prazo</div>
     <div class="val" id="t-prz">—</div>
     <div class="note" id="t-prz-note"></div>
+  </div>
+  <div class="card tile">
+    <div class="lab">Em aberto no período</div>
+    <div class="val" id="t-abe">—</div>
+    <div class="note" id="t-abe-note"></div>
+  </div>
+  <div class="card tile">
+    <div class="lab">Reprovados</div>
+    <div class="val" id="t-rep">—</div>
+    <div class="note" id="t-rep-note"></div>
   </div>
   <div class="card tile">
     <div class="lab">Gravação → entrega</div>
@@ -1604,6 +1752,15 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
   %(lista_atras)s
 </div>
 
+<div class="card" id="sec-reprov" style="margin-bottom:14px">
+  <h2>Cards reprovados <span class="count">%(n_reprov)d</span></h2>
+  <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
+  Voltaram da aprovação e precisam de nova versão. Enquanto o status for
+  <b>Reprovado</b>, o card não conta como entregue — a entrega volta para a conta
+  quando a nova versão sai e o status muda.</p>
+  %(lista_reprov)s
+</div>
+
 <div class="card" id="sec-complex" style="margin-bottom:14px">
   <h2>Sem Complexidade válida <span class="count">%(n_cx_pend)d</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
@@ -1633,14 +1790,41 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 
 </section>
 
+<!-- ==================== LOG ==================== -->
+<section id="tab-log" hidden>
+
+<p class="plabel">Bloco de notas da operação. Cada página do banco
+<b>📓 LOG — Audiovisual</b> (Notion) vira uma caixinha aqui — clique para abrir.
+Registros de decisão, combinados com cliente, aprendizados: o que precisar ficar
+anotado e à mão. <span class="count">%(log_n)d</span> log(s).</p>
+
+%(log_caixas)s
+
+<div class="modal" id="m-log" hidden onclick="if(event.target===this)fecharLog()">
+  <div class="mbox">
+    <div class="mhead">
+      <div style="flex:1">
+        <div class="mt" id="m-titulo"></div>
+        <div class="md" id="m-data"></div>
+      </div>
+      <button class="mx" onclick="fecharLog()" title="fechar">✕</button>
+    </div>
+    <div class="mbody" id="m-texto"></div>
+    <div class="mfoot"><a id="m-link" href="#" target="_blank" rel="noopener">abrir no Notion →</a></div>
+  </div>
+</div>
+
+</section>
+
 <p class="foot">Fonte: banco 🎯 Tarefas — Audiovisual (Notion) · %(n_cards)d cards com prazo em %(mes_nome)s ·
 %(n_todos)d cards no histórico completo (desde o primeiro registro).
 Horários convertidos para America/São_Paulo (UTC−3). &quot;Entregues&quot; = cards com Edição Fim preenchida,
-incluindo os que aguardam aprovação. Pontualidade compara Edição Fim com Prazo.<br>
+incluindo os que aguardam aprovação — mas não os reprovados, que voltam a contar quando a nova
+versão sai. Pontualidade compara Edição Fim com Prazo.<br>
 Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
 
 </div>
-<script>window.DATA=%(dados)s;</script>
+<script>window.DATA=%(dados)s;window.LOGS=%(logs_json)s;</script>
 <script>%(js)s</script>
 </body></html>""" % dict(
         css=CSS, js=JS, dados=json.dumps(dados, ensure_ascii=False, separators=(",", ":")),
@@ -1654,6 +1838,8 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         pct_antec=min(100, 100 * m["antec"] / m["meta_antec"]),
         antec_cor="var(--good)" if m["antec"] >= m["meta_antec"] else "var(--crit)",
         n_fila=len(m["fila"]), n_fazer=len([c for c in m["fila"] if not c["_exec"]]),
+        n_aberto=len(m["fila"]) + len(m["reprovados"]), n_reprov=len(m["reprovados"]),
+        n_exec_ab=len([c for c in m["fila"] if c["_exec"]]),
         dur_ed_txt=fmt_dur(sum(m["dur_ed"]) / len(m["dur_ed"]) if m["dur_ed"] else None),
         dur_ed_note=("mediana %s · %d entrega(s) com Edição Início e Fim · tempo de "
                      "calendário, não horas trabalhadas"
@@ -1674,12 +1860,13 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         lab_amanha=fmt(m["amanha"]), n_amanha=len(m["f_amanha"]), b_amanha=bloco_amanha,
         n_sed=len(m["sem_t_ed"]), lista_ed=lista_ed,
         n_salt=len(m["sem_t_alt"]), lista_alt=lista_alt,
-        n_atras=len(m["atrasados"]), lista_atras=lista_atras,
+        n_atras=len(m["atrasados"]), lista_atras=lista_atras, lista_reprov=lista_reprov,
         n_cx_pend=len(m["sem_cx"]) + len(m["cx_quebrada"]), lista_cx=lista_cx,
         n_cards=len(m["cards"]), n_todos=len(dados["cards"]),
         dias_entrega=DIAS_ATE_ENTREGA,
         **bloco_agenda(m, todos), **bloco_complexidade(m),
-        **bloco_captacoes(carregar_captacoes(), m["hoje"], todos))
+        **bloco_captacoes(carregar_captacoes(), m["hoje"], todos),
+        **bloco_logs(carregar_logs()))
 
 
 if __name__ == "__main__":
