@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-04T20:31:19-03:00",
+ "gerado_em": "2026-09-04T22:20:00-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -6638,7 +6638,7 @@
   {
    "titulo": "[JARDIM] POLTRONA COPA",
    "cliente": "JARDIM",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -7114,7 +7114,7 @@
   {
    "titulo": "[JARDIM] TERRA ALTA",
    "cliente": "JARDIM",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -7134,7 +7134,7 @@
   {
    "titulo": "[EVOLVE]  A torneira que não cabe",
    "cliente": "EVOLVE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7154,7 +7154,7 @@
   {
    "titulo": "[RICHARD] APTO PIÇARRAS",
    "cliente": "RICHARD",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7174,7 +7174,7 @@
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] PEDRA FERRO + MOLEDO BLACK",
    "cliente": "EMPÓRIO DAS PEDRAS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7194,7 +7194,7 @@
   {
    "titulo": "[EVOLVE] DEPÓSITO",
    "cliente": "EVOLVE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7214,7 +7214,7 @@
   {
    "titulo": "[CHESS] PODER DO COLOR GRADING",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7234,7 +7234,7 @@
   {
    "titulo": "[CHESS] VÍDEO PEDRO/AMAZON",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7274,7 +7274,7 @@
   {
    "titulo": "[CHESS] EDUCAÇÃO MERCADO",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7294,7 +7294,7 @@
   {
    "titulo": "[EVOLVE] SHOWROOM INAUGURAÇÃO",
    "cliente": "EVOLVE",
-   "status": "Pré Aprovação",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -7306,8 +7306,8 @@
    "prazo": "2026-09-04",
    "ed_ini": "2026-09-04T15:01:00.000-03:00",
    "ed_fim": "2026-09-04T19:36:00.000-03:00",
-   "alt_ini": null,
-   "alt_fim": null,
+   "alt_ini": "2026-09-04T19:30:00.000-03:00",
+   "alt_fim": "2026-09-04T21:08:00.000-03:00",
    "gravado": "2026-09-03",
    "publicacao": "2026-09-04",
    "url": "https://app.notion.com/p/EVOLVE-SHOWROOM-INAUGURA-O-3d11e7f422b98023a096f8e8ce0da448"
@@ -7735,7 +7735,7 @@
   {
    "titulo": "[MALWEE] FEBRATEX",
    "cliente": "MALWEE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
