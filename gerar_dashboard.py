@@ -14,6 +14,7 @@ Todas as datas de edição vêm do Notion em UTC (sufixo Z) e são convertidas
 para UTC-3 (America/Sao_Paulo) antes de qualquer comparação de dia.
 """
 import json
+import os
 import statistics
 import sys
 from datetime import date, datetime, timedelta, timezone
@@ -693,6 +694,9 @@ ul{list-style:none}
 .plabel{font-size:12.5px;color:var(--muted);margin:0 0 14px}
 
 /* aba LOG — bloco de notas */
+.btn-novolog{display:inline-block;font:600 13px/1 system-ui;padding:11px 18px;
+ border-radius:20px;background:var(--s1);color:#fff;text-decoration:none;white-space:nowrap}
+.btn-novolog:hover{opacity:.88}
 .logs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 @media(max-width:900px){.logs{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.logs{grid-template-columns:1fr}}
@@ -995,7 +999,7 @@ function abrirLog(i){
  if(!l)return;
  $("m-titulo").textContent=l.t;
  $("m-data").textContent=l.d?fmtBR(l.d):"";
- $("m-texto").textContent=l.x||"(nota sem conteúdo — o texto fica no corpo da página do Notion)";
+ $("m-texto").textContent=l.x||"(nota sem texto — escreva no campo Nota do formulário ou no corpo da página do Notion)";
  var a=$("m-link");
  if(l.u){a.href=l.u;a.hidden=false}else{a.hidden=true}
  $("m-log").hidden=false;
@@ -1064,6 +1068,15 @@ def carregar_logs(caminho="logs.json"):
 
 def bloco_logs(logs):
     """Caixinhas da aba LOG + JSON com os textos para o modal."""
+    # Link do formulário do Notion ("Novo log"): quem abre o painel escreve
+    # por ali e a nota cai direto no banco de LOG — sem token no site.
+    form_url = os.environ.get("LOG_FORM_URL", "").strip()
+    if form_url:
+        log_novo = ('<a class="btn-novolog" href="%s" target="_blank" rel="noopener">'
+                    '+ Novo log</a>' % esc(form_url))
+    else:
+        log_novo = ('<span style="font-size:12px;color:var(--muted)">botão "+ Novo log" '
+                    'aparece quando o secret LOG_FORM_URL for configurado</span>')
     if not logs:
         caixas = ('<p class="empty">Nenhum log ainda. Para criar o primeiro, abra o banco '
                   '<b>📓 LOG — Audiovisual</b> no Notion e adicione uma página: o título '
@@ -1083,7 +1096,7 @@ def bloco_logs(logs):
         caixas = '<div class="logs">%s</div>' % "".join(partes)
     dados = [{"t": l.get("titulo") or "(sem título)", "d": l.get("data"),
               "u": l.get("url"), "x": l.get("texto") or ""} for l in logs]
-    return dict(log_n=len(logs), log_caixas=caixas,
+    return dict(log_n=len(logs), log_caixas=caixas, log_novo=log_novo,
                 logs_json=json.dumps(dados, ensure_ascii=False, separators=(",", ":")))
 
 
@@ -1793,10 +1806,14 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 <!-- ==================== LOG ==================== -->
 <section id="tab-log" hidden>
 
-<p class="plabel">Bloco de notas da operação. Cada página do banco
-<b>📓 LOG — Audiovisual</b> (Notion) vira uma caixinha aqui — clique para abrir.
-Registros de decisão, combinados com cliente, aprendizados: o que precisar ficar
-anotado e à mão. <span class="count">%(log_n)d</span> log(s).</p>
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
+  flex-wrap:wrap;margin-bottom:16px">
+  <p class="plabel" style="margin:0;flex:1;min-width:260px">Bloco de notas da operação.
+  Escreva pelo botão ao lado — a nota é gravada no banco <b>📓 LOG — Audiovisual</b>
+  (Notion) e vira uma caixinha aqui na atualização seguinte do painel (até 1h).
+  Também dá para escrever direto no Notion. <span class="count">%(log_n)d</span> log(s).</p>
+  %(log_novo)s
+</div>
 
 %(log_caixas)s
 

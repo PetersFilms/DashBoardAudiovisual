@@ -124,17 +124,25 @@ def main():
             pr = p.get("properties", {})
             titulo = None
             data = None
+            nota = None
             for prop in pr.values():
                 if prop.get("type") == "title":
                     titulo = texto_rico(prop.get("title")) or None
                 elif prop.get("type") == "date" and prop.get("date"):
                     data = prop["date"].get("start")
+                elif prop.get("type") == "rich_text":
+                    # campo "Nota": é onde o formulário "+ Novo log" grava o texto
+                    nota = texto_rico(prop.get("rich_text")) or None
             criado = p.get("created_time")
+            # o texto do log pode vir do campo Nota (formulário) e/ou do corpo
+            # da página (nota escrita direto no Notion) — mostra os dois
+            corpo = corpo_da_pagina(p["id"], token)
+            texto = "\n\n".join(t for t in (nota, corpo) if t)
             logs.append({
                 "titulo": titulo or "(sem título)",
                 "data": (data or criado or "")[:10] or None,
                 "url": p.get("url"),
-                "texto": corpo_da_pagina(p["id"], token),
+                "texto": texto,
             })
         logs.sort(key=lambda x: x["data"] or "", reverse=True)
         saida["logs"] = logs

@@ -72,6 +72,9 @@ jobs:
         run: python fetch_notion.py
 
       - name: Gerar o painel
+        env:
+          # link do formulário "Novo log" do Notion — vira o botão da aba LOG
+          LOG_FORM_URL: ${{ secrets.LOG_FORM_URL }}
         run: python gerar_dashboard.py cards.json index.html
 
       - name: Commitar se algo mudou
