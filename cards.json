@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-08T10:03:34-03:00",
+ "gerado_em": "2026-09-08T10:19:20-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7335,7 +7335,7 @@
   {
    "titulo": "[EVOLVE] SHOWROOM",
    "cliente": "EVOLVE",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7345,7 +7345,7 @@
    "complexidade": "Básico",
    "prazo": "2026-09-07",
    "ed_ini": "2026-09-04T14:49:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-09-08T10:16:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-03",
