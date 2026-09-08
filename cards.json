@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-08T16:06:04-03:00",
+ "gerado_em": "2026-09-08T19:07:48-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7254,7 +7254,7 @@
   {
    "titulo": "[HAGUE] BOTECO ASIÁTICO",
    "cliente": "HAGUE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7355,7 +7355,7 @@
   {
    "titulo": "[PIKOLIN] FEIRÃO",
    "cliente": "PIKOLIN",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7591,7 +7591,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO (AMBIENTE)",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7627,7 +7627,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7645,7 +7645,7 @@
   {
    "titulo": "[HAGUE] CAPTAÇÃO",
    "cliente": "HAGUE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7663,7 +7663,7 @@
   {
    "titulo": "[PIKOLIN] CAPTAÇÃO",
    "cliente": "PIKOLIN",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7681,7 +7681,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7717,7 +7717,7 @@
   {
    "titulo": "[LUME] CAPTAÇÃO",
    "cliente": "LUME",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7753,7 +7753,7 @@
   {
    "titulo": "[RICHARD] CAPTAÇÃO (PIÇARRAS)",
    "cliente": "RICHARD",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7827,7 +7827,7 @@
   {
    "titulo": "CAPTAÇÃO — Captação Glar - Febratex",
    "cliente": null,
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7845,7 +7845,7 @@
   {
    "titulo": "[HOMENZ] CAPTAÇÃO",
    "cliente": "HOMENZ",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7863,7 +7863,7 @@
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] CAPTAÇÃO",
    "cliente": "EMPÓRIO DAS PEDRAS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7881,7 +7881,7 @@
   {
    "titulo": "[GRANADA] CAPTAÇÃO",
    "cliente": "GRANADA",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -7935,7 +7935,7 @@
   {
    "titulo": "[JARDIM] CAPTAÇÃO",
    "cliente": "JARDIM",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
