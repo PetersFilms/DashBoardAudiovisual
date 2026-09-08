@@ -58,6 +58,13 @@ jobs:
           FORCAR_SYNC: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python criar_cards_captacao.py
 
+      - name: Ler o LOG do Notion
+        continue-on-error: true
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_LOG_DB: ${{ secrets.NOTION_LOG_DB }}
+        run: python fetch_logs.py
+
       - name: Recarregar os cards, já com os recém-criados
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
@@ -65,13 +72,16 @@ jobs:
         run: python fetch_notion.py
 
       - name: Gerar o painel
+        env:
+          # link do formulário "Novo log" do Notion — vira o botão da aba LOG
+          LOG_FORM_URL: ${{ secrets.LOG_FORM_URL }}
         run: python gerar_dashboard.py cards.json index.html
 
       - name: Commitar se algo mudou
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html cards.json captacoes.json captacoes_criadas.json
+          git add index.html cards.json captacoes.json captacoes_criadas.json logs.json
           if git diff --staged --quiet; then
             echo "Nada mudou desde a última rodada — sem commit."
             exit 0
