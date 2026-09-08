@@ -1,4 +1,23 @@
 {
- "gerado_em": "2026-09-08T09:52:16-03:00",
- "logs": []
+ "gerado_em": "2026-09-08T10:03:33-03:00",
+ "logs": [
+  {
+   "titulo": "(sem título)",
+   "data": "2026-09-08",
+   "url": "https://app.notion.com/p/3d51e7f422b980d4b72fd7732f6ba05f",
+   "texto": ""
+  },
+  {
+   "titulo": "(sem título)",
+   "data": "2026-09-05",
+   "url": "https://app.notion.com/p/3d21e7f422b980f3bf2ae9a03365deab",
+   "texto": ""
+  },
+  {
+   "titulo": "Como usar este LOG",
+   "data": "2026-09-05",
+   "url": "https://app.notion.com/p/Como-usar-este-LOG-3d21e7f422b9816bb45acdb1180ce16d",
+   "texto": "Este banco é o bloco de notas do painel.\nO jeito principal de escrever é pelo próprio painel: o botão + Novo log na aba LOG abre um formulário — título, texto da nota e data opcional. A resposta cai aqui como uma nova página e vira uma caixinha clicável no painel na atualização seguinte (até 1h).\nTambém dá para escrever direto aqui no Notion:\n• O título da página é o nome da caixinha.\n• O texto pode ficar no campo Nota ou no corpo da página — o painel mostra os dois.\n• A Data pode ficar vazia; o painel usa a data de criação.\nPode apagar esta nota quando quiser."
+  }
+ ]
 }
