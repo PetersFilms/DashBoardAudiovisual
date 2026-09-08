@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-08T12:34:22-03:00",
+ "gerado_em": "2026-09-08T16:06:01-03:00",
  "captacoes": [
   {
    "data": "2026-07-25",
@@ -218,10 +218,22 @@
    "cliente": "GLAR"
   },
   {
+   "data": "2026-09-14",
+   "hora": "13:30",
+   "titulo": "Captação Evolve - câmera e stories",
+   "cliente": "EVOLVE"
+  },
+  {
    "data": "2026-09-15",
    "hora": "13:00",
    "titulo": "Captação - HomenZ",
    "cliente": "HOMENZ"
+  },
+  {
+   "data": "2026-09-30",
+   "hora": "12:00",
+   "titulo": "Captação- Cunha",
+   "cliente": "CUNHA"
   },
   {
    "data": "2026-11-07",
