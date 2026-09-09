@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-09T11:52:41-03:00",
+ "gerado_em": "2026-09-09T14:33:14-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7371,6 +7371,106 @@
    "gravado": "2026-09-03",
    "publicacao": "2026-09-10",
    "url": "https://app.notion.com/p/PIKOLIN-FEIR-O-3d01e7f422b980b68ef2c73369663c58"
+  },
+  {
+   "titulo": "[LAPIDATO] FER 02",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-09",
+   "publicacao": "2026-09-15",
+   "url": "https://app.notion.com/p/LAPIDATO-FER-02-3d61e7f422b980e48b71d7e1cc78d6f6"
+  },
+  {
+   "titulo": "[LAPIDATO] MONI 01",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-09",
+   "publicacao": "2026-09-15",
+   "url": "https://app.notion.com/p/LAPIDATO-MONI-01-3d61e7f422b9801ea13aeab3031cd63e"
+  },
+  {
+   "titulo": "[LAPIDATO] MONI 02",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-09",
+   "publicacao": "2026-09-15",
+   "url": "https://app.notion.com/p/LAPIDATO-MONI-02-3d61e7f422b980248c1debe0ab883247"
+  },
+  {
+   "titulo": "[LAPIDATO] FER 03",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-09",
+   "publicacao": "2026-09-15",
+   "url": "https://app.notion.com/p/LAPIDATO-FER-03-3d61e7f422b980eda1e0eb0a21c5e6ba"
+  },
+  {
+   "titulo": "[LAPIDATO] FER 01",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-09",
+   "publicacao": "2026-09-15",
+   "url": "https://app.notion.com/p/LAPIDATO-FER-01-3d61e7f422b9809aa281da7cc1e30077"
   },
   {
    "titulo": "[MABOOH] LOOK COMING SOON",
