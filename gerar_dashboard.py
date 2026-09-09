@@ -557,6 +557,7 @@ def dados_js(cfg, hoje, todos):
             "cl": c.get("cliente"),
             "r": c.get("responsavel"),
             "c": c.get("categoria"),
+            "cs": c["_cats"],
             "st": st,
             "p": d10(c["_prazo"]),
             "f": d10(c["_fim"].date() if c["_fim"] else None),
@@ -719,6 +720,7 @@ ul{list-style:none}
 .chip{font:600 12px/1 system-ui;padding:7px 12px;border-radius:16px;border:1px solid var(--ring);
  background:var(--surface);color:var(--ink2);cursor:pointer}
 .chip.on{background:var(--s1);border-color:var(--s1);color:#fff}
+.chip.cat.on{background:var(--s3);border-color:var(--s3)}
 .range{display:flex;gap:8px;align-items:center;font-size:12.5px;color:var(--ink2);flex-wrap:wrap;
  margin-bottom:16px}
 .range input{font:13px system-ui;padding:6px 8px;border:1px solid var(--ring);border-radius:8px;
@@ -814,7 +816,7 @@ var PERIODOS={
 };
 
 function setChip(key){
- document.querySelectorAll(".chip").forEach(function(b){b.classList.toggle("on",b.dataset.k===key)});
+ document.querySelectorAll(".chip:not(.cat)").forEach(function(b){b.classList.toggle("on",b.dataset.k===key)});
 }
 function aplicarPeriodo(key){
  var p=PERIODOS[key]();
@@ -831,13 +833,45 @@ function aplicarCustom(){
 }
 function inR(x,a,b){return x&&x>=a&&x<=b}
 
+/* ---------- filtro de categoria (aba de período) ---------- */
+var FILTRO_CAT={};          /* {nome:true}; vazio = todas */
+var ULTIMO=null;            /* [a,b,label] do último render, para reaplicar ao mudar o filtro */
+function cardsFiltrados(){
+ var ks=Object.keys(FILTRO_CAT);
+ if(!ks.length)return D.cards;
+ return D.cards.filter(function(c){var cs=c.cs&&c.cs.length?c.cs:(c.c?[c.c]:["(sem categoria)"]);
+  return cs.some(function(k){return FILTRO_CAT[k]})});
+}
+function montarChipsCat(){
+ var cont={};
+ D.cards.forEach(function(c){var cs=c.cs&&c.cs.length?c.cs:(c.c?[c.c]:["(sem categoria)"]);
+  cs.forEach(function(k){cont[k]=(cont[k]||0)+1})});
+ var ks=Object.keys(cont).sort(function(x,y){return cont[y]-cont[x]});
+ var h='<button class="chip cat on" data-c="" onclick="setCat(\'\')">Todas as categorias</button>';
+ ks.forEach(function(k){h+='<button class="chip cat" data-c="'+esc(k)+'" onclick="setCat(this.dataset.c)">'+esc(k)+
+  ' <span style="opacity:.6;font-weight:500">'+cont[k]+'</span></button>'});
+ $("cat-chips").innerHTML=h;
+}
+function setCat(k){
+ if(!k){FILTRO_CAT={}}
+ else if(FILTRO_CAT[k]){delete FILTRO_CAT[k]}
+ else{FILTRO_CAT[k]=true}
+ var ks=Object.keys(FILTRO_CAT);
+ document.querySelectorAll(".chip.cat").forEach(function(b){
+  b.classList.toggle("on", b.dataset.c===""?!ks.length:!!FILTRO_CAT[b.dataset.c])});
+ if(ULTIMO)render(ULTIMO[0],ULTIMO[1],ULTIMO[2]);
+}
 function render(a,b,label){
- $("p-label").textContent="Período: "+fmtBR(a)+" a "+fmtBR(b)+" — "+label+".";
+ ULTIMO=[a,b,label];
+ var CARDS=cardsFiltrados();
+ var ks=Object.keys(FILTRO_CAT);
+ var sufixo=ks.length?" · só "+ks.join(" + ")+" ("+CARDS.length+" cards no histórico)":"";
+ $("p-label").textContent="Período: "+fmtBR(a)+" a "+fmtBR(b)+" — "+label+sufixo+".";
  /* Reprovado não conta como entrega: o vídeo foi descartado */
- var ent=D.cards.filter(function(c){return inR(c.f,a,b)&&c.st!=="rep"});
+ var ent=CARDS.filter(function(c){return inR(c.f,a,b)&&c.st!=="rep"});
  var du=Math.max(1,diasUteis(a,b));
  /* cards que pertencem ao período (por prazo ou por entrega) */
- var noPer=D.cards.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)});
+ var noPer=CARDS.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)});
 
  /* tile: entregues */
  $("t-ent").textContent=ent.length;
@@ -913,7 +947,7 @@ function render(a,b,label){
  var cEd=ent.filter(function(c){return c.de!=null});
  var ded=cEd.map(function(c){return c.de});
  pintaDur("t-ded",ded,"entrega(s) com Edição Início e Fim");
- var cAl=D.cards.filter(function(c){return inR(c.ad,a,b)&&c.da!=null});
+ var cAl=CARDS.filter(function(c){return inR(c.ad,a,b)&&c.da!=null});
  var dal=cAl.map(function(c){return c.da});
  pintaDur("t-dal",dal,"alteração(ões) concluída(s) no período");
  CALC_PER.ded=cEd.map(function(c){return {t:c.t,u:c.u,i:c.ei,f:c.ef,mn:c.de}});
@@ -961,7 +995,7 @@ function render(a,b,label){
  grafico(ent,a,b);
 
  /* tabela */
- var rows=D.cards.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)||inR(c.d,a,b)});
+ var rows=CARDS.filter(function(c){return inR(c.p,a,b)||inR(c.f,a,b)||inR(c.d,a,b)});
  rows.sort(function(x,y){return (x.p||x.f||"9999")<(y.p||y.f||"9999")?-1:1});
  var EST={fin:"Finalizado",apr:"Em aprovação",exe:"Em execução",todo:"A fazer",rep:"Reprovado"};
  var html="";
@@ -1102,7 +1136,7 @@ function abrirCalc(chave){
   calcHTML(rows,f[2],f[3]), null);
 }
 
-document.addEventListener("DOMContentLoaded",function(){aplicarPeriodo("mes")});
+document.addEventListener("DOMContentLoaded",function(){montarChipsCat();aplicarPeriodo("mes")});
 """
 
 
@@ -1672,6 +1706,7 @@ def render(m, dados, todos):
   <input type="date" id="d-ini"> <span>até</span> <input type="date" id="d-fim">
   <button class="btn" onclick="aplicarCustom()">Aplicar</button>
 </div>
+<div class="chips" id="cat-chips" style="margin-top:-6px"></div>
 <p class="plabel" id="p-label"></p>
 
 <div class="grid g3" style="margin-bottom:14px">
