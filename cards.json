@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-09T14:55:56-03:00",
+ "gerado_em": "2026-09-09T15:02:26-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7223,7 +7223,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-02",
-   "ed_ini": null,
+   "ed_ini": "2026-09-02T08:00:00.000-03:00",
    "ed_fim": "2026-09-02T09:36:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
@@ -7524,7 +7524,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-16",
-   "ed_ini": null,
+   "ed_ini": "2026-09-08T15:48:00.000-03:00",
    "ed_fim": "2026-09-08T14:03:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
