@@ -181,12 +181,22 @@ def preparar(cfg):
                         if c["_ini"] and c["_fim"] else None)
         c["_dur_alt"] = (abs((c["_alt_f"] - c["_alt_i"]).total_seconds()) / 60
                          if c["_alt_i"] and c["_alt_f"] else None)
-        if c["_prazo"] and c["_fim"]:
-            c["_atraso"] = (c["_fim"].date() - c["_prazo"]).days
-        elif c["_prazo"] and not c["_final"]:
-            c["_atraso"] = (hoje - c["_prazo"]).days
-        else:
-            c["_atraso"] = None
+        # Atraso de verdade é medido contra a PUBLICAÇÃO, quando preenchida:
+        # o Prazo é uma data interna, propositalmente mais curta, para
+        # garantir que o vídeo vá ao ar no dia certo. Sem Publicação, vale o
+        # Prazo. O atraso contra o prazo interno fica guardado à parte.
+        c["_ref"] = c["_pub"] or c["_prazo"]
+
+        def _dias(base):
+            if not base:
+                return None
+            if c["_fim"]:
+                return (c["_fim"].date() - base).days
+            if not c["_final"]:
+                return (hoje - base).days
+            return None
+        c["_atraso"] = _dias(c["_ref"])          # real (publicação, ou prazo se não houver)
+        c["_atraso_int"] = _dias(c["_prazo"])    # contra o prazo interno
         todos.append(c)
 
     # Prazo previsto a partir da captação, para os cards que ainda não têm
@@ -268,10 +278,14 @@ def montar(cfg, agora, hoje, todos):
     sem_resp = len([c for c in concluidos if not c.get("responsavel")])
     total_atr = sum(dist.values())
 
-    # ---- alertas
-    vence_hoje = [c for c in fila if c["_prazo"] == hoje]
-    atrasados = sorted([c for c in fila if c["_prazo"] and c["_prazo"] < hoje],
-                       key=lambda c: c["_prazo"])
+    # ---- alertas (atraso real = contra a Publicação quando ela existe)
+    vence_hoje = [c for c in fila if c["_ref"] == hoje]
+    atrasados = sorted([c for c in fila if c["_ref"] and c["_ref"] < hoje],
+                       key=lambda c: c["_ref"])
+    # passou do prazo interno, mas a publicação ainda está a salvo
+    folga_curta = sorted([c for c in fila if c["_prazo"] and c["_prazo"] < hoje
+                          and c["_pub"] and c["_pub"] >= hoje],
+                         key=lambda c: c["_pub"])
     sem_dono = [c for c in cards if not c.get("responsavel") and not c["_final"]]
 
     # ---- furos de tempo: o que impede medir edição e alteração
@@ -309,7 +323,7 @@ def montar(cfg, agora, hoje, todos):
                 total_atr=total_atr, meta_dist=cfg["meta_dist"],
                 meta_antec=cfg.get("meta_antecedencia_dias", 30),
                 vence_hoje=vence_hoje, atrasados=atrasados, sem_dono=sem_dono,
-                reprovados=reprovados,
+                reprovados=reprovados, folga_curta=folga_curta,
                 sem_t_ed=sem_t_ed, sem_t_alt=sem_t_alt, f_ontem=f_ontem,
                 f_hoje_ok=f_hoje_ok, f_amanha=f_amanha, f_prox=f_prox,
                 prox_data=prox_data, serie=serie, cards=cards, mes_lab=cfg["mes_ref"],
@@ -462,7 +476,7 @@ def comentario(m):
 
     if m["atrasados"]:
         n = len(m["atrasados"])
-        idade = (m["hoje"] - m["atrasados"][0]["_prazo"]).days
+        idade = (m["hoje"] - m["atrasados"][0]["_ref"]).days
         notas.append((2 if (n >= 4 or idade >= 7) else 1,
                       "Há %d card(s) atrasado(s), o mais antigo há %d dia(s) — "
                       "priorizar antes de puxar coisa nova." % (n, idade)))
@@ -549,6 +563,7 @@ def dados_js(cfg, hoje, todos):
             "d": d10(c["_grav"]),
             "pb": d10(c["_pub"]),
             "atr": c["_atraso"],
+            "ati": c["_atraso_int"],
             "cx": c["_peso"],
             "de": round(c["_dur_ed"]) if c["_dur_ed"] is not None else None,
             "da": round(c["_dur_alt"]) if c["_dur_alt"] is not None else None,
@@ -834,7 +849,7 @@ function render(a,b,label){
  var pct=cp.length?Math.round(100*np.length/cp.length):null;
  $("t-prz").textContent=pct==null?"—":pct+"%";
  $("t-prz").style.color=pct==null?"":(pct>=85?"var(--good)":pct>=70?"var(--warn)":"var(--crit)");
- $("t-prz-note").textContent=cp.length?np.length+" de "+cp.length+" entregas dentro do prazo":"nenhuma entrega com prazo no período";
+ $("t-prz-note").textContent=cp.length?np.length+" de "+cp.length+" entregas dentro da data · Publicação quando preenchida, senão Prazo":"nenhuma entrega com prazo no período";
 
  /* tile: dias entre a gravação (campo Data) e o fim da edição */
  var ca=ent.filter(function(c){return c.d});
@@ -952,6 +967,7 @@ function render(a,b,label){
  var html="";
  rows.forEach(function(c){
   var at=c.atr,atx=at==null?"—":(at<=0?"no prazo":"+"+at+" d");
+  if(at!=null&&at<=0&&c.ati!=null&&c.ati>0)atx='no prazo <span style="color:var(--muted);font-weight:400">(interno +'+c.ati+' d)</span>';
   var cor=(at!=null&&at>0)?' style="color:var(--crit);font-weight:600"':'';
   var est=c.st==="rep"?'<span style="color:var(--crit);font-weight:600">Reprovado</span>':EST[c.st];
   html+="<tr><td><a href=\""+esc(c.u||"#")+"\" target=\"_blank\" rel=\"noopener\">"+esc(c.t)+"</a></td><td>"+
@@ -1400,11 +1416,20 @@ def render(m, dados, todos):
                                     esc(" · ".join(c["titulo"] for c in m["vence_hoje"])))))
     if m["atrasados"]:
         pior = m["atrasados"][0]
-        al.append(('i-crit', '!', "<b>%d card(s) atrasados</b>, o mais antigo há %d dia(s)."
+        al.append(('i-crit', '!', "<b>%d card(s) atrasados de fato</b> (passaram da Publicação, ou do "
+                   "Prazo quando não há Publicação), o mais antigo há %d dia(s)."
                    '<button class="btnlink" onclick="showTab(\'dados\',\'sec-atraso\')">ver quais →</button>'
-                   "<em>%s — prazo %s</em>" % (len(m["atrasados"]),
-                                               (m["hoje"] - pior["_prazo"]).days,
-                                               esc(pior["titulo"]), fmt(pior["_prazo"]))))
+                   "<em>%s — %s %s</em>" % (len(m["atrasados"]),
+                                            (m["hoje"] - pior["_ref"]).days,
+                                            esc(pior["titulo"]),
+                                            "publicação" if pior["_pub"] else "prazo", fmt(pior["_ref"]))))
+    if m["folga_curta"]:
+        prox = m["folga_curta"][0]
+        al.append(('i-warn', '~', "<b>%d card(s) passaram do prazo interno</b>, mas a publicação ainda "
+                   "está a salvo. Prioridade da fila, não atraso."
+                   "<em>%s — publica em %s (%d dia(s) de margem)</em>"
+                   % (len(m["folga_curta"]), esc(prox["titulo"]), fmt(prox["_pub"]),
+                      (prox["_pub"] - m["hoje"]).days)))
     if m["reprovados"]:
         al.append(('i-info', '✕', "<b>%d vídeo(s) reprovados no mês</b>: feitos e descartados; "
                    "o refazer nasce de nova captação, em card novo."
@@ -1446,7 +1471,8 @@ def render(m, dados, todos):
         bloco_amanha = '<p class="empty">Nada previsto para %s nem adiante.</p>' % amanha_lab
 
     prazo_txt = ("%d%%" % m["pct_prazo"]) if m["pct_prazo"] is not None else "—"
-    prazo_note = ("%d de %d entregas dentro da data" % (len(m["no_prazo"]), len(m["com_prazo"]))
+    prazo_note = ("%d de %d entregas dentro da data · medido pela Publicação quando "
+                  "preenchida, senão pelo Prazo" % (len(m["no_prazo"]), len(m["com_prazo"]))
                   if m["com_prazo"] else "sem base de comparação ainda")
     prazo_cor = "var(--good)" if (m["pct_prazo"] or 0) >= 85 else (
         "var(--warn)" if (m["pct_prazo"] or 0) >= 70 else "var(--crit)")
@@ -1473,9 +1499,10 @@ def render(m, dados, todos):
                       extra=lambda c: " · %s" % _falta_alt(c))
 
     # atrasados: do mais antigo para o mais novo, com o tamanho do atraso
-    lista_atras = lista(m["atrasados"], "Nenhum card atrasado. 🎉",
-                        extra=lambda c: " · prazo %s · <b style='color:var(--crit)'>+%d d</b>"
-                        % (fmt(c["_prazo"], False), (m["hoje"] - c["_prazo"]).days))
+    lista_atras = lista(m["atrasados"], "Nenhum card atrasado de fato. 🎉",
+                        extra=lambda c: " · %s %s · <b style='color:var(--crit)'>+%d d</b>"
+                        % ("publicação" if c["_pub"] else "prazo", fmt(c["_ref"], False),
+                           (m["hoje"] - c["_ref"]).days))
 
     # reprovados: com o prazo original, para dar noção da urgência
     lista_reprov = lista(m["reprovados"], "Nenhum vídeo reprovado no mês. 🎉",
@@ -1839,8 +1866,9 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 <div class="card" id="sec-atraso" style="margin-bottom:14px">
   <h2>Cards atrasados <span class="count">%(n_atras)d</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
-  Passaram do Prazo e ainda não saíram da edição. Do mais antigo para o mais novo —
-  o de cima é o que mais precisa de atenção.</p>
+  Passaram da data de <b>Publicação</b> (ou do Prazo, quando não há Publicação) e ainda
+  não saíram da edição. O Prazo interno é propositalmente mais curto e não conta como
+  atraso sozinho. Do mais antigo para o mais novo.</p>
   %(lista_atras)s
 </div>
 
@@ -1918,7 +1946,7 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 %(n_todos)d cards no histórico completo (desde o primeiro registro).
 Horários convertidos para America/São_Paulo (UTC−3). &quot;Entregues&quot; = cards com Edição Fim preenchida,
 incluindo os que aguardam aprovação, mas não os reprovados (vídeo feito e descartado; o refazer
-é card novo, de nova captação). Pontualidade compara Edição Fim com Prazo.<br>
+é card novo, de nova captação). Pontualidade compara Edição Fim com a <b>Publicação</b> (o Prazo é interno e mais curto de propósito); sem Publicação, compara com o Prazo.<br>
 Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
 
 </div>
