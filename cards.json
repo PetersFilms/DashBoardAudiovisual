@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-08T19:07:48-03:00",
+ "gerado_em": "2026-09-08T21:48:52-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7412,27 +7412,6 @@
    "gravado": "2026-09-02",
    "publicacao": "2026-09-18",
    "url": "https://app.notion.com/p/MABOOH-LOOKS-VERTICAIS-ONE-TAKE-COLE-O-RAIZES-3d11e7f422b98019bfabe439bf1ad099"
-  },
-  {
-   "titulo": "[MABOOH] LOOKS HORIZONTAIS",
-   "cliente": "MABOOH",
-   "status": "À Fazer Maila",
-   "fase": null,
-   "responsavel": "Maila",
-   "categoria": "Site",
-   "categorias": [
-    "Site",
-    "Banner"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-09-16",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-09-02",
-   "publicacao": "2026-09-22",
-   "url": "https://app.notion.com/p/MABOOH-LOOKS-HORIZONTAIS-3d11e7f422b980498bb1fbee52939000"
   },
   {
    "titulo": "[MABOOH] DESFILE HORIZONTAL",
