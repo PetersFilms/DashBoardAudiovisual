@@ -26,8 +26,9 @@ FINALIZADO = {"Aprovado/Finalizado", "Drive"}
 EM_APROVACAO = {"Pré Aprovação"}
 EM_EXECUCAO = {"Executando", "Alteração", "Alterado"}
 EM_ALTERACAO = {"Alteração", "Alterado"}
-# Reprovado = voltou da aprovação e precisa de nova versão. Não é entregue
-# nem está "em execução" — é uma fila própria, que pede ação.
+# Reprovado = o vídeo foi feito e não será usado; o refazer nasce de uma nova
+# captação, em card novo. Este card fica só como marcação: não é entrega,
+# não está em aberto e não entra na agenda de publicação.
 REPROVADO = {"Reprovado"}
 
 # Complexidade vira número para permitir média. Escala de 1 a 3.
@@ -221,9 +222,9 @@ def montar(cfg, agora, hoje, todos):
     du_total = dias_uteis(prim, ult)
     du_corridos = dias_uteis(prim, min(hoje, ult))
 
-    execu = [c for c in cards if c["_exec"] and not c["_final"]]
-    # Reprovado não é entrega: mesmo com Edição Fim preenchida, o vídeo
-    # voltou e precisa de nova versão — sai dos entregues e conta como aberto.
+    execu = [c for c in cards if c["_exec"] and not c["_final"] and not c["_reprov"]]
+    # Reprovado não é entrega (o vídeo foi descartado) nem está em aberto
+    # (o refazer é um card novo, de nova captação). Só fica marcado.
     reprovados = sorted([c for c in cards if c["_reprov"]],
                         key=lambda c: (c["_prazo"] or date(2099, 1, 1), c["titulo"]))
     concluidos = [c for c in cards if c["_fim"] and not c["_reprov"]]
@@ -351,6 +352,8 @@ def agenda_pub(todos, hoje, fim):
     inicio_mes = date(hoje.year, hoje.month, 1)
     confirmados, pendentes, fora, anuncios = [], [], [], []
     for c in todos:
+        if c["_reprov"]:
+            continue                                    # descartado: não vai ao ar
         if c["_pub"]:
             if inicio_mes <= c["_pub"] <= fim:
                 confirmados.append(c)
@@ -466,9 +469,9 @@ def comentario(m):
 
     if m["reprovados"]:
         n = len(m["reprovados"])
-        notas.append((2 if n >= 3 else 1,
-                      "%d card(s) reprovado(s) esperando nova versão — cada um deles "
-                      "é uma entrega que saiu da conta até ser refeita." % n))
+        notas.append((1 if n >= 3 else 0,
+                      "%d vídeo(s) reprovado(s) no mês: trabalho feito e descartado, "
+                      "refeito a partir de nova captação. Não contam como entrega." % n))
 
     if m["pct_prazo"] is not None and m["pct_prazo"] < 85:
         notas.append((2 if m["pct_prazo"] < 60 else 1,
@@ -507,6 +510,19 @@ def comentario(m):
 
 # ---------------------------------------------------------------- dados p/ JS
 
+def dm(v):
+    """datetime local -> 'YYYY-MM-DDTHH:MM' (sem fuso: já está em UTC-3)."""
+    return v.strftime("%Y-%m-%dT%H:%M") if v else None
+
+
+def linhas_calc(cards, ini, fim, dur):
+    """Linhas do 'como é calculado': um dicionário por card com início, fim e
+    duração em minutos, já no formato que o JS espera."""
+    return [{"t": c.get("titulo") or "(sem título)", "u": c.get("url"),
+             "i": dm(c[ini]), "f": dm(c[fim]), "mn": round(c[dur])}
+            for c in cards if c[dur] is not None]
+
+
 def dados_js(cfg, hoje, todos):
     def d10(v):
         return v.isoformat() if v else None
@@ -537,6 +553,9 @@ def dados_js(cfg, hoje, todos):
             "de": round(c["_dur_ed"]) if c["_dur_ed"] is not None else None,
             "da": round(c["_dur_alt"]) if c["_dur_alt"] is not None else None,
             "ad": d10(c["_alt_f"].date() if c["_alt_f"] else None),
+            # horários de início/fim (hora local) para o "como é calculado"
+            "ei": dm(c["_ini"]), "ef": dm(c["_fim"]),
+            "ai": dm(c["_alt_i"]), "af": dm(c["_alt_f"]),
             "u": c.get("url"),
         })
     return {"hoje": hoje.isoformat(), "cards": cards,
@@ -650,6 +669,7 @@ ul{list-style:none}
 .btnlink{font:600 11.5px/1 system-ui;padding:5px 10px;border-radius:14px;border:1px solid var(--ring);
  background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap;margin-left:8px}
 .btnlink:hover{background:var(--grid)}
+.tile .note .btnlink{display:inline-block;margin:6px 0 0}
 
 .comment{font-size:14px;line-height:1.7;color:var(--ink)}
 .comment .sig{display:block;margin-top:10px;font-size:11.5px;color:var(--muted)}
@@ -798,7 +818,7 @@ function inR(x,a,b){return x&&x>=a&&x<=b}
 
 function render(a,b,label){
  $("p-label").textContent="Período: "+fmtBR(a)+" a "+fmtBR(b)+" — "+label+".";
- /* Reprovado não conta como entrega: voltou da aprovação e precisa de nova versão */
+ /* Reprovado não conta como entrega: o vídeo foi descartado */
  var ent=D.cards.filter(function(c){return inR(c.f,a,b)&&c.st!=="rep"});
  var du=Math.max(1,diasUteis(a,b));
  /* cards que pertencem ao período (por prazo ou por entrega) */
@@ -844,19 +864,19 @@ function render(a,b,label){
    "sozinho assim que houver entregas com ele preenchido";
  }
 
- /* em aberto e reprovados — retrato de agora, sobre os cards do período */
- var abertos=noPer.filter(function(c){return c.st==="rep"||(!c.f&&c.st!=="fin")});
+ /* em aberto (retrato de agora) e reprovados (só marcação), sobre os cards do período */
+ var abertos=noPer.filter(function(c){return !c.f&&c.st!=="fin"&&c.st!=="rep"});
  var nExe=abertos.filter(function(c){return c.st==="exe"}).length;
- var nRep=abertos.filter(function(c){return c.st==="rep"}).length;
+ var nRep=noPer.filter(function(c){return c.st==="rep"}).length;
  var nAtrHoje=abertos.filter(function(c){return c.p&&c.p<HOJE}).length;
  $("t-abe").textContent=abertos.length;
- $("t-abe-note").textContent=nExe+" em execução · "+(abertos.length-nExe-nRep)+
+ $("t-abe-note").textContent=nExe+" em execução · "+(abertos.length-nExe)+
   " a fazer · retrato de agora"+(nAtrHoje?" · "+nAtrHoje+" já passaram do prazo":"");
  $("t-rep").textContent=nRep;
  $("t-rep").style.color=nRep?"var(--crit)":"";
  $("t-rep-note").textContent=nRep?
-  "voltaram da aprovação e precisam de nova versão — não contam como entregues":
-  "nenhum card do período está reprovado";
+  "vídeos feitos e descartados, refeitos a partir de nova captação · não contam como entrega nem como aberto":
+  "nenhum vídeo reprovado no período";
 
  /* complexidade média — escala 1 a 3, sobre os cards com prazo no período */
  var cxs=noPer.filter(function(c){return c.cx}).map(function(c){return c.cx});
@@ -874,11 +894,15 @@ function render(a,b,label){
   $("t-cx-note").textContent="nenhum card do período tem Complexidade preenchida";
  }
 
- /* tempos médios */
- var ded=ent.filter(function(c){return c.de!=null}).map(function(c){return c.de});
+ /* tempos médios (e as linhas do "como é calculado") */
+ var cEd=ent.filter(function(c){return c.de!=null});
+ var ded=cEd.map(function(c){return c.de});
  pintaDur("t-ded",ded,"entrega(s) com Edição Início e Fim");
- var dal=D.cards.filter(function(c){return inR(c.ad,a,b)&&c.da!=null}).map(function(c){return c.da});
+ var cAl=D.cards.filter(function(c){return inR(c.ad,a,b)&&c.da!=null});
+ var dal=cAl.map(function(c){return c.da});
  pintaDur("t-dal",dal,"alteração(ões) concluída(s) no período");
+ CALC_PER.ded=cEd.map(function(c){return {t:c.t,u:c.u,i:c.ei,f:c.ef,mn:c.de}});
+ CALC_PER.dal=cAl.map(function(c){return {t:c.t,u:c.u,i:c.ai,f:c.af,mn:c.da}});
 
  /* distribuição por responsável */
  var por={},semR=0;
@@ -993,15 +1017,13 @@ function grafico(ent,a,b){
  $("p-xaxis").innerHTML=xs;
 }
 
-/* ---------- aba LOG: caixinhas que abrem em modal ---------- */
-function abrirLog(i){
- var l=(window.LOGS||[])[i];
- if(!l)return;
- $("m-titulo").textContent=l.t;
- $("m-data").textContent=l.d?fmtBR(l.d):"";
- $("m-texto").textContent=l.x||"(nota sem texto — escreva no campo Nota do formulário ou no corpo da página do Notion)";
+/* ---------- modal genérico (LOG e "como é calculado") ---------- */
+function abrirModal(titulo,sub,corpoHTML,link){
+ $("m-titulo").textContent=titulo;
+ $("m-data").textContent=sub||"";
+ $("m-texto").innerHTML=corpoHTML;
  var a=$("m-link");
- if(l.u){a.href=l.u;a.hidden=false}else{a.hidden=true}
+ if(link){a.href=link;a.hidden=false}else{a.hidden=true}
  $("m-log").hidden=false;
  document.body.style.overflow="hidden";
 }
@@ -1010,6 +1032,59 @@ function fecharLog(){
  document.body.style.overflow="";
 }
 document.addEventListener("keydown",function(e){if(e.key==="Escape")fecharLog()});
+
+/* aba LOG: caixinhas */
+function abrirLog(i){
+ var l=(window.LOGS||[])[i];
+ if(!l)return;
+ abrirModal(l.t, l.d?fmtBR(l.d):"",
+  esc(l.x||"(nota sem texto: escreva no campo Nota do formulário ou no corpo da página do Notion)"),
+  l.u);
+}
+
+/* ---------- "como é calculado": abre a conta do tempo médio ---------- */
+var CALC_PER={};   /* preenchido pelo render() da aba de período */
+function fmtDT(s){return s?s.slice(8,10)+"/"+s.slice(5,7)+" "+s.slice(11,16):"—"}
+function calcHTML(rows,tipo,escopo){
+ var campoI=tipo==="ed"?"Edição Início":"Alteração Início";
+ var campoF=tipo==="ed"?"Edição Fim":"Alteração Fim";
+ var nome=tipo==="ed"?"edição":"alteração";
+ if(!rows.length){
+  return '<div style="white-space:normal">Nenhum card '+escopo+' tem <b>'+campoI+'</b> e <b>'+campoF+
+   '</b> preenchidos ao mesmo tempo, então não há duração para calcular.</div>';
+ }
+ var v=rows.map(function(r){return r.mn}),soma=0;v.forEach(function(x){soma+=x});
+ var media=soma/v.length,med=mediana(v);
+ var ord=rows.slice().sort(function(a,b){return b.mn-a.mn});
+ var h='<div style="white-space:normal;font-size:13.5px;line-height:1.6">';
+ h+='<p style="margin-bottom:10px"><b>1.</b> Entram só os cards '+escopo+' que têm <b>'+campoI+'</b> e <b>'+
+  campoF+'</b> preenchidos: <b>'+rows.length+'</b> card(s). Quem tem só um dos dois fica fora (aparece em Pendências).</p>';
+ h+='<p style="margin-bottom:10px"><b>2.</b> Duração de cada card = '+campoF+' − '+campoI+', em <b>tempo de calendário</b>: '+
+  'relógio corrido, contando noite e fim de semana. Não é hora trabalhada. Se os dois horários foram preenchidos na ordem trocada, usa-se a diferença em valor absoluto.</p>';
+ h+='<p style="margin-bottom:10px"><b>3.</b> Média = soma das durações ÷ quantidade = <b>'+fmtDur(soma)+'</b> ÷ '+
+  rows.length+' = <b>'+fmtDur(media)+'</b>.</p>';
+ h+='<p style="margin-bottom:14px"><b>4.</b> Mediana = a duração do meio, com todas em ordem = <b>'+fmtDur(med)+
+  '</b>. Ela sofre menos com um card que atravessou vários dias, por isso as duas aparecem juntas.</p>';
+ h+='<table style="font-size:12.5px"><thead><tr><th>Card</th><th>'+campoI+'</th><th>'+campoF+'</th><th class=num>Duração</th></tr></thead><tbody>';
+ ord.forEach(function(r){
+  var longo=r.mn>media*2?';color:var(--serious);font-weight:600':'';
+  h+='<tr><td><a href="'+esc(r.u||"#")+'" target="_blank" rel="noopener">'+esc(r.t)+'</a></td><td style="white-space:nowrap">'+fmtDT(r.i)+
+   '</td><td style="white-space:nowrap">'+fmtDT(r.f)+'</td><td class=num style="white-space:nowrap'+longo+'">'+fmtDur(r.mn)+'</td></tr>';
+ });
+ h+='<tr><td colspan="3" style="text-align:right;color:var(--muted)">soma de '+rows.length+' card(s)</td><td class=num><b>'+
+  fmtDur(soma)+'</b></td></tr></tbody></table>';
+ h+='<p style="margin-top:10px;font-size:12px;color:var(--muted)">Em laranja: durações acima de 2× a média, as que mais puxam o número para cima.</p></div>';
+ return h;
+}
+function abrirCalc(chave){
+ var fontes={ded:[window.CALC||{}, "ded","ed","do mês"], dal:[window.CALC||{}, "dal","al","do mês"],
+             pded:[CALC_PER,"ded","ed","do período"], pdal:[CALC_PER,"dal","al","do período"]};
+ var f=fontes[chave]; if(!f)return;
+ var rows=f[0][f[1]]||[];
+ var titulo=(f[2]==="ed"?"Tempo médio por edição":"Tempo médio por alteração")+" · como é calculado";
+ abrirModal(titulo, f[3]==="do mês"?"cards com prazo no mês corrente":$("p-label").textContent.replace("Período: ",""),
+  calcHTML(rows,f[2],f[3]), null);
+}
 
 document.addEventListener("DOMContentLoaded",function(){aplicarPeriodo("mes")});
 """
@@ -1331,8 +1406,8 @@ def render(m, dados, todos):
                                                (m["hoje"] - pior["_prazo"]).days,
                                                esc(pior["titulo"]), fmt(pior["_prazo"]))))
     if m["reprovados"]:
-        al.append(('i-crit', '!', "<b>%d card(s) reprovados</b> — voltaram da aprovação e "
-                   "precisam de nova versão."
+        al.append(('i-info', '✕', "<b>%d vídeo(s) reprovados no mês</b>: feitos e descartados; "
+                   "o refazer nasce de nova captação, em card novo."
                    '<button class="btnlink" onclick="showTab(\'dados\',\'sec-reprov\')">ver quais →</button>'
                    "<em>%s</em>" % (len(m["reprovados"]),
                                     esc(" · ".join(c["titulo"] for c in m["reprovados"][:5])))))
@@ -1403,7 +1478,7 @@ def render(m, dados, todos):
                         % (fmt(c["_prazo"], False), (m["hoje"] - c["_prazo"]).days))
 
     # reprovados: com o prazo original, para dar noção da urgência
-    lista_reprov = lista(m["reprovados"], "Nenhum card reprovado no momento. 🎉",
+    lista_reprov = lista(m["reprovados"], "Nenhum vídeo reprovado no mês. 🎉",
                          extra=lambda c: " · prazo %s" % fmt(c["_prazo"], False)
                          if c["_prazo"] else "")
 
@@ -1466,18 +1541,20 @@ def render(m, dados, todos):
   <div class="card tile">
     <div class="lab">Em aberto no mês</div>
     <div class="val">%(n_aberto)d</div>
-    <div class="note">%(n_exec_ab)d em execução · %(n_fazer)d a fazer · %(n_reprov)d reprovado(s).<br>
+    <div class="note">%(n_exec_ab)d em execução · %(n_fazer)d a fazer · %(n_reprov)d reprovado(s) fora da conta.<br>
       Leitura por período fica na aba <b>Análise por Período</b>.</div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por edição</div>
     <div class="val">%(dur_ed_txt)s</div>
-    <div class="note">%(dur_ed_note)s</div>
+    <div class="note">%(dur_ed_note)s
+      <button class="btnlink" onclick="abrirCalc('ded')">como é calculado →</button></div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por alteração</div>
     <div class="val">%(dur_alt_txt)s</div>
-    <div class="note">%(dur_alt_note)s</div>
+    <div class="note">%(dur_alt_note)s
+      <button class="btnlink" onclick="abrirCalc('dal')">como é calculado →</button></div>
   </div>
   <div class="card tile">
     <div class="lab">Complexidade média</div>
@@ -1606,12 +1683,14 @@ def render(m, dados, todos):
   <div class="card tile">
     <div class="lab">Tempo médio por edição</div>
     <div class="val" id="t-ded">—</div>
-    <div class="note" id="t-ded-note"></div>
+    <div class="note"><span id="t-ded-note"></span>
+      <button class="btnlink" onclick="abrirCalc('pded')">como é calculado →</button></div>
   </div>
   <div class="card tile">
     <div class="lab">Tempo médio por alteração</div>
     <div class="val" id="t-dal">—</div>
-    <div class="note" id="t-dal-note"></div>
+    <div class="note"><span id="t-dal-note"></span>
+      <button class="btnlink" onclick="abrirCalc('pdal')">como é calculado →</button></div>
   </div>
   <div class="card tile">
     <div class="lab">Antecedência de publicação</div>
@@ -1766,11 +1845,11 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 </div>
 
 <div class="card" id="sec-reprov" style="margin-bottom:14px">
-  <h2>Cards reprovados <span class="count">%(n_reprov)d</span></h2>
+  <h2>Vídeos reprovados no mês <span class="count">%(n_reprov)d</span></h2>
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px;line-height:1.55">
-  Voltaram da aprovação e precisam de nova versão. Enquanto o status for
-  <b>Reprovado</b>, o card não conta como entregue — a entrega volta para a conta
-  quando a nova versão sai e o status muda.</p>
+  Vídeo feito e descartado: o refazer nasce de uma nova captação, em card novo.
+  Estes ficam aqui só como marcação. Não contam como entrega, não estão em aberto
+  e não entram na agenda de publicação.</p>
   %(lista_reprov)s
 </div>
 
@@ -1817,6 +1896,10 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
 
 %(log_caixas)s
 
+
+</section>
+
+<!-- modal compartilhado: LOG e "como é calculado" (fora das abas para abrir de qualquer uma) -->
 <div class="modal" id="m-log" hidden onclick="if(event.target===this)fecharLog()">
   <div class="mbox">
     <div class="mhead">
@@ -1831,17 +1914,15 @@ campos sem preencher. Clique no card para abri-lo no Notion e resolver.</p>
   </div>
 </div>
 
-</section>
-
 <p class="foot">Fonte: banco 🎯 Tarefas — Audiovisual (Notion) · %(n_cards)d cards com prazo em %(mes_nome)s ·
 %(n_todos)d cards no histórico completo (desde o primeiro registro).
 Horários convertidos para America/São_Paulo (UTC−3). &quot;Entregues&quot; = cards com Edição Fim preenchida,
-incluindo os que aguardam aprovação — mas não os reprovados, que voltam a contar quando a nova
-versão sai. Pontualidade compara Edição Fim com Prazo.<br>
+incluindo os que aguardam aprovação, mas não os reprovados (vídeo feito e descartado; o refazer
+é card novo, de nova captação). Pontualidade compara Edição Fim com Prazo.<br>
 Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
 
 </div>
-<script>window.DATA=%(dados)s;window.LOGS=%(logs_json)s;</script>
+<script>window.DATA=%(dados)s;window.LOGS=%(logs_json)s;window.CALC=%(calc_json)s;</script>
 <script>%(js)s</script>
 </body></html>""" % dict(
         css=CSS, js=JS, dados=json.dumps(dados, ensure_ascii=False, separators=(",", ":")),
@@ -1855,7 +1936,7 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         pct_antec=min(100, 100 * m["antec"] / m["meta_antec"]),
         antec_cor="var(--good)" if m["antec"] >= m["meta_antec"] else "var(--crit)",
         n_fila=len(m["fila"]), n_fazer=len([c for c in m["fila"] if not c["_exec"]]),
-        n_aberto=len(m["fila"]) + len(m["reprovados"]), n_reprov=len(m["reprovados"]),
+        n_aberto=len(m["fila"]), n_reprov=len(m["reprovados"]),
         n_exec_ab=len([c for c in m["fila"] if c["_exec"]]),
         dur_ed_txt=fmt_dur(sum(m["dur_ed"]) / len(m["dur_ed"]) if m["dur_ed"] else None),
         dur_ed_note=("mediana %s · %d entrega(s) com Edição Início e Fim · tempo de "
@@ -1878,6 +1959,10 @@ Gerado automaticamente em %(dtitulo)s às %(hora)s.</p>
         n_sed=len(m["sem_t_ed"]), lista_ed=lista_ed,
         n_salt=len(m["sem_t_alt"]), lista_alt=lista_alt,
         n_atras=len(m["atrasados"]), lista_atras=lista_atras, lista_reprov=lista_reprov,
+        calc_json=json.dumps({
+            "ded": linhas_calc(m["concluidos"], "_ini", "_fim", "_dur_ed"),
+            "dal": linhas_calc(m["cards"], "_alt_i", "_alt_f", "_dur_alt")},
+            ensure_ascii=False, separators=(",", ":")),
         n_cx_pend=len(m["sem_cx"]) + len(m["cx_quebrada"]), lista_cx=lista_cx,
         n_cards=len(m["cards"]), n_todos=len(dados["cards"]),
         dias_entrega=DIAS_ATE_ENTREGA,
