@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-11T15:50:25-03:00",
+ "gerado_em": "2026-09-11T18:25:02-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7377,7 +7377,7 @@
   {
    "titulo": "[LAPIDATO] FER 02",
    "cliente": "LAPIDATO",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7388,8 +7388,8 @@
    "prazo": "2026-09-14",
    "ed_ini": "2026-09-11T11:23:00.000-03:00",
    "ed_fim": "2026-09-11T12:49:00.000-03:00",
-   "alt_ini": "2026-09-11T15:45:00.000-03:00",
-   "alt_fim": null,
+   "alt_ini": "2026-09-11T17:27:00.000-03:00",
+   "alt_fim": "2026-09-11T17:30:00.000-03:00",
    "gravado": "2026-09-09",
    "publicacao": "2026-09-15",
    "url": "https://app.notion.com/p/LAPIDATO-FER-02-3d61e7f422b980e48b71d7e1cc78d6f6"
@@ -7437,7 +7437,7 @@
   {
    "titulo": "[LAPIDATO] FER 03",
    "cliente": "LAPIDATO",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7449,7 +7449,7 @@
    "ed_ini": "2026-09-11T12:49:00.000-03:00",
    "ed_fim": "2026-09-11T13:22:00.000-03:00",
    "alt_ini": "2026-09-11T15:45:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-09-11T17:22:00.000-03:00",
    "gravado": "2026-09-09",
    "publicacao": "2026-09-15",
    "url": "https://app.notion.com/p/LAPIDATO-FER-03-3d61e7f422b980eda1e0eb0a21c5e6ba"
@@ -7457,7 +7457,7 @@
   {
    "titulo": "[LAPIDATO] FER 01",
    "cliente": "LAPIDATO",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7469,7 +7469,7 @@
    "ed_ini": "2026-09-11T09:35:00.000-03:00",
    "ed_fim": "2026-09-11T10:23:00.000-03:00",
    "alt_ini": "2026-09-11T15:45:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-09-11T17:27:00.000-03:00",
    "gravado": "2026-09-09",
    "publicacao": "2026-09-15",
    "url": "https://app.notion.com/p/LAPIDATO-FER-01-3d61e7f422b9809aa281da7cc1e30077"
@@ -7736,6 +7736,24 @@
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
   },
   {
+   "titulo": "CAPTAÇÃO — Captação Bea - BC",
+   "cliente": null,
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-17",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CAPTA-O-Capta-o-Bea-BC-3d81e7f422b981b2bcd0eba0022c0fba"
+  },
+  {
    "titulo": "[GLAR] CAPTAÇÃO",
    "cliente": "GLAR",
    "status": null,
@@ -7842,24 +7860,6 @@
    "gravado": "2026-09-10",
    "publicacao": null,
    "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-3d71e7f422b98197809de3551d7fad22"
-  },
-  {
-   "titulo": "Captura de Tela 2026-09-10 às 09.52.32",
-   "cliente": null,
-   "status": "Aprovado/Finalizado",
-   "fase": null,
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/Captura-de-Tela-2026-09-10-a-s-09-52-32-3d71e7f422b980859b25dbe8f10fa691"
   },
   {
    "titulo": "[CUNHA] CAPTAÇÃO",
