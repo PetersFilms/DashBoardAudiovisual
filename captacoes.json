@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-11T08:55:16-03:00",
+ "gerado_em": "2026-09-11T12:27:33-03:00",
  "captacoes": [
   {
    "data": "2026-07-28",
@@ -201,7 +201,7 @@
   },
   {
    "data": "2026-09-11",
-   "hora": "14:30",
+   "hora": "16:30",
    "titulo": "Gravação Chess",
    "cliente": "CHESS"
   },
@@ -222,6 +222,12 @@
    "hora": "13:00",
    "titulo": "Captação - HomenZ",
    "cliente": "HOMENZ"
+  },
+  {
+   "data": "2026-09-18",
+   "hora": "08:30",
+   "titulo": "Captação Glar",
+   "cliente": "GLAR"
   },
   {
    "data": "2026-09-30",
