@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-12T14:30:34-03:00",
+ "gerado_em": "2026-09-12T16:48:39-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7557,7 +7557,7 @@
   {
    "titulo": "[MABOOH] BACKSTAGE",
    "cliente": "MABOOH",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7568,7 +7568,7 @@
    "prazo": "2026-09-16",
    "ed_ini": "2026-09-10T13:53:00.000-03:00",
    "ed_fim": "2026-09-10T14:38:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-12T16:07:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-02",
    "publicacao": "2026-09-17",
