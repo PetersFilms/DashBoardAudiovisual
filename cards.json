@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-14T12:22:01-03:00",
+ "gerado_em": "2026-09-14T17:00:13-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7357,7 +7357,7 @@
   {
    "titulo": "[EVOLVE] FEIRA CONSTRUIR.AI",
    "cliente": "EVOLVE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Highlight",
@@ -7367,7 +7367,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-09-12",
    "ed_ini": "2026-09-11T18:30:00.000-03:00",
-   "ed_fim": "2026-09-12T00:08:00.000-03:00",
+   "ed_fim": "2026-09-14T15:27:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-10",
@@ -7377,7 +7377,7 @@
   {
    "titulo": "[CHESS] DIA DO CLIENTE",
    "cliente": "CHESS",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -7386,12 +7386,12 @@
    ],
    "complexidade": null,
    "prazo": "2026-09-14",
-   "ed_ini": null,
+   "ed_ini": "2026-09-14T15:07:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
-   "publicacao": null,
+   "publicacao": "2026-09-15",
    "url": "https://app.notion.com/p/CHESS-DIA-DO-CLIENTE-3d71e7f422b98032bfbdcfb697eef352"
   },
   {
@@ -7417,7 +7417,7 @@
   {
    "titulo": "[LAPIDATO] MONI 01",
    "cliente": "LAPIDATO",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7427,7 +7427,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-09-14",
    "ed_ini": "2026-09-14T10:56:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-09-14T12:27:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-09",
@@ -7437,7 +7437,7 @@
   {
    "titulo": "[LAPIDATO] MONI 02",
    "cliente": "LAPIDATO",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -7446,8 +7446,8 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-09-14",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-09-14T15:38:00.000-03:00",
+   "ed_fim": "2026-09-14T16:05:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-09",
