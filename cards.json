@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-15T14:23:11-03:00",
+ "gerado_em": "2026-09-15T17:35:01-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7618,7 +7618,7 @@
   {
    "titulo": "[MABOOH] SUSPENSE DE MARCA",
    "cliente": "MABOOH",
-   "status": "À Fazer Maila",
+   "status": "Alteração",
    "fase": null,
    "responsavel": "Maila",
    "categoria": "Banner",
@@ -7628,9 +7628,9 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-16",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
+   "ed_ini": "2026-09-15T14:41:00.000-03:00",
+   "ed_fim": "2026-09-15T15:31:00.000-03:00",
+   "alt_ini": "2026-09-15T15:31:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-02",
    "publicacao": "2026-09-21",
