@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-15T09:20:02-03:00",
+ "gerado_em": "2026-09-15T14:23:11-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -5939,7 +5939,7 @@
   {
    "titulo": "[BU] INSTITUCIONAL",
    "cliente": "BU",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Institucional",
@@ -5949,7 +5949,7 @@
    "complexidade": "Avançado",
    "prazo": "2026-08-04",
    "ed_ini": "2026-08-05T18:48:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-09-15T11:13:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
@@ -7317,7 +7317,7 @@
   {
    "titulo": "[EVOLVE] SHOWROOM",
    "cliente": "EVOLVE",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7328,7 +7328,7 @@
    "prazo": "2026-09-07",
    "ed_ini": "2026-09-08T07:49:00.000-03:00",
    "ed_fim": "2026-09-08T10:16:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-15T13:58:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-03",
    "publicacao": "2026-09-08",
@@ -7499,27 +7499,7 @@
    "cliente": "CHESS",
    "status": "À Fazer Peterson",
    "fase": "Captação",
-   "responsavel": null,
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-09-16",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-PEDRO-BARRETOS-3d71e7f422b980ceba39e61855cfca5d"
-  },
-  {
-   "titulo": "[MABOOH] TAKES",
-   "cliente": "MABOOH",
-   "status": "À Fazer Maila",
-   "fase": "Edição",
-   "responsavel": "Maila",
+   "responsavel": "Petterson",
    "categoria": "Reels",
    "categorias": [
     "Reels"
@@ -7530,9 +7510,29 @@
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
+   "gravado": "2026-09-11",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-PEDRO-BARRETOS-3d71e7f422b980ceba39e61855cfca5d"
+  },
+  {
+   "titulo": "[MABOOH] ONE TAKES",
+   "cliente": "MABOOH",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-16",
+   "ed_ini": "2026-09-15T09:28:00.000-03:00",
+   "ed_fim": "2026-09-15T10:36:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
    "gravado": "2026-09-02",
    "publicacao": "2026-09-17",
-   "url": "https://app.notion.com/p/MABOOH-TAKES-3d71e7f422b9809a979cec0e26e758e9"
+   "url": "https://app.notion.com/p/MABOOH-ONE-TAKES-3d71e7f422b9809a979cec0e26e758e9"
   },
   {
    "titulo": "[MABOOH] SOBRE A MABOOH",
@@ -7680,21 +7680,21 @@
   {
    "titulo": "[CHESS] VÍDEO APPLE",
    "cliente": "CHESS",
-   "status": "À Fazer Peterson",
-   "fase": null,
-   "responsavel": "Petterson",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
    "categoria": "Reels",
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
-   "prazo": "2026-09-21",
+   "complexidade": "Intermediário",
+   "prazo": "2026-09-18",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
+   "gravado": "2026-09-11",
+   "publicacao": "2026-09-21",
    "url": "https://app.notion.com/p/CHESS-V-DEO-APPLE-3d71e7f422b980309284e95e912560d4"
   },
   {
@@ -7754,6 +7754,42 @@
    "gravado": null,
    "publicacao": "2026-10-05",
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
+  },
+  {
+   "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
+   "cliente": "HOMENZ",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-18",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HOMENZ-CAPTA-O-CL-NICA-3dc1e7f422b98195b50ee349e22c16ad"
+  },
+  {
+   "titulo": "[EVOLVE] CAPTAÇÃO",
+   "cliente": "EVOLVE",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-16",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-3dc1e7f422b9813b8077d2b4c2db0378"
   },
   {
    "titulo": "[CHESS] CAPTAÇÃO",
@@ -7916,24 +7952,6 @@
    "gravado": "2026-09-10",
    "publicacao": null,
    "url": "https://app.notion.com/p/GLAR-CAPTA-O-3d51e7f422b98145ad89e6cc587426f5"
-  },
-  {
-   "titulo": "[HOMENZ] CAPTAÇÃO",
-   "cliente": "HOMENZ",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-09-15",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HOMENZ-CAPTA-O-3d11e7f422b9817b9d9ed7508eb51b7f"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO (AMBIENTE)",
