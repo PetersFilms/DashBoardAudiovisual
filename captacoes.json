@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-16T04:59:51-03:00",
+ "gerado_em": "2026-09-16T10:13:07-03:00",
  "captacoes": [
   {
    "data": "2026-08-04",
@@ -204,6 +204,12 @@
    "hora": "08:00",
    "titulo": "Captação Bea - BC",
    "cliente": "BEA"
+  },
+  {
+   "data": "2026-09-17",
+   "hora": "13:00",
+   "titulo": "Captação Lapidato",
+   "cliente": "LAPIDATO"
   },
   {
    "data": "2026-09-18",
