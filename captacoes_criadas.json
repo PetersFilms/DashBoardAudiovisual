@@ -307,7 +307,9 @@
    "card": "https://app.notion.com/p/HOMENZ-CAPTA-O-CL-NICA-3dc1e7f422b98195b50ee349e22c16ad",
    "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
    "gravado": "2026-09-18",
-   "em": "2026-09-15 14:23"
+   "em": "2026-09-15 14:23",
+   "arquivado": "2026-09-17 20:12",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-09-16|captacao - lapidato",
@@ -343,6 +345,20 @@
    "titulo": "[HAGUE] CAPTAÇÃO VÍDEOS E FOTOS",
    "gravado": "2026-09-24",
    "em": "2026-09-16 20:21"
+  },
+  {
+   "chave": "2026-09-21|captacao - lapidato",
+   "card": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3de1e7f422b981e4b96eed8fcf14893e",
+   "titulo": "[LAPIDATO] CAPTAÇÃO",
+   "gravado": "2026-09-21",
+   "em": "2026-09-17 20:12"
+  },
+  {
+   "chave": "2026-09-23|captacao - clinica homenz",
+   "card": "https://app.notion.com/p/HOMENZ-CAPTA-O-CL-NICA-3de1e7f422b9816a9dc0dc787162a1ca",
+   "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
+   "gravado": "2026-09-23",
+   "em": "2026-09-17 20:12"
   }
  ]
 }
