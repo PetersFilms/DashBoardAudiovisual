@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-18T16:16:14-03:00",
+ "gerado_em": "2026-09-18T19:00:46-03:00",
  "captacoes": [
   {
    "data": "2026-08-04",
@@ -258,6 +258,12 @@
    "hora": "12:00",
    "titulo": "Captação- Cunha",
    "cliente": "CUNHA"
+  },
+  {
+   "data": "2026-10-02",
+   "hora": "14:00",
+   "titulo": "Captação - Empório das Pedras",
+   "cliente": "EMPÓRIO DAS PEDRAS"
   },
   {
    "data": "2026-11-07",
