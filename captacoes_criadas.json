@@ -358,7 +358,9 @@
    "card": "https://app.notion.com/p/HOMENZ-CAPTA-O-CL-NICA-3de1e7f422b9816a9dc0dc787162a1ca",
    "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
    "gravado": "2026-09-23",
-   "em": "2026-09-17 20:12"
+   "em": "2026-09-17 20:12",
+   "arquivado": "2026-09-19 16:02",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-09-24|captacao dezari",
@@ -373,6 +375,13 @@
    "titulo": "[EMPÓRIO DAS PEDRAS] CAPTAÇÃO",
    "gravado": "2026-10-02",
    "em": "2026-09-19 06:52"
+  },
+  {
+   "chave": "2026-09-24|captacao - clinica homenz",
+   "card": "https://app.notion.com/p/HOMENZ-CAPTA-O-CL-NICA-3e01e7f422b981aa97f9c8a8fd07ed44",
+   "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
+   "gravado": "2026-09-24",
+   "em": "2026-09-19 16:02"
   }
  ]
 }
