@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-21T08:19:27-03:00",
+ "gerado_em": "2026-09-21T14:19:50-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7317,7 +7317,7 @@
   {
    "titulo": "[EVOLVE] SHOWROOM",
    "cliente": "EVOLVE",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7329,7 +7329,7 @@
    "ed_ini": "2026-09-08T07:49:00.000-03:00",
    "ed_fim": "2026-09-08T10:16:00.000-03:00",
    "alt_ini": "2026-09-15T13:58:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-09-21T12:50:00.000-03:00",
    "gravado": "2026-09-03",
    "publicacao": "2026-09-08",
    "url": "https://app.notion.com/p/EVOLVE-SHOWROOM-3d11e7f422b980f388e3d8bca0d9646a"
@@ -7996,6 +7996,24 @@
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
   },
   {
+   "titulo": "[HAGUE] CAPTAÇÃO VÍDEOS E FOTOS",
+   "cliente": "HAGUE",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/HAGUE-CAPTA-O-V-DEOS-E-FOTOS-3e21e7f422b9819ca107ea2476106077"
+  },
+  {
    "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
    "cliente": "HOMENZ",
    "status": null,
@@ -8084,42 +8102,6 @@
    "gravado": "2026-09-24",
    "publicacao": null,
    "url": "https://app.notion.com/p/DEZARI-CAPTA-O-3df1e7f422b981fb86cce2a2e97e0159"
-  },
-  {
-   "titulo": "[LAPIDATO] CAPTAÇÃO",
-   "cliente": "LAPIDATO",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-09-21",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3de1e7f422b981e4b96eed8fcf14893e"
-  },
-  {
-   "titulo": "[HAGUE] CAPTAÇÃO VÍDEOS E FOTOS",
-   "cliente": "HAGUE",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-09-24",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/HAGUE-CAPTA-O-V-DEOS-E-FOTOS-3dd1e7f422b981538ba7c5de60d870d1"
   },
   {
    "titulo": "[CHESS] CAPTAÇÃO",

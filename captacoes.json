@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-21T08:19:25-03:00",
+ "gerado_em": "2026-09-21T14:19:46-03:00",
  "captacoes": [
   {
    "data": "2026-08-10",
@@ -212,12 +212,6 @@
    "cliente": "GLAR"
   },
   {
-   "data": "2026-09-21",
-   "hora": "15:30",
-   "titulo": "Captação - Lapidato",
-   "cliente": "LAPIDATO"
-  },
-  {
    "data": "2026-09-24",
    "hora": "09:00",
    "titulo": "Captação Dezari",
@@ -230,16 +224,16 @@
    "cliente": "CLÍNICA HOMENZ"
   },
   {
-   "data": "2026-09-24",
-   "hora": "14:00",
-   "titulo": "Captação Hague - Vídeos e Fotos",
-   "cliente": "HAGUE"
-  },
-  {
    "data": "2026-09-30",
    "hora": "12:00",
    "titulo": "Captação- Cunha",
    "cliente": "CUNHA"
+  },
+  {
+   "data": "2026-10-01",
+   "hora": "14:00",
+   "titulo": "Captação Hague - Vídeos e Fotos",
+   "cliente": "HAGUE"
   },
   {
    "data": "2026-10-02",
