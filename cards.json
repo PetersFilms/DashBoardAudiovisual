@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-22T12:13:24-03:00",
+ "gerado_em": "2026-09-22T16:20:39-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7657,7 +7657,7 @@
   {
    "titulo": "[MABOOH] ONE TAKES",
    "cliente": "MABOOH",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7677,7 +7677,7 @@
   {
    "titulo": "[MABOOH] SOBRE A MABOOH",
    "cliente": "MABOOH",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7689,7 +7689,7 @@
    "ed_ini": "2026-09-16T09:59:00.000-03:00",
    "ed_fim": "2026-09-19T11:22:00.000-03:00",
    "alt_ini": "2026-09-22T08:54:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-09-22T15:06:00.000-03:00",
    "gravado": "2026-09-02",
    "publicacao": "2026-09-17",
    "url": "https://app.notion.com/p/MABOOH-SOBRE-A-MABOOH-3d61e7f422b980c88156de2ef55e41d3"
@@ -7800,7 +7800,7 @@
   {
    "titulo": "[MABOOH] LOOK NOVO",
    "cliente": "MABOOH",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7920,7 +7920,7 @@
   {
    "titulo": "[BEA FRUET] APTO PRONTO",
    "cliente": "BEA FRUET",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -7931,7 +7931,7 @@
    "prazo": "2026-09-22",
    "ed_ini": "2026-09-22T09:32:00.000-03:00",
    "ed_fim": "2026-09-22T10:20:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-22T16:09:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-17",
    "publicacao": "2026-09-24",
@@ -8018,7 +8018,7 @@
   {
    "titulo": "[GLAR] A largura na prática",
    "cliente": "GLAR",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8027,7 +8027,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-23",
-   "ed_ini": null,
+   "ed_ini": "2026-09-22T15:28:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
