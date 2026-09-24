@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-24T14:44:27-03:00",
+ "gerado_em": "2026-09-24T17:53:09-03:00",
  "captacoes": [
   {
    "data": "2026-08-10",
@@ -228,6 +228,18 @@
    "hora": "11:30",
    "titulo": "Captação - Clínica HomenZ",
    "cliente": "CLÍNICA HOMENZ"
+  },
+  {
+   "data": "2026-09-24",
+   "hora": "18:00",
+   "titulo": "Captação Chess",
+   "cliente": "CHESS"
+  },
+  {
+   "data": "2026-09-29",
+   "hora": "11:00",
+   "titulo": "Captação Lapidato",
+   "cliente": "LAPIDATO"
   },
   {
    "data": "2026-09-29",
