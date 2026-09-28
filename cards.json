@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-28T04:52:11-03:00",
+ "gerado_em": "2026-09-28T13:11:15-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -7940,15 +7940,15 @@
   {
    "titulo": "[CHESS] THE ART OF DETAILS",
    "cliente": "CHESS",
-   "status": "À Fazer Peterson",
-   "fase": "Roteirização",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": null,
    "categorias": [],
    "complexidade": null,
    "prazo": "2026-09-22",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-09-21T13:00:00.000-03:00",
+   "ed_fim": "2026-09-21T14:30:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
@@ -8056,9 +8056,190 @@
    "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
   },
   {
+   "titulo": "[DEZARI] O QUE A DEZARI NÃO FAZ",
+   "cliente": "DEZARI",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-29",
+   "ed_ini": "2026-09-28T12:47:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-24",
+   "publicacao": "2026-09-30",
+   "url": "https://app.notion.com/p/DEZARI-O-QUE-A-DEZARI-N-O-FAZ-3e91e7f422b980d3b1b5d71d7ab932b8"
+  },
+  {
+   "titulo": "[HOMENZ] CLÍNICA",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-30",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-CL-NICA-3e91e7f422b980c7aae4fba9c9004da7"
+  },
+  {
+   "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-30",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-CLIENTE-EM-CL-NICA-3e91e7f422b980ad997bcdc3e4275d73"
+  },
+  {
+   "titulo": "[HOMENZ] AD 03",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-30",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-AD-03-3e91e7f422b98064b111c41005815a53"
+  },
+  {
+   "titulo": "[HOMENZ] AD 04",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-30",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-AD-04-3e91e7f422b980af9140db055d552483"
+  },
+  {
+   "titulo": "[HOMENZ] AD 02",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-30",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-AD-02-3e91e7f422b98042bc20fd2c9ef9b00a"
+  },
+  {
+   "titulo": "[HOMENZ] AD 01",
+   "cliente": "HOMENZ",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-09-30",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-AD-01-3e91e7f422b9805e83e0d0a7ebe897e1"
+  },
+  {
+   "titulo": "[LUME] ASSINATURA DE CAFÉ",
+   "cliente": "LUME",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-22",
+   "publicacao": "2026-10-02",
+   "url": "https://app.notion.com/p/LUME-ASSINATURA-DE-CAF-3e91e7f422b980a5a7fff55a1c23e30d"
+  },
+  {
+   "titulo": "[GLAR] MINI PODCAST",
+   "cliente": "GLAR",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "PodCast",
+   "categorias": [
+    "PodCast",
+    "Corte"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-05",
+   "ed_ini": "2026-09-28T10:56:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-18",
+   "publicacao": "2026-11-02",
+   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-3e91e7f422b980688931ce6a2c55f13c"
+  },
+  {
    "titulo": "[CHESS] 1 CENA, 10 PLANOS",
    "cliente": "CHESS",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8067,7 +8248,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-26",
-   "ed_ini": null,
+   "ed_ini": "2026-09-28T11:00:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
