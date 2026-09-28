@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-28T13:11:13-03:00",
+ "gerado_em": "2026-09-28T19:18:57-03:00",
  "captacoes": [
   {
    "data": "2026-08-14",
@@ -225,12 +225,6 @@
   },
   {
    "data": "2026-09-29",
-   "hora": "11:00",
-   "titulo": "Captação Lapidato",
-   "cliente": "LAPIDATO"
-  },
-  {
-   "data": "2026-09-29",
    "hora": "19:00",
    "titulo": "Captação Evolve - Risoto",
    "cliente": "EVOLVE"
@@ -249,7 +243,13 @@
   },
   {
    "data": "2026-10-01",
-   "hora": "14:00",
+   "hora": "13:00",
+   "titulo": "Captação Lapidato",
+   "cliente": "LAPIDATO"
+  },
+  {
+   "data": "2026-10-01",
+   "hora": "15:00",
    "titulo": "Captação Hague - Vídeos e Fotos",
    "cliente": "HAGUE"
   },
@@ -258,6 +258,12 @@
    "hora": "14:00",
    "titulo": "Captação - Empório das Pedras",
    "cliente": "EMPÓRIO DAS PEDRAS"
+  },
+  {
+   "data": "2026-10-08",
+   "hora": "10:30",
+   "titulo": "Captação Lapidato",
+   "cliente": "LAPIDATO"
   },
   {
    "data": "2026-11-07",
