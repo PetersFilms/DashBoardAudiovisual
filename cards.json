@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-28T23:22:09-03:00",
+ "gerado_em": "2026-09-29T06:12:33-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -8257,6 +8257,42 @@
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
   },
   {
+   "titulo": "[LAPIDATO] CAPTAÇÃO",
+   "cliente": "LAPIDATO",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-08",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3ea1e7f422b98170976ff413d3990137"
+  },
+  {
+   "titulo": "[LAPIDATO] CAPTAÇÃO",
+   "cliente": "LAPIDATO",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3ea1e7f422b981e78cdaca7076939e80"
+  },
+  {
    "titulo": "[HOMENZ] CAPTAÇÃO",
    "cliente": "HOMENZ",
    "status": null,
@@ -8273,24 +8309,6 @@
    "gravado": "2026-09-26",
    "publicacao": null,
    "url": "https://app.notion.com/p/HOMENZ-CAPTA-O-3e71e7f422b981a0be56e95227635657"
-  },
-  {
-   "titulo": "[LAPIDATO] CAPTAÇÃO",
-   "cliente": "LAPIDATO",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-09-29",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3e51e7f422b9812c9718c8138cff70f2"
   },
   {
    "titulo": "[CHESS] CAPTAÇÃO",
