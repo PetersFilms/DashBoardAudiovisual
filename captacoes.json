@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-29T06:12:29-03:00",
+ "gerado_em": "2026-09-29T13:11:52-03:00",
  "captacoes": [
   {
    "data": "2026-08-16",
@@ -219,21 +219,21 @@
   },
   {
    "data": "2026-09-29",
-   "hora": "19:00",
+   "hora": "18:00",
    "titulo": "Captação Evolve - Risoto",
    "cliente": "EVOLVE"
-  },
-  {
-   "data": "2026-09-30",
-   "hora": "09:00",
-   "titulo": "Captação Lume",
-   "cliente": "LUME"
   },
   {
    "data": "2026-09-30",
    "hora": "12:00",
    "titulo": "Captação- Cunha",
    "cliente": "CUNHA"
+  },
+  {
+   "data": "2026-10-01",
+   "hora": "08:00",
+   "titulo": "Captação Pikolin",
+   "cliente": "PIKOLIN"
   },
   {
    "data": "2026-10-01",
@@ -246,6 +246,12 @@
    "hora": "15:00",
    "titulo": "Captação Hague - Vídeos e Fotos",
    "cliente": "HAGUE"
+  },
+  {
+   "data": "2026-10-02",
+   "hora": "09:00",
+   "titulo": "Captação Lume",
+   "cliente": "LUME"
   },
   {
    "data": "2026-10-02",
