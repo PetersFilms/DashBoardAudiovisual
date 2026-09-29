@@ -406,7 +406,9 @@
    "card": "https://app.notion.com/p/LUME-CAPTA-O-3e41e7f422b981a0a19ef63615f17d29",
    "titulo": "[LUME] CAPTAÇÃO",
    "gravado": "2026-09-30",
-   "em": "2026-09-23 14:32"
+   "em": "2026-09-23 14:32",
+   "arquivado": "2026-09-29 18:07",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-11-07|captacao lapidato - diamond",
@@ -458,6 +460,20 @@
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "gravado": "2026-10-08",
    "em": "2026-09-29 06:12"
+  },
+  {
+   "chave": "2026-10-01|captacao pikolin",
+   "card": "https://app.notion.com/p/PIKOLIN-CAPTA-O-3ea1e7f422b98118b749fb18ea851b5e",
+   "titulo": "[PIKOLIN] CAPTAÇÃO",
+   "gravado": "2026-10-01",
+   "em": "2026-09-29 18:07"
+  },
+  {
+   "chave": "2026-10-02|captacao lume",
+   "card": "https://app.notion.com/p/LUME-CAPTA-O-3ea1e7f422b981c5b8fcf1b9f12ada4f",
+   "titulo": "[LUME] CAPTAÇÃO",
+   "gravado": "2026-10-02",
+   "em": "2026-09-29 18:07"
   }
  ]
 }
