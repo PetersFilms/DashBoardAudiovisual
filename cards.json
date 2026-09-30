@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-30T10:07:37-03:00",
+ "gerado_em": "2026-09-30T15:40:01-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -8216,6 +8216,26 @@
    "url": "https://app.notion.com/p/LUME-ASSINATURA-DE-CAF-3e91e7f422b980a5a7fff55a1c23e30d"
   },
   {
+   "titulo": "[CHESS] 1 CENA, 10 PLANOS",
+   "cliente": "CHESS",
+   "status": "Executando",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-02",
+   "ed_ini": "2026-09-28T11:00:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-17",
+   "publicacao": "2026-10-05",
+   "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
+  },
+  {
    "titulo": "[GLAR] MINI PODCAST",
    "cliente": "GLAR",
    "status": "À Fazer Maila",
@@ -8235,26 +8255,6 @@
    "gravado": "2026-09-18",
    "publicacao": "2026-11-02",
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-3e91e7f422b980688931ce6a2c55f13c"
-  },
-  {
-   "titulo": "[CHESS] 1 CENA, 10 PLANOS",
-   "cliente": "CHESS",
-   "status": "Executando",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-10-26",
-   "ed_ini": "2026-09-28T11:00:00.000-03:00",
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-09-17",
-   "publicacao": "2026-10-05",
-   "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
   },
   {
    "titulo": "[LUME] CAPTAÇÃO",
