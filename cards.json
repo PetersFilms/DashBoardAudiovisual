@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-29T18:07:35-03:00",
+ "gerado_em": "2026-09-29T21:50:24-03:00",
  "mes_ref": "2026-09",
  "meta_mes": 50,
  "meta_dist": {
@@ -8118,7 +8118,7 @@
   {
    "titulo": "[HOMENZ] AD 03",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8129,7 +8129,7 @@
    "prazo": "2026-09-30",
    "ed_ini": "2026-09-29T10:23:00.000-03:00",
    "ed_fim": "2026-09-29T11:06:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-29T18:36:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
@@ -8158,7 +8158,7 @@
   {
    "titulo": "[HOMENZ] AD 02",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8169,7 +8169,7 @@
    "prazo": "2026-09-30",
    "ed_ini": "2026-09-29T14:11:00.000-03:00",
    "ed_fim": "2026-09-29T14:11:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-29T18:36:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
@@ -8178,7 +8178,7 @@
   {
    "titulo": "[HOMENZ] AD 01",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8189,7 +8189,7 @@
    "prazo": "2026-09-30",
    "ed_ini": "2026-09-29T13:21:00.000-03:00",
    "ed_fim": "2026-09-29T13:49:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-09-29T18:36:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
