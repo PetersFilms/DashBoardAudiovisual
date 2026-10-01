@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-01T11:58:01-03:00",
+ "gerado_em": "2026-10-01T17:04:52-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8194,6 +8194,166 @@
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-AD-01-3e91e7f422b9805e83e0d0a7ebe897e1"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 07",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-07-3ec1e7f422b9802cac90d22ecc0d76c5"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 08",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-08-3ec1e7f422b9803eaba6e74a7d73f23d"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 06",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-06-3ec1e7f422b98078a9e3c513527ce677"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 05",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-05-3ec1e7f422b980589d6ce3776a160723"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 04",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-04-3ec1e7f422b98074a686cfa21e2a459d"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 03",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-03-3ec1e7f422b980d38eafc37919b9d0cf"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 02",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:02:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-02-3ec1e7f422b9809190a2dce3572209b0"
+  },
+  {
+   "titulo": "[CUNHA] PROMOÇÃO 01",
+   "cliente": "CUNHA",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-01",
+   "ed_ini": "2026-10-01T12:01:00.000-03:00",
+   "ed_fim": "2026-10-01T12:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/CUNHA-PROMO-O-01-3ec1e7f422b980128bbefee26521b2af"
   },
   {
    "titulo": "[LUME] ASSINATURA DE CAFÉ",
