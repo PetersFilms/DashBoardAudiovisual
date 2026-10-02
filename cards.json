@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-01T17:04:52-03:00",
+ "gerado_em": "2026-10-01T21:17:53-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -7317,7 +7317,7 @@
   {
    "titulo": "[EVOLVE] SHOWROOM",
    "cliente": "EVOLVE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8098,7 +8098,7 @@
   {
    "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "À Fazer Maila",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8107,7 +8107,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-30",
-   "ed_ini": null,
+   "ed_ini": "2026-10-01T18:10:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -8376,6 +8376,46 @@
    "url": "https://app.notion.com/p/LUME-ASSINATURA-DE-CAF-3e91e7f422b980a5a7fff55a1c23e30d"
   },
   {
+   "titulo": "[CHESS] CUSTO AGENDAMENTO",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-02",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-29",
+   "publicacao": "2026-10-05",
+   "url": "https://app.notion.com/p/CHESS-CUSTO-AGENDAMENTO-3ec1e7f422b9800ba740d4a7b1b60b4c"
+  },
+  {
+   "titulo": "[CHESS] CLÍNICA CRESCE",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-02",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-29",
+   "publicacao": "2026-10-05",
+   "url": "https://app.notion.com/p/CHESS-CL-NICA-CRESCE-3ec1e7f422b980d1a905ea19906875f7"
+  },
+  {
    "titulo": "[CHESS] 1 CENA, 10 PLANOS",
    "cliente": "CHESS",
    "status": "Executando",
@@ -8394,6 +8434,26 @@
    "gravado": "2026-09-17",
    "publicacao": "2026-10-05",
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
+  },
+  {
+   "titulo": "[EVOLVE] NA COZINHA",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-05",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-29",
+   "publicacao": "2026-10-06",
+   "url": "https://app.notion.com/p/EVOLVE-NA-COZINHA-3ec1e7f422b980be9485fe967ea071e7"
   },
   {
    "titulo": "[GLAR] MINI PODCAST",
@@ -8415,6 +8475,187 @@
    "gravado": "2026-09-18",
    "publicacao": "2026-11-02",
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-3e91e7f422b980688931ce6a2c55f13c"
+  },
+  {
+   "titulo": "[PIKOLIN] MAJORI COLAB",
+   "cliente": "PIKOLIN",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-06",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": "2026-10-08",
+   "url": "https://app.notion.com/p/PIKOLIN-MAJORI-COLAB-3ec1e7f422b9804091caf18c1f1e32be"
+  },
+  {
+   "titulo": "[PIKOLIN] COLCHÕES",
+   "cliente": "PIKOLIN",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-06",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": "2026-10-08",
+   "url": "https://app.notion.com/p/PIKOLIN-COLCH-ES-3ec1e7f422b9801dbbd4fb35f64cefd8"
+  },
+  {
+   "titulo": "[CUNHA] CONVITE",
+   "cliente": "CUNHA",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-15",
+   "url": "https://app.notion.com/p/CUNHA-CONVITE-3ec1e7f422b980698792e6efa6f33cd1"
+  },
+  {
+   "titulo": "[HAGUE] MESA STOP MOTION",
+   "cliente": "HAGUE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-08",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": "2026-10-09",
+   "url": "https://app.notion.com/p/HAGUE-MESA-STOP-MOTION-3ec1e7f422b98063ae15f207be355937"
+  },
+  {
+   "titulo": "[HAGUE] PREPARO PRATO",
+   "cliente": "HAGUE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-08",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": "2026-10-09",
+   "url": "https://app.notion.com/p/HAGUE-PREPARO-PRATO-3ec1e7f422b980d9af20c052ee8ef234"
+  },
+  {
+   "titulo": "[HAGUE] LENDO COMENTÁRIOS",
+   "cliente": "HAGUE",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-08",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": "2026-10-09",
+   "url": "https://app.notion.com/p/HAGUE-LENDO-COMENT-RIOS-3ec1e7f422b98016b3cac2545fa178b1"
+  },
+  {
+   "titulo": "[LAPIDATO] Mini Institucional",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Institucional",
+   "categorias": [
+    "Institucional",
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-09",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-06",
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/LAPIDATO-Mini-Institucional-3ec1e7f422b980cd91e6e68eb04738b8"
+  },
+  {
+   "titulo": "[CUNHA] O QUE CHEGOU HOJE",
+   "cliente": "CUNHA",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-03",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-30",
+   "publicacao": "2026-10-15",
+   "url": "https://app.notion.com/p/CUNHA-O-QUE-CHEGOU-HOJE-3ec1e7f422b98061b39fc0d52965dc8f"
+  },
+  {
+   "titulo": "[LAPIDATO] LENTES EM RESINA",
+   "cliente": "LAPIDATO",
+   "status": "À Delegar",
+   "fase": "Gravação",
+   "responsavel": null,
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LAPIDATO-LENTES-EM-RESINA-3ec1e7f422b9803289f2ff300a0ec168"
   },
   {
    "titulo": "[LUME] CAPTAÇÃO",
