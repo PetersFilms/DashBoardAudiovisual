@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-02T10:18:23-03:00",
+ "gerado_em": "2026-10-02T15:47:04-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -7677,7 +7677,7 @@
   {
    "titulo": "[MABOOH] SOBRE A MABOOH",
    "cliente": "MABOOH",
-   "status": "Pré Aprovação",
+   "status": "Reprovado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8078,7 +8078,7 @@
   {
    "titulo": "[HOMENZ] CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8087,8 +8087,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-09-30",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-10-02T10:32:00.000-03:00",
+   "ed_fim": "2026-10-02T11:55:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-25",
@@ -8098,7 +8098,7 @@
   {
    "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8109,7 +8109,7 @@
    "prazo": "2026-09-30",
    "ed_ini": "2026-10-01T18:10:00.000-03:00",
    "ed_fim": "2026-10-01T21:37:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-10-02T15:41:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
@@ -8118,7 +8118,7 @@
   {
    "titulo": "[HOMENZ] AD 03",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8129,7 +8129,7 @@
    "prazo": "2026-09-30",
    "ed_ini": "2026-09-29T10:23:00.000-03:00",
    "ed_fim": "2026-09-29T22:19:00.000-03:00",
-   "alt_ini": "2026-09-29T18:36:00.000-03:00",
+   "alt_ini": "2026-10-02T15:36:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
@@ -8178,7 +8178,7 @@
   {
    "titulo": "[HOMENZ] AD 01",
    "cliente": "HOMENZ",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8189,7 +8189,7 @@
    "prazo": "2026-09-30",
    "ed_ini": "2026-09-29T13:21:00.000-03:00",
    "ed_fim": "2026-09-29T22:19:00.000-03:00",
-   "alt_ini": "2026-09-29T18:36:00.000-03:00",
+   "alt_ini": "2026-10-02T15:35:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
@@ -8198,7 +8198,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 07",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8218,7 +8218,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 08",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8238,7 +8238,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 06",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8258,7 +8258,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 05",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8278,7 +8278,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 04",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8298,7 +8298,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 03",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8318,7 +8318,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 02",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8338,7 +8338,7 @@
   {
    "titulo": "[CUNHA] PROMOÇÃO 01",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Stories",
@@ -8358,7 +8358,7 @@
   {
    "titulo": "[LUME] ASSINATURA DE CAFÉ",
    "cliente": "LUME",
-   "status": "À Fazer Maila",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8367,8 +8367,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-01",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-10-02T13:05:00.000-03:00",
+   "ed_fim": "2026-10-02T14:14:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-22",
@@ -8436,6 +8436,26 @@
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
   },
   {
+   "titulo": "[MABOOH] ALTERAÇÃO SOBRE A MABOOH",
+   "cliente": "MABOOH",
+   "status": "Alteração",
+   "fase": null,
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-05",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": "2026-10-02T14:54:00.000-03:00",
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/MABOOH-ALTERA-O-SOBRE-A-MABOOH-3ed1e7f422b9807d8523d219364c0338"
+  },
+  {
    "titulo": "[EVOLVE] NA COZINHA",
    "cliente": "EVOLVE",
    "status": "À Fazer Maila",
@@ -8475,6 +8495,46 @@
    "gravado": "2026-09-18",
    "publicacao": "2026-11-02",
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-3e91e7f422b980688931ce6a2c55f13c"
+  },
+  {
+   "titulo": "[MABOOH] ALTERAÇÃO BACKSTAGE",
+   "cliente": "MABOOH",
+   "status": "Alteração",
+   "fase": "Revisão",
+   "responsavel": "Maila",
+   "categoria": "Take",
+   "categorias": [
+    "Take"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-06",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": "2026-10-02T15:19:00.000-03:00",
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/MABOOH-ALTERA-O-BACKSTAGE-3ed1e7f422b98062bef6cb8e33b3a5bc"
+  },
+  {
+   "titulo": "[MABOOH] ALTERAÇÃO ONE TAKE",
+   "cliente": "MABOOH",
+   "status": "Alteração",
+   "fase": "Revisão",
+   "responsavel": "Maila",
+   "categoria": "Take",
+   "categorias": [
+    "Take"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-06",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": "2026-10-02T15:01:00.000-03:00",
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/MABOOH-ALTERA-O-ONE-TAKE-3ed1e7f422b980238de8c0a339f9cdeb"
   },
   {
    "titulo": "[PIKOLIN] MAJORI COLAB",
