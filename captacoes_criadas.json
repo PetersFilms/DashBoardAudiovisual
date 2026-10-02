@@ -474,6 +474,18 @@
    "titulo": "[LUME] CAPTAÇÃO",
    "gravado": "2026-10-02",
    "em": "2026-09-29 18:07"
+  },
+  {
+   "chave": "2026-10-06|captacao - lapidato",
+   "card": null,
+   "motivo": "já existia no banco"
+  },
+  {
+   "chave": "2026-10-06|captacao sicredi",
+   "card": "https://app.notion.com/p/CAPTA-O-Capta-o-Sicredi-3ed1e7f422b981cca81fc73de0decc7c",
+   "titulo": "CAPTAÇÃO — Captação Sicredi",
+   "gravado": "2026-10-06",
+   "em": "2026-10-02 10:18"
   }
  ]
 }
