@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-03T13:50:19-03:00",
+ "gerado_em": "2026-10-03T16:34:29-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8078,7 +8078,7 @@
   {
    "titulo": "[HOMENZ] CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8090,7 +8090,7 @@
    "ed_ini": "2026-10-02T10:32:00.000-03:00",
    "ed_fim": "2026-10-02T11:55:00.000-03:00",
    "alt_ini": "2026-10-02T18:02:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-03T14:17:00.000-03:00",
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-CL-NICA-3e91e7f422b980c7aae4fba9c9004da7"
@@ -8358,7 +8358,7 @@
   {
    "titulo": "[LUME] ASSINATURA DE CAFÉ",
    "cliente": "LUME",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8370,7 +8370,7 @@
    "ed_ini": "2026-10-02T13:05:00.000-03:00",
    "ed_fim": "2026-10-02T14:14:00.000-03:00",
    "alt_ini": "2026-10-02T18:42:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-03T15:17:00.000-03:00",
    "gravado": "2026-09-22",
    "publicacao": "2026-10-02",
    "url": "https://app.notion.com/p/LUME-ASSINATURA-DE-CAF-3e91e7f422b980a5a7fff55a1c23e30d"
@@ -8698,7 +8698,7 @@
    "url": "https://app.notion.com/p/CUNHA-O-QUE-CHEGOU-HOJE-3ec1e7f422b98061b39fc0d52965dc8f"
   },
   {
-   "titulo": "Aprovar [HOMENZ] AD 03",
+   "titulo": "Aprovar [LUME] ASSINATURA DE CAFÉ",
    "cliente": null,
    "status": "À Fazer Peterson",
    "fase": "Aprovação",
@@ -8713,10 +8713,10 @@
    "alt_fim": null,
    "gravado": null,
    "publicacao": null,
-   "url": "https://app.notion.com/p/Aprovar-3ed1e7f422b981d29d19e569d030737a"
+   "url": "https://app.notion.com/p/Aprovar-3ee1e7f422b981459526c2f1ad3c9120"
   },
   {
-   "titulo": "Aprovar [HOMENZ] AD 01",
+   "titulo": "Aprovar [HOMENZ] CLÍNICA",
    "cliente": null,
    "status": "À Fazer Peterson",
    "fase": "Aprovação",
@@ -8731,7 +8731,7 @@
    "alt_fim": null,
    "gravado": null,
    "publicacao": null,
-   "url": "https://app.notion.com/p/Aprovar-3ed1e7f422b981c5bf69fdb5160c92dc"
+   "url": "https://app.notion.com/p/Aprovar-3ee1e7f422b9815b8072c55adad3b48e"
   },
   {
    "titulo": "CAPTAÇÃO — Captação Sicredi",
