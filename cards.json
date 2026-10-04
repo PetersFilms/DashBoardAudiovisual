@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-04T11:30:05-03:00",
+ "gerado_em": "2026-10-04T15:26:25-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8436,6 +8436,69 @@
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
   },
   {
+   "titulo": "[GLAR] MINI PODCAST CORTE 4",
+   "cliente": "GLAR",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "PodCast",
+   "categorias": [
+    "PodCast",
+    "Corte"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-05",
+   "ed_ini": "2026-10-04T14:50:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-18",
+   "publicacao": "2026-11-02",
+   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-4-3ef1e7f422b980d2b0c2d076e376d4cc"
+  },
+  {
+   "titulo": "[GLAR] MINI PODCAST CORTE 3",
+   "cliente": "GLAR",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "PodCast",
+   "categorias": [
+    "PodCast",
+    "Corte"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-05",
+   "ed_ini": "2026-10-04T14:50:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-18",
+   "publicacao": "2026-11-02",
+   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-3-3ef1e7f422b980a38652d4bdd49c80d1"
+  },
+  {
+   "titulo": "[GLAR] MINI PODCAST CORTE 2",
+   "cliente": "GLAR",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "PodCast",
+   "categorias": [
+    "PodCast",
+    "Corte"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-05",
+   "ed_ini": "2026-10-04T14:50:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-18",
+   "publicacao": "2026-11-02",
+   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-2-3ef1e7f422b980ec9258fca1bcef56d5"
+  },
+  {
    "titulo": "[MABOOH] ALTERAÇÃO SOBRE A MABOOH",
    "cliente": "MABOOH",
    "status": "Alteração",
@@ -8476,7 +8539,7 @@
    "url": "https://app.notion.com/p/EVOLVE-NA-COZINHA-3ec1e7f422b980be9485fe967ea071e7"
   },
   {
-   "titulo": "[GLAR] MINI PODCAST",
+   "titulo": "[GLAR] MINI PODCAST CORTE 1",
    "cliente": "GLAR",
    "status": "À Fazer Maila",
    "fase": "Edição",
@@ -8488,13 +8551,13 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-05",
-   "ed_ini": "2026-09-28T10:56:00.000-03:00",
+   "ed_ini": "2026-10-04T14:50:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-18",
    "publicacao": "2026-11-02",
-   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-3e91e7f422b980688931ce6a2c55f13c"
+   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-1-3e91e7f422b980688931ce6a2c55f13c"
   },
   {
    "titulo": "[MABOOH] ALTERAÇÃO BACKSTAGE",
