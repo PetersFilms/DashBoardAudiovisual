@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-04T15:26:25-03:00",
+ "gerado_em": "2026-10-04T19:03:50-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8418,7 +8418,7 @@
   {
    "titulo": "[CHESS] 1 CENA, 10 PLANOS",
    "cliente": "CHESS",
-   "status": "Executando",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8428,12 +8428,33 @@
    "complexidade": "Básico",
    "prazo": "2026-10-02",
    "ed_ini": "2026-09-28T11:00:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-02T16:11:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-17",
    "publicacao": "2026-10-05",
    "url": "https://app.notion.com/p/CHESS-1-CENA-10-PLANOS-3d71e7f422b98023a820f59db7e548b5"
+  },
+  {
+   "titulo": "[GLAR] MINI PODCAST CORTE 5",
+   "cliente": "GLAR",
+   "status": "À Fazer Maila",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "PodCast",
+   "categorias": [
+    "PodCast",
+    "Corte"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-05",
+   "ed_ini": "2026-10-04T14:50:00.000-03:00",
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-09-18",
+   "publicacao": "2026-11-02",
+   "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-5-3ef1e7f422b98039a34fced0ff5c5e74"
   },
   {
    "titulo": "[GLAR] MINI PODCAST CORTE 4",
