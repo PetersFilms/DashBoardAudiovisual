@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-06T18:20:46-03:00",
+ "gerado_em": "2026-10-06T22:05:25-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8056,66 +8056,6 @@
    "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
   },
   {
-   "titulo": "[DEZARI] O QUE A DEZARI NÃO FAZ",
-   "cliente": "DEZARI",
-   "status": "Alteração",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-09-29",
-   "ed_ini": "2026-09-28T12:47:00.000-03:00",
-   "ed_fim": "2026-09-28T18:18:00.000-03:00",
-   "alt_ini": "2026-10-05T13:24:00.000-03:00",
-   "alt_fim": "2026-09-29T10:00:00.000-03:00",
-   "gravado": "2026-09-24",
-   "publicacao": "2026-09-30",
-   "url": "https://app.notion.com/p/DEZARI-O-QUE-A-DEZARI-N-O-FAZ-3e91e7f422b980d3b1b5d71d7ab932b8"
-  },
-  {
-   "titulo": "[HOMENZ] CLÍNICA",
-   "cliente": "HOMENZ",
-   "status": "Alteração",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Ad",
-   "categorias": [
-    "Ad"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-09-30",
-   "ed_ini": "2026-10-02T10:32:00.000-03:00",
-   "ed_fim": "2026-10-02T11:55:00.000-03:00",
-   "alt_ini": "2026-10-06T17:33:00.000-03:00",
-   "alt_fim": "2026-10-03T14:17:00.000-03:00",
-   "gravado": "2026-09-25",
-   "publicacao": "2026-10-01",
-   "url": "https://app.notion.com/p/HOMENZ-CL-NICA-3e91e7f422b980c7aae4fba9c9004da7"
-  },
-  {
-   "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
-   "cliente": "HOMENZ",
-   "status": "Alteração",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Ad",
-   "categorias": [
-    "Ad"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-09-30",
-   "ed_ini": "2026-10-01T18:10:00.000-03:00",
-   "ed_fim": "2026-10-02T18:02:00.000-03:00",
-   "alt_ini": "2026-10-06T17:33:00.000-03:00",
-   "alt_fim": "2026-10-05T17:42:00.000-03:00",
-   "gravado": "2026-09-25",
-   "publicacao": "2026-10-01",
-   "url": "https://app.notion.com/p/HOMENZ-CLIENTE-EM-CL-NICA-3e91e7f422b980ad997bcdc3e4275d73"
-  },
-  {
    "titulo": "[HOMENZ] AD 03",
    "cliente": "HOMENZ",
    "status": "Aprovado/Finalizado",
@@ -8134,46 +8074,6 @@
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-AD-03-3e91e7f422b98064b111c41005815a53"
-  },
-  {
-   "titulo": "[HOMENZ] AD 04",
-   "cliente": "HOMENZ",
-   "status": "Alteração",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Ad",
-   "categorias": [
-    "Ad"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-09-30",
-   "ed_ini": "2026-09-29T22:19:00.000-03:00",
-   "ed_fim": "2026-09-29T22:19:00.000-03:00",
-   "alt_ini": "2026-10-06T17:30:00.000-03:00",
-   "alt_fim": null,
-   "gravado": "2026-09-25",
-   "publicacao": "2026-10-01",
-   "url": "https://app.notion.com/p/HOMENZ-AD-04-3e91e7f422b980af9140db055d552483"
-  },
-  {
-   "titulo": "[HOMENZ] AD 02",
-   "cliente": "HOMENZ",
-   "status": "Alteração",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Ad",
-   "categorias": [
-    "Ad"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-09-30",
-   "ed_ini": "2026-09-29T14:11:00.000-03:00",
-   "ed_fim": "2026-09-29T22:19:00.000-03:00",
-   "alt_ini": "2026-10-06T17:29:00.000-03:00",
-   "alt_fim": null,
-   "gravado": "2026-09-25",
-   "publicacao": "2026-10-01",
-   "url": "https://app.notion.com/p/HOMENZ-AD-02-3e91e7f422b98042bc20fd2c9ef9b00a"
   },
   {
    "titulo": "[HOMENZ] AD 01",
@@ -8540,26 +8440,6 @@
    "url": "https://app.notion.com/p/MABOOH-ALTERA-O-SOBRE-A-MABOOH-3ed1e7f422b9807d8523d219364c0338"
   },
   {
-   "titulo": "[EVOLVE] NA COZINHA",
-   "cliente": "EVOLVE",
-   "status": "Alteração",
-   "fase": "Edição",
-   "responsavel": "Maila",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-10-05",
-   "ed_ini": "2026-10-02T16:00:00.000-03:00",
-   "ed_fim": "2026-10-03T20:56:00.000-03:00",
-   "alt_ini": "2026-10-05T12:19:00.000-03:00",
-   "alt_fim": null,
-   "gravado": "2026-09-29",
-   "publicacao": "2026-10-06",
-   "url": "https://app.notion.com/p/EVOLVE-NA-COZINHA-3ec1e7f422b980be9485fe967ea071e7"
-  },
-  {
    "titulo": "[GLAR] MINI PODCAST CORTE 1",
    "cliente": "GLAR",
    "status": "À Delegar",
@@ -8641,26 +8521,6 @@
    "url": "https://app.notion.com/p/PIKOLIN-MAJORI-COLAB-3ec1e7f422b9804091caf18c1f1e32be"
   },
   {
-   "titulo": "[PIKOLIN] COLCHÕES",
-   "cliente": "PIKOLIN",
-   "status": "Executando",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Ad",
-   "categorias": [
-    "Ad"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-10-06",
-   "ed_ini": "2026-10-06T17:43:00.000-03:00",
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-01",
-   "publicacao": "2026-10-08",
-   "url": "https://app.notion.com/p/PIKOLIN-COLCH-ES-3ec1e7f422b9801dbbd4fb35f64cefd8"
-  },
-  {
    "titulo": "[CUNHA] CONVITE",
    "cliente": "CUNHA",
    "status": "À Fazer Peterson",
@@ -8679,6 +8539,146 @@
    "gravado": "2026-09-30",
    "publicacao": "2026-10-15",
    "url": "https://app.notion.com/p/CUNHA-CONVITE-3ec1e7f422b980698792e6efa6f33cd1"
+  },
+  {
+   "titulo": "[EVOLVE] NA COZINHA",
+   "cliente": "EVOLVE",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-10-02T16:00:00.000-03:00",
+   "ed_fim": "2026-10-03T20:56:00.000-03:00",
+   "alt_ini": "2026-10-05T12:19:00.000-03:00",
+   "alt_fim": null,
+   "gravado": "2026-09-29",
+   "publicacao": "2026-10-06",
+   "url": "https://app.notion.com/p/EVOLVE-NA-COZINHA-3ec1e7f422b980be9485fe967ea071e7"
+  },
+  {
+   "titulo": "[PIKOLIN] COLCHÕES",
+   "cliente": "PIKOLIN",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-10-06T17:43:00.000-03:00",
+   "ed_fim": "2026-10-06T19:56:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-01",
+   "publicacao": "2026-10-08",
+   "url": "https://app.notion.com/p/PIKOLIN-COLCH-ES-3ec1e7f422b9801dbbd4fb35f64cefd8"
+  },
+  {
+   "titulo": "[HOMENZ] CLÍNICA",
+   "cliente": "HOMENZ",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-10-02T10:32:00.000-03:00",
+   "ed_fim": "2026-10-02T11:55:00.000-03:00",
+   "alt_ini": "2026-10-06T17:33:00.000-03:00",
+   "alt_fim": "2026-10-03T14:17:00.000-03:00",
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-CL-NICA-3e91e7f422b980c7aae4fba9c9004da7"
+  },
+  {
+   "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
+   "cliente": "HOMENZ",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-10-01T18:10:00.000-03:00",
+   "ed_fim": "2026-10-02T18:02:00.000-03:00",
+   "alt_ini": "2026-10-06T17:33:00.000-03:00",
+   "alt_fim": "2026-10-05T17:42:00.000-03:00",
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-CLIENTE-EM-CL-NICA-3e91e7f422b980ad997bcdc3e4275d73"
+  },
+  {
+   "titulo": "[HOMENZ] AD 04",
+   "cliente": "HOMENZ",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-09-29T22:19:00.000-03:00",
+   "ed_fim": "2026-09-29T22:19:00.000-03:00",
+   "alt_ini": "2026-10-06T17:30:00.000-03:00",
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-AD-04-3e91e7f422b980af9140db055d552483"
+  },
+  {
+   "titulo": "[HOMENZ] AD 02",
+   "cliente": "HOMENZ",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-09-29T14:11:00.000-03:00",
+   "ed_fim": "2026-09-29T22:19:00.000-03:00",
+   "alt_ini": "2026-10-06T17:29:00.000-03:00",
+   "alt_fim": null,
+   "gravado": "2026-09-25",
+   "publicacao": "2026-10-01",
+   "url": "https://app.notion.com/p/HOMENZ-AD-02-3e91e7f422b98042bc20fd2c9ef9b00a"
+  },
+  {
+   "titulo": "[DEZARI] O QUE A DEZARI NÃO FAZ",
+   "cliente": "DEZARI",
+   "status": "Alteração",
+   "fase": "Edição",
+   "responsavel": "Maila",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-07",
+   "ed_ini": "2026-09-28T12:47:00.000-03:00",
+   "ed_fim": "2026-09-28T18:18:00.000-03:00",
+   "alt_ini": "2026-10-05T13:24:00.000-03:00",
+   "alt_fim": "2026-09-29T10:00:00.000-03:00",
+   "gravado": "2026-09-24",
+   "publicacao": "2026-09-30",
+   "url": "https://app.notion.com/p/DEZARI-O-QUE-A-DEZARI-N-O-FAZ-3e91e7f422b980d3b1b5d71d7ab932b8"
   },
   {
    "titulo": "[HAGUE] MESA STOP MOTION",
