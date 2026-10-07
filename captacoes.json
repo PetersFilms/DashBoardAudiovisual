@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-07T11:51:13-03:00",
+ "gerado_em": "2026-10-07T17:16:38-03:00",
  "captacoes": [
   {
    "data": "2026-08-25",
@@ -234,6 +234,12 @@
    "hora": "09:00",
    "titulo": "Captação Lapidato",
    "cliente": "LAPIDATO"
+  },
+  {
+   "data": "2026-10-14",
+   "hora": "14:00",
+   "titulo": "Captação Jardim",
+   "cliente": "JARDIM"
   },
   {
    "data": "2026-10-15",
