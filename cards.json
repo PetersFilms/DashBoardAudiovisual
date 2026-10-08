@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-07T17:16:39-03:00",
+ "gerado_em": "2026-10-07T21:31:48-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8422,7 +8422,7 @@
   {
    "titulo": "[MABOOH] ALTERAÇÃO SOBRE A MABOOH",
    "cliente": "MABOOH",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": null,
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8434,7 +8434,7 @@
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": "2026-10-02T14:54:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-07T20:26:00.000-03:00",
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/MABOOH-ALTERA-O-SOBRE-A-MABOOH-3ed1e7f422b9807d8523d219364c0338"
@@ -8583,7 +8583,7 @@
   {
    "titulo": "[HOMENZ] CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8595,7 +8595,7 @@
    "ed_ini": "2026-10-02T10:32:00.000-03:00",
    "ed_fim": "2026-10-02T11:55:00.000-03:00",
    "alt_ini": "2026-10-06T17:33:00.000-03:00",
-   "alt_fim": "2026-10-03T14:17:00.000-03:00",
+   "alt_fim": "2026-10-07T19:00:00.000-03:00",
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-CL-NICA-3e91e7f422b980c7aae4fba9c9004da7"
@@ -8603,7 +8603,7 @@
   {
    "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8615,7 +8615,7 @@
    "ed_ini": "2026-10-01T18:10:00.000-03:00",
    "ed_fim": "2026-10-02T18:02:00.000-03:00",
    "alt_ini": "2026-10-06T17:33:00.000-03:00",
-   "alt_fim": "2026-10-05T17:42:00.000-03:00",
+   "alt_fim": "2026-10-07T19:00:00.000-03:00",
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-CLIENTE-EM-CL-NICA-3e91e7f422b980ad997bcdc3e4275d73"
@@ -8623,7 +8623,7 @@
   {
    "titulo": "[HOMENZ] AD 04",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8635,7 +8635,7 @@
    "ed_ini": "2026-09-29T22:19:00.000-03:00",
    "ed_fim": "2026-09-29T22:19:00.000-03:00",
    "alt_ini": "2026-10-06T17:30:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-07T19:29:00.000-03:00",
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-AD-04-3e91e7f422b980af9140db055d552483"
@@ -8643,7 +8643,7 @@
   {
    "titulo": "[HOMENZ] AD 02",
    "cliente": "HOMENZ",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8655,7 +8655,7 @@
    "ed_ini": "2026-09-29T14:11:00.000-03:00",
    "ed_fim": "2026-09-29T22:19:00.000-03:00",
    "alt_ini": "2026-10-06T17:29:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-07T19:29:00.000-03:00",
    "gravado": "2026-09-25",
    "publicacao": "2026-10-01",
    "url": "https://app.notion.com/p/HOMENZ-AD-02-3e91e7f422b98042bc20fd2c9ef9b00a"
@@ -8663,7 +8663,7 @@
   {
    "titulo": "[DEZARI] O QUE A DEZARI NÃO FAZ",
    "cliente": "DEZARI",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8675,7 +8675,7 @@
    "ed_ini": "2026-09-28T12:47:00.000-03:00",
    "ed_fim": "2026-09-28T18:18:00.000-03:00",
    "alt_ini": "2026-10-05T13:24:00.000-03:00",
-   "alt_fim": "2026-09-29T10:00:00.000-03:00",
+   "alt_fim": "2026-10-07T18:14:00.000-03:00",
    "gravado": "2026-09-24",
    "publicacao": "2026-09-30",
    "url": "https://app.notion.com/p/DEZARI-O-QUE-A-DEZARI-N-O-FAZ-3e91e7f422b980d3b1b5d71d7ab932b8"
@@ -8683,7 +8683,7 @@
   {
    "titulo": "[HAGUE] MESA STOP MOTION",
    "cliente": "HAGUE",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8695,7 +8695,7 @@
    "ed_ini": "2026-10-04T20:30:00.000-03:00",
    "ed_fim": "2026-10-04T20:33:00.000-03:00",
    "alt_ini": "2026-10-05T19:14:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-07T18:26:00.000-03:00",
    "gravado": "2026-10-01",
    "publicacao": "2026-10-09",
    "url": "https://app.notion.com/p/HAGUE-MESA-STOP-MOTION-3ec1e7f422b98063ae15f207be355937"
@@ -8703,7 +8703,7 @@
   {
    "titulo": "[HAGUE] PREPARO PRATO",
    "cliente": "HAGUE",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8715,7 +8715,7 @@
    "ed_ini": "2026-10-04T20:30:00.000-03:00",
    "ed_fim": "2026-10-04T20:33:00.000-03:00",
    "alt_ini": "2026-10-05T19:15:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-07T18:33:00.000-03:00",
    "gravado": "2026-10-01",
    "publicacao": "2026-10-09",
    "url": "https://app.notion.com/p/HAGUE-PREPARO-PRATO-3ec1e7f422b980d9af20c052ee8ef234"
