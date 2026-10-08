@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-08T03:46:14-03:00",
+ "gerado_em": "2026-10-08T11:09:02-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8422,7 +8422,7 @@
   {
    "titulo": "[MABOOH] ALTERAÇÃO SOBRE A MABOOH",
    "cliente": "MABOOH",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": null,
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8543,7 +8543,7 @@
   {
    "titulo": "[EVOLVE] NA COZINHA",
    "cliente": "EVOLVE",
-   "status": "Alterado",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8554,7 +8554,7 @@
    "prazo": "2026-10-07",
    "ed_ini": "2026-10-02T16:00:00.000-03:00",
    "ed_fim": "2026-10-03T20:56:00.000-03:00",
-   "alt_ini": "2026-10-05T12:19:00.000-03:00",
+   "alt_ini": "2026-10-08T10:47:00.000-03:00",
    "alt_fim": "2026-10-07T14:44:00.000-03:00",
    "gravado": "2026-09-29",
    "publicacao": "2026-10-06",
@@ -8723,9 +8723,9 @@
   {
    "titulo": "[HAGUE] LENDO COMENTÁRIOS",
    "cliente": "HAGUE",
-   "status": "À Delegar",
+   "status": "À Fazer Peterson",
    "fase": "Edição",
-   "responsavel": "Maila",
+   "responsavel": "Petterson",
    "categoria": "Reels",
    "categorias": [
     "Reels"
@@ -8760,6 +8760,146 @@
    "gravado": "2026-10-06",
    "publicacao": "2026-10-13",
    "url": "https://app.notion.com/p/LAPIDATO-Mini-Institucional-3ec1e7f422b980cd91e6e68eb04738b8"
+  },
+  {
+   "titulo": "[BEA FRUET] EVOLVE PROJETO",
+   "cliente": "BEA FRUET",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/BEA-FRUET-EVOLVE-PROJETO-3f31e7f422b980bd9a17f8b46c6f4a0a"
+  },
+  {
+   "titulo": "[BEA FRUET] DETALHES AP BC",
+   "cliente": "BEA FRUET",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/BEA-FRUET-DETALHES-AP-BC-3f31e7f422b98014b790d3cf84462481"
+  },
+  {
+   "titulo": "[BEA FRUET] DETALHES A.MARIE",
+   "cliente": "BEA FRUET",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-12",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/BEA-FRUET-DETALHES-A-MARIE-3f31e7f422b9800cbba4c4738d70392e"
+  },
+  {
+   "titulo": "[PROMA] CONVITE SICREDI",
+   "cliente": "PROMA",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-13",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-06",
+   "publicacao": "2026-10-12",
+   "url": "https://app.notion.com/p/PROMA-CONVITE-SICREDI-3f31e7f422b9803aa27cf1642032592b"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] VISITA NAS OBRAS",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-13",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-07",
+   "publicacao": "2026-10-15",
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-VISITA-NAS-OBRAS-3f31e7f422b9806399c3e6a056d5aaac"
+  },
+  {
+   "titulo": "[LUME] CONFRATERNIZAÇÃO",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-13",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-05",
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/LUME-CONFRATERNIZA-O-3f31e7f422b980099ff8c36ffcf7ebda"
+  },
+  {
+   "titulo": "[LUME] CAFÉS E DOCES",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-13",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-05",
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/LUME-CAF-S-E-DOCES-3f31e7f422b980db862be850a6b28b57"
   },
   {
    "titulo": "[CUNHA] O QUE CHEGOU HOJE",
