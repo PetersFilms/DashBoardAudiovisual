@@ -461,7 +461,9 @@
    "card": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3ea1e7f422b98170976ff413d3990137",
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "gravado": "2026-10-08",
-   "em": "2026-09-29 06:12"
+   "em": "2026-09-29 06:12",
+   "arquivado": "2026-10-09 10:57",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-10-01|captacao pikolin",
@@ -502,6 +504,25 @@
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "gravado": "2026-10-15",
    "em": "2026-10-06 18:20"
+  },
+  {
+   "chave": "2026-10-07|captacao - emporio das pedras",
+   "card": null,
+   "motivo": "já existia no banco"
+  },
+  {
+   "chave": "2026-10-14|captacao lapidato",
+   "card": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3f41e7f422b9817abc13f69caaec04f2",
+   "titulo": "[LAPIDATO] CAPTAÇÃO",
+   "gravado": "2026-10-14",
+   "em": "2026-10-09 10:57"
+  },
+  {
+   "chave": "2026-10-14|captacao jardim",
+   "card": "https://app.notion.com/p/JARDIM-CAPTA-O-3f41e7f422b981338e56d9044494a600",
+   "titulo": "[JARDIM] CAPTAÇÃO",
+   "gravado": "2026-10-14",
+   "em": "2026-10-09 10:57"
   }
  ]
 }
