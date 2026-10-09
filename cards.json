@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-09T16:13:02-03:00",
+ "gerado_em": "2026-10-09T20:39:13-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8543,7 +8543,7 @@
   {
    "titulo": "[EVOLVE] NA COZINHA",
    "cliente": "EVOLVE",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8555,7 +8555,7 @@
    "ed_ini": "2026-10-02T16:00:00.000-03:00",
    "ed_fim": "2026-10-03T20:56:00.000-03:00",
    "alt_ini": "2026-10-08T10:47:00.000-03:00",
-   "alt_fim": "2026-10-07T14:44:00.000-03:00",
+   "alt_fim": "2026-10-09T17:37:00.000-03:00",
    "gravado": "2026-09-29",
    "publicacao": "2026-10-06",
    "url": "https://app.notion.com/p/EVOLVE-NA-COZINHA-3ec1e7f422b980be9485fe967ea071e7"
@@ -8583,7 +8583,7 @@
   {
    "titulo": "[HOMENZ] CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8603,7 +8603,7 @@
   {
    "titulo": "[HOMENZ] CLIENTE EM CLÍNICA",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8623,7 +8623,7 @@
   {
    "titulo": "[HOMENZ] AD 04",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8643,7 +8643,7 @@
   {
    "titulo": "[HOMENZ] AD 02",
    "cliente": "HOMENZ",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Ad",
@@ -8683,7 +8683,7 @@
   {
    "titulo": "[HAGUE] MESA STOP MOTION",
    "cliente": "HAGUE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8703,7 +8703,7 @@
   {
    "titulo": "[HAGUE] PREPARO PRATO",
    "cliente": "HAGUE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
