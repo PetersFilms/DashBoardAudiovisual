@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-12T13:15:24-03:00",
+ "gerado_em": "2026-10-12T20:19:21-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8743,7 +8743,7 @@
   {
    "titulo": "[LAPIDATO] Mini Institucional",
    "cliente": "LAPIDATO",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Institucional",
@@ -8754,7 +8754,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-10-09",
    "ed_ini": "2026-10-12T12:05:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-12T19:10:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-10-06",
@@ -8824,7 +8824,7 @@
   {
    "titulo": "[PROMA] CONVITE SICREDI",
    "cliente": "PROMA",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8833,7 +8833,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-10-13",
-   "ed_ini": null,
+   "ed_ini": "2026-10-12T19:54:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -8920,6 +8920,24 @@
    "gravado": "2026-09-30",
    "publicacao": "2026-10-15",
    "url": "https://app.notion.com/p/CUNHA-O-QUE-CHEGOU-HOJE-3ec1e7f422b98061b39fc0d52965dc8f"
+  },
+  {
+   "titulo": "[EVOLVE] CAPTAÇÃO EVENTO  - CAPTAÇÃO",
+   "cliente": "EVOLVE",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-20",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-EVENTO-CAPTA-O-3f71e7f422b9810e89f5fce6efe11610"
   },
   {
    "titulo": "[CUNHA] CAPTAÇÃO",

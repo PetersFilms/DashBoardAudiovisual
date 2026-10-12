@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-12T13:15:22-03:00",
+ "gerado_em": "2026-10-12T20:19:19-03:00",
  "captacoes": [
   {
    "data": "2026-08-28",
@@ -222,6 +222,12 @@
    "hora": "15:45",
    "titulo": "Captação Lapidato",
    "cliente": "LAPIDATO"
+  },
+  {
+   "data": "2026-10-20",
+   "hora": "18:00",
+   "titulo": "Evento Evolve - Captação",
+   "cliente": "EVENTO EVOLVE"
   },
   {
    "data": "2026-11-07",
