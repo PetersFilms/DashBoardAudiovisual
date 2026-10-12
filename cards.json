@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-12T03:42:33-03:00",
+ "gerado_em": "2026-10-12T13:15:24-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8543,7 +8543,7 @@
   {
    "titulo": "[EVOLVE] NA COZINHA",
    "cliente": "EVOLVE",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Maila",
    "categoria": "Reels",
@@ -8743,7 +8743,7 @@
   {
    "titulo": "[LAPIDATO] Mini Institucional",
    "cliente": "LAPIDATO",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Institucional",
@@ -8753,7 +8753,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-10-09",
-   "ed_ini": null,
+   "ed_ini": "2026-10-12T12:05:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
