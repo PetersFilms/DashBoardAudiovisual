@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-13T09:16:56-03:00",
+ "gerado_em": "2026-10-13T16:36:53-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8920,6 +8920,24 @@
    "gravado": "2026-09-30",
    "publicacao": "2026-10-15",
    "url": "https://app.notion.com/p/CUNHA-O-QUE-CHEGOU-HOJE-3ec1e7f422b98061b39fc0d52965dc8f"
+  },
+  {
+   "titulo": "[MABOOH] CAPTAÇÃO",
+   "cliente": "MABOOH",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-14",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/MABOOH-CAPTA-O-3f81e7f422b98102a8f8df837ab7dcc3"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO EVENTO  - CAPTAÇÃO",
