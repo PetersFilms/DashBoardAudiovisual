@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-16T09:48:25-03:00",
+ "gerado_em": "2026-10-16T14:02:38-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8824,7 +8824,7 @@
   {
    "titulo": "[PROMA] CONVITE SICREDI",
    "cliente": "PROMA",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8835,7 +8835,7 @@
    "prazo": "2026-10-13",
    "ed_ini": "2026-10-12T19:54:00.000-03:00",
    "ed_fim": "2026-10-15T12:16:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-10-16T10:30:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-10-06",
    "publicacao": "2026-10-12",
@@ -8920,6 +8920,24 @@
    "gravado": "2026-09-30",
    "publicacao": "2026-10-15",
    "url": "https://app.notion.com/p/CUNHA-O-QUE-CHEGOU-HOJE-3ec1e7f422b98061b39fc0d52965dc8f"
+  },
+  {
+   "titulo": "[PROMA] CAPTAÇÃO + REAL VIDROS",
+   "cliente": "PROMA",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-19",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/PROMA-CAPTA-O-REAL-VIDROS-3fb1e7f422b9815a830cdef344eb8f87"
   },
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] CAPTAÇÃO ·",
