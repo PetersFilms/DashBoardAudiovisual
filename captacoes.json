@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-16T04:36:57-03:00",
+ "gerado_em": "2026-10-16T09:48:24-03:00",
  "captacoes": [
   {
    "data": "2026-09-01",
@@ -222,6 +222,12 @@
    "hora": "16:00",
    "titulo": "Captação Lapidato",
    "cliente": "LAPIDATO"
+  },
+  {
+   "data": "2026-10-19",
+   "hora": "09:30",
+   "titulo": "Captação - Proma + Real Vidros",
+   "cliente": "PROMA + REAL VIDROS"
   },
   {
    "data": "2026-10-20",
