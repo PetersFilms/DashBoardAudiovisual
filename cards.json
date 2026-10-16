@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-16T17:11:32-03:00",
+ "gerado_em": "2026-10-16T20:05:57-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8550,7 +8550,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-07",
    "ed_ini": "2026-10-02T16:00:00.000-03:00",
    "ed_fim": "2026-10-03T20:56:00.000-03:00",
@@ -8690,7 +8690,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-08",
    "ed_ini": "2026-10-04T20:30:00.000-03:00",
    "ed_fim": "2026-10-04T20:33:00.000-03:00",
@@ -8710,7 +8710,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-08",
    "ed_ini": "2026-10-04T20:30:00.000-03:00",
    "ed_fim": "2026-10-04T20:33:00.000-03:00",
@@ -8730,7 +8730,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-08",
    "ed_ini": null,
    "ed_fim": null,
@@ -8824,7 +8824,7 @@
   {
    "titulo": "[PROMA] CONVITE SICREDI",
    "cliente": "PROMA",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8836,7 +8836,7 @@
    "ed_ini": "2026-10-12T19:54:00.000-03:00",
    "ed_fim": "2026-10-15T12:16:00.000-03:00",
    "alt_ini": "2026-10-16T10:30:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-16T19:10:00.000-03:00",
    "gravado": "2026-10-06",
    "publicacao": "2026-10-12",
    "url": "https://app.notion.com/p/PROMA-CONVITE-SICREDI-3f31e7f422b9803aa27cf1642032592b"
