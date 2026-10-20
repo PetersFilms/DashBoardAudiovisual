@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-20T07:33:54-03:00",
+ "gerado_em": "2026-10-20T12:25:46-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8902,6 +8902,106 @@
    "url": "https://app.notion.com/p/LUME-CAF-S-E-DOCES-3f31e7f422b980db862be850a6b28b57"
   },
   {
+   "titulo": "[LAPIDATO]  AD 05",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-20",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-13",
+   "publicacao": "2026-10-20",
+   "url": "https://app.notion.com/p/LAPIDATO-AD-05-3ff1e7f422b9808b95e7c258d1b9a280"
+  },
+  {
+   "titulo": "[LAPIDATO]  AD 04",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-20",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-13",
+   "publicacao": "2026-10-20",
+   "url": "https://app.notion.com/p/LAPIDATO-AD-04-3ff1e7f422b98066ae77d09b05b151b7"
+  },
+  {
+   "titulo": "[LAPIDATO]  AD 03",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-20",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-13",
+   "publicacao": "2026-10-20",
+   "url": "https://app.notion.com/p/LAPIDATO-AD-03-3ff1e7f422b98051b592e780f371bb0c"
+  },
+  {
+   "titulo": "[LAPIDATO]  AD 02",
+   "cliente": "LAPIDATO",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-20",
+   "ed_ini": "2026-10-20T09:45:00.000-03:00",
+   "ed_fim": "2026-10-20T10:44:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-13",
+   "publicacao": "2026-10-20",
+   "url": "https://app.notion.com/p/LAPIDATO-AD-02-3ff1e7f422b98083ada5f98659af49f2"
+  },
+  {
+   "titulo": "[LAPIDATO]  AD 01",
+   "cliente": "LAPIDATO",
+   "status": "Pré Aprovação",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-20",
+   "ed_ini": "2026-10-20T09:06:00.000-03:00",
+   "ed_fim": "2026-10-20T10:44:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-13",
+   "publicacao": "2026-10-20",
+   "url": "https://app.notion.com/p/LAPIDATO-AD-01-3ff1e7f422b9803090b1f2983e93751a"
+  },
+  {
    "titulo": "[CUNHA] O QUE CHEGOU HOJE",
    "cliente": "CUNHA",
    "status": "À Fazer Peterson",
@@ -8920,6 +9020,24 @@
    "gravado": "2026-09-30",
    "publicacao": "2026-10-15",
    "url": "https://app.notion.com/p/CUNHA-O-QUE-CHEGOU-HOJE-3ec1e7f422b98061b39fc0d52965dc8f"
+  },
+  {
+   "titulo": "[LAPIDATO] CAPTAÇÃO",
+   "cliente": "LAPIDATO",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-27",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-3ff1e7f422b981d792a3f135d8c9ebe5"
   },
   {
    "titulo": "[MABOOH]",
