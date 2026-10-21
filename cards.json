@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-21T14:44:32-03:00",
+ "gerado_em": "2026-10-21T17:59:03-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8904,7 +8904,7 @@
   {
    "titulo": "[LAPIDATO]  AD 05",
    "cliente": "LAPIDATO",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
@@ -8913,7 +8913,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-10-20",
-   "ed_ini": null,
+   "ed_ini": "2026-10-21T15:42:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -8924,7 +8924,7 @@
   {
    "titulo": "[LAPIDATO]  AD 04",
    "cliente": "LAPIDATO",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
@@ -8933,7 +8933,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-10-20",
-   "ed_ini": null,
+   "ed_ini": "2026-10-21T15:42:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -8944,7 +8944,7 @@
   {
    "titulo": "[LAPIDATO]  AD 03",
    "cliente": "LAPIDATO",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
@@ -8953,7 +8953,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-10-20",
-   "ed_ini": null,
+   "ed_ini": "2026-10-21T15:42:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
