@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-22T05:03:31-03:00",
+ "gerado_em": "2026-10-22T11:11:15-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8764,7 +8764,7 @@
   {
    "titulo": "[PROMA] CONVITE SICREDI",
    "cliente": "PROMA",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8904,7 +8904,7 @@
   {
    "titulo": "[MABOOH] LANÇAMENTO",
    "cliente": "MABOOH",
-   "status": "Pré Aprovação",
+   "status": "Alteração",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8915,7 +8915,7 @@
    "prazo": "2026-10-20",
    "ed_ini": "2026-10-20T16:17:00.000-03:00",
    "ed_fim": "2026-10-20T21:15:00.000-03:00",
-   "alt_ini": null,
+   "alt_ini": "2026-10-22T09:45:00.000-03:00",
    "alt_fim": null,
    "gravado": "2026-10-14",
    "publicacao": "2026-10-20",
