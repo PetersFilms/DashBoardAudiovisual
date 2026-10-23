@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-23T16:37:09-03:00",
+ "gerado_em": "2026-10-23T19:43:22-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -9178,6 +9178,24 @@
    "gravado": "2026-10-05",
    "publicacao": "2026-10-13",
    "url": "https://app.notion.com/p/LUME-CAF-S-E-DOCES-3f31e7f422b980db862be850a6b28b57"
+  },
+  {
+   "titulo": "[EVOLVE] CAPTAÇÃO (DEPOIMENTO)",
+   "cliente": "EVOLVE",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-27",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-DEPOIMENTO-4021e7f422b981cba48af73bc33d70b6"
   },
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
