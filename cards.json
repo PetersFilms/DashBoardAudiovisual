@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-22T18:59:57-03:00",
+ "gerado_em": "2026-10-22T21:26:24-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8904,7 +8904,7 @@
   {
    "titulo": "[MABOOH] LANÇAMENTO",
    "cliente": "MABOOH",
-   "status": "Alteração",
+   "status": "Alterado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8916,7 +8916,7 @@
    "ed_ini": "2026-10-20T16:17:00.000-03:00",
    "ed_fim": "2026-10-20T21:15:00.000-03:00",
    "alt_ini": "2026-10-22T09:45:00.000-03:00",
-   "alt_fim": null,
+   "alt_fim": "2026-10-22T15:05:00.000-03:00",
    "gravado": "2026-10-14",
    "publicacao": "2026-10-20",
    "url": "https://app.notion.com/p/MABOOH-LAN-AMENTO-3fe1e7f422b98009a2b7d44cf1aa7cc2"
@@ -8924,7 +8924,7 @@
   {
    "titulo": "[BEA FRUET] DETALHES EVOLVE 2",
    "cliente": "BEA FRUET",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8934,7 +8934,7 @@
    "complexidade": "Básico",
    "prazo": "2026-10-22",
    "ed_ini": "2026-10-22T15:10:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-22T19:05:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
@@ -8984,7 +8984,7 @@
   {
    "titulo": "[CUNHA] CONVITE",
    "cliente": "CUNHA",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8993,7 +8993,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-22",
-   "ed_ini": null,
+   "ed_ini": "2026-10-22T19:10:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
