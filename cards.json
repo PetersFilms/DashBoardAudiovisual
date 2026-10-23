@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-23T07:39:13-03:00",
+ "gerado_em": "2026-10-23T12:31:14-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8942,6 +8942,46 @@
    "url": "https://app.notion.com/p/BEA-FRUET-DETALHES-EVOLVE-2-3f31e7f422b98014b790d3cf84462481"
   },
   {
+   "titulo": "[EVOLVE] EVENTO COMES E BEBES",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-23",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-20",
+   "publicacao": "2026-10-24",
+   "url": "https://app.notion.com/p/EVOLVE-EVENTO-COMES-E-BEBES-4021e7f422b9813988e6d4a09d02e14f"
+  },
+  {
+   "titulo": "[EVOLVE] EVENTO DETALHES",
+   "cliente": "EVOLVE",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-23",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-20",
+   "publicacao": "2026-10-25",
+   "url": "https://app.notion.com/p/EVOLVE-EVENTO-DETALHES-4021e7f422b9815dbd93e4eedae4401a"
+  },
+  {
    "titulo": "[HAGUE] LENDO COMENTÁRIOS",
    "cliente": "HAGUE",
    "status": "À Fazer Peterson",
@@ -8952,7 +8992,7 @@
     "Reels"
    ],
    "complexidade": "Básico",
-   "prazo": "2026-10-22",
+   "prazo": "2026-10-23",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -8972,7 +9012,7 @@
     "Reels"
    ],
    "complexidade": "Básico",
-   "prazo": "2026-10-22",
+   "prazo": "2026-10-23",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -8992,7 +9032,7 @@
     "Reels"
    ],
    "complexidade": "Básico",
-   "prazo": "2026-10-22",
+   "prazo": "2026-10-23",
    "ed_ini": "2026-10-22T19:10:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
@@ -9010,7 +9050,7 @@
    "categoria": null,
    "categorias": [],
    "complexidade": null,
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9030,7 +9070,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9050,7 +9090,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9070,7 +9110,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9090,7 +9130,7 @@
     "Reels"
    ],
    "complexidade": "Básico",
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9110,7 +9150,7 @@
     "Reels"
    ],
    "complexidade": "Básico",
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9130,7 +9170,7 @@
     "Reels"
    ],
    "complexidade": "Básico",
-   "prazo": "2026-10-23",
+   "prazo": "2026-10-24",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
