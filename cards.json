@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-23T22:13:32-03:00",
+ "gerado_em": "2026-10-24T03:37:57-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8904,7 +8904,7 @@
   {
    "titulo": "[MABOOH] LANÇAMENTO",
    "cliente": "MABOOH",
-   "status": "Alterado",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8984,7 +8984,7 @@
   {
    "titulo": "[HAGUE] LENDO COMENTÁRIOS",
    "cliente": "HAGUE",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8993,7 +8993,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-23",
-   "ed_ini": null,
+   "ed_ini": "2026-10-24T00:25:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -9004,7 +9004,7 @@
   {
    "titulo": "[CUNHA] O QUE CHEGOU HOJE",
    "cliente": "CUNHA",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9013,8 +9013,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-23",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-10-23T23:36:00.000-03:00",
+   "ed_fim": "2026-10-24T00:00:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-30",
@@ -9024,7 +9024,7 @@
   {
    "titulo": "[CUNHA] CONVITE",
    "cliente": "CUNHA",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9034,7 +9034,7 @@
    "complexidade": "Básico",
    "prazo": "2026-10-23",
    "ed_ini": "2026-10-22T19:10:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-24T00:00:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-09-30",
