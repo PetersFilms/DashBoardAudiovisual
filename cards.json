@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T14:48:48-03:00",
+ "gerado_em": "2026-10-26T19:01:45-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8942,26 +8942,6 @@
    "url": "https://app.notion.com/p/BEA-FRUET-DETALHES-EVOLVE-2-3f31e7f422b98014b790d3cf84462481"
   },
   {
-   "titulo": "[EVOLVE] EVENTO COMES E BEBES",
-   "cliente": "EVOLVE",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-10-23",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-20",
-   "publicacao": "2026-10-24",
-   "url": "https://app.notion.com/p/EVOLVE-EVENTO-COMES-E-BEBES-4021e7f422b9813988e6d4a09d02e14f"
-  },
-  {
    "titulo": "[HAGUE] LENDO COMENTÁRIOS",
    "cliente": "HAGUE",
    "status": "Pré Aprovação",
@@ -9162,7 +9142,7 @@
   {
    "titulo": "[PROMA] REAL VIDROS CONVITE",
    "cliente": "PROMA",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9172,7 +9152,7 @@
    "complexidade": "Intermediário",
    "prazo": "2026-10-26",
    "ed_ini": "2026-10-26T12:55:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-26T18:27:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-10-19",
@@ -9182,7 +9162,7 @@
   {
    "titulo": "[EVOLVE] NOITE TRAMONTINA",
    "cliente": "EVOLVE",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9191,7 +9171,7 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-10-27",
-   "ed_ini": null,
+   "ed_ini": "2026-10-26T18:51:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
