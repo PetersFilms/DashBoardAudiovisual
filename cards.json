@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-26T02:32:50-03:00",
+ "gerado_em": "2026-10-26T08:46:34-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -9160,6 +9160,26 @@
    "url": "https://app.notion.com/p/LUME-CAF-S-E-DOCES-3f31e7f422b980db862be850a6b28b57"
   },
   {
+   "titulo": "[PROMA] REAL VIDROS CONVITE",
+   "cliente": "PROMA",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-10-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-19",
+   "publicacao": "2026-10-30",
+   "url": "https://app.notion.com/p/PROMA-REAL-VIDROS-CONVITE-4051e7f422b980a7863dd3d30ab0ae9c"
+  },
+  {
    "titulo": "[EVOLVE] NOITE TRAMONTINA",
    "cliente": "EVOLVE",
    "status": "À Fazer Peterson",
@@ -9178,6 +9198,24 @@
    "gravado": "2026-10-20",
    "publicacao": null,
    "url": "https://app.notion.com/p/EVOLVE-NOITE-TRAMONTINA-4031e7f422b980fea1f4d7a0f266e54e"
+  },
+  {
+   "titulo": "(sem título)",
+   "cliente": null,
+   "status": "À Fazer Pedro",
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/4051e7f422b980e0a1ecc7ceebc6355a"
   },
   {
    "titulo": "[RICHARD] CAPTAÇÃO",
