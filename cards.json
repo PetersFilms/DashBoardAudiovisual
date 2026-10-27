@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-27T15:30:53-03:00",
+ "gerado_em": "2026-10-27T19:43:46-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -9062,7 +9062,7 @@
   {
    "titulo": "[JARDIM] BLACK FRIDAY 01",
    "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9071,8 +9071,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-27",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-10-27T15:37:00.000-03:00",
+   "ed_fim": "2026-10-27T19:09:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-10-14",
@@ -9261,7 +9261,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO (DEPOIMENTO)",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9297,7 +9297,7 @@
   {
    "titulo": "[PROMA] CAPTAÇÃO + REAL VIDROS",
    "cliente": "PROMA",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9315,7 +9315,7 @@
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] CAPTAÇÃO ·",
    "cliente": "EMPÓRIO DAS PEDRAS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9333,7 +9333,7 @@
   {
    "titulo": "[MABOOH] CAPTAÇÃO",
    "cliente": "MABOOH",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
