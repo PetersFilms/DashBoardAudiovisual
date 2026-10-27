@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-27T09:57:20-03:00",
+ "gerado_em": "2026-10-27T15:30:53-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -8036,26 +8036,6 @@
    "url": "https://app.notion.com/p/GLAR-A-largura-na-pr-tica-3e01e7f422b98020b060d7eef6df6305"
   },
   {
-   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
-   "cliente": "CHESS",
-   "status": "À Fazer Peterson",
-   "fase": "Captação",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-09-23",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": "2026-09-28",
-   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
-  },
-  {
    "titulo": "[HOMENZ] AD 03",
    "cliente": "HOMENZ",
    "status": "Aprovado/Finalizado",
@@ -9002,144 +8982,6 @@
    "url": "https://app.notion.com/p/CUNHA-CONVITE-3ec1e7f422b980698792e6efa6f33cd1"
   },
   {
-   "titulo": "[CHESS] DEPOIMENTO JARDIM",
-   "cliente": "CHESS",
-   "status": "À Fazer Peterson",
-   "fase": null,
-   "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-14",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-DEPOIMENTO-JARDIM-3fa1e7f422b980869f28f3b8c379cbb3"
-  },
-  {
-   "titulo": "[JARDIM] WELLNESS 02",
-   "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-14",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/JARDIM-WELLNESS-02-3fa1e7f422b98080952dc4864913b98d"
-  },
-  {
-   "titulo": "[JARDIM] WELLNESS 01",
-   "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-14",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/JARDIM-WELLNESS-01-3fa1e7f422b980a4b0aed6d5eab0b0d6"
-  },
-  {
-   "titulo": "[JARDIM] BLACK FRIDAY 02",
-   "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-14",
-   "publicacao": "2026-11-05",
-   "url": "https://app.notion.com/p/JARDIM-BLACK-FRIDAY-02-3fa1e7f422b980218879c895c79032d0"
-  },
-  {
-   "titulo": "[JARDIM] BLACK FRIDAY 01",
-   "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-14",
-   "publicacao": "2026-11-01",
-   "url": "https://app.notion.com/p/JARDIM-BLACK-FRIDAY-01-3fa1e7f422b980b78a2eeb6adbd2a9b4"
-  },
-  {
-   "titulo": "[LUME] CONFRATERNIZAÇÃO",
-   "cliente": "LUME",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-05",
-   "publicacao": "2026-10-13",
-   "url": "https://app.notion.com/p/LUME-CONFRATERNIZA-O-3f31e7f422b980099ff8c36ffcf7ebda"
-  },
-  {
-   "titulo": "[LUME] CAFÉS E DOCES",
-   "cliente": "LUME",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": "Básico",
-   "prazo": "2026-10-24",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-10-05",
-   "publicacao": "2026-10-13",
-   "url": "https://app.notion.com/p/LUME-CAF-S-E-DOCES-3f31e7f422b980db862be850a6b28b57"
-  },
-  {
    "titulo": "[PROMA] REAL VIDROS CONVITE",
    "cliente": "PROMA",
    "status": "Pré Aprovação",
@@ -9162,7 +9004,7 @@
   {
    "titulo": "[EVOLVE] NOITE TRAMONTINA",
    "cliente": "EVOLVE",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9172,12 +9014,213 @@
    "complexidade": "Intermediário",
    "prazo": "2026-10-27",
    "ed_ini": "2026-10-26T18:51:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-26T23:24:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-10-20",
    "publicacao": null,
    "url": "https://app.notion.com/p/EVOLVE-NOITE-TRAMONTINA-4031e7f422b980fea1f4d7a0f266e54e"
+  },
+  {
+   "titulo": "[CHESS] DEPOIMENTO JARDIM",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-10-27",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-14",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-DEPOIMENTO-JARDIM-3fa1e7f422b980869f28f3b8c379cbb3"
+  },
+  {
+   "titulo": "[JARDIM] BLACK FRIDAY 02",
+   "cliente": "JARDIM",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-27",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-14",
+   "publicacao": "2026-11-05",
+   "url": "https://app.notion.com/p/JARDIM-BLACK-FRIDAY-02-3fa1e7f422b980218879c895c79032d0"
+  },
+  {
+   "titulo": "[JARDIM] BLACK FRIDAY 01",
+   "cliente": "JARDIM",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-27",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-14",
+   "publicacao": "2026-11-01",
+   "url": "https://app.notion.com/p/JARDIM-BLACK-FRIDAY-01-3fa1e7f422b980b78a2eeb6adbd2a9b4"
+  },
+  {
+   "titulo": "[JARDIM] WELLNESS 02",
+   "cliente": "JARDIM",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-28",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-14",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/JARDIM-WELLNESS-02-3fa1e7f422b98080952dc4864913b98d"
+  },
+  {
+   "titulo": "[JARDIM] WELLNESS 01",
+   "cliente": "JARDIM",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-10-28",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-14",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/JARDIM-WELLNESS-01-3fa1e7f422b980a4b0aed6d5eab0b0d6"
+  },
+  {
+   "titulo": "[LAPIDATO] DEPOIMENTO 01",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels",
+    "Depoimento"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-29",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-22",
+   "publicacao": "2026-10-29",
+   "url": "https://app.notion.com/p/LAPIDATO-DEPOIMENTO-01-4061e7f422b98075a375ea2fb591aa16"
+  },
+  {
+   "titulo": "[LUME] CONFRATERNIZAÇÃO",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-29",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-05",
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/LUME-CONFRATERNIZA-O-3f31e7f422b980099ff8c36ffcf7ebda"
+  },
+  {
+   "titulo": "[LUME] CAFÉS E DOCES",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-10-29",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-05",
+   "publicacao": "2026-10-13",
+   "url": "https://app.notion.com/p/LUME-CAF-S-E-DOCES-3f31e7f422b980db862be850a6b28b57"
+  },
+  {
+   "titulo": "[LAPIDATO] DEPOIMENTO 03",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels",
+    "Depoimento"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-03",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-27",
+   "publicacao": "2026-11-03",
+   "url": "https://app.notion.com/p/LAPIDATO-DEPOIMENTO-03-4061e7f422b9808b8493ea735d960eed"
+  },
+  {
+   "titulo": "[LAPIDATO] DEPOIMENTO 02",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels",
+    "Depoimento"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-03",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-10-27",
+   "publicacao": "2026-11-03",
+   "url": "https://app.notion.com/p/LAPIDATO-DEPOIMENTO-02-4061e7f422b98077a780cf158c75ab36"
   },
   {
    "titulo": "(sem título)",
@@ -10044,6 +10087,26 @@
    "gravado": "2026-09-11",
    "publicacao": null,
    "url": "https://app.notion.com/p/LAPIDATO-CAPTA-O-CLEAR-DAY-3d71e7f422b981cebe2ef642525c61a9"
+  },
+  {
+   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Captação",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-09-28",
+   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO",
