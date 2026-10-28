@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-27T22:53:22-03:00",
+ "gerado_em": "2026-10-28T04:40:41-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -5939,7 +5939,7 @@
   {
    "titulo": "[BU] INSTITUCIONAL",
    "cliente": "BU",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Aprovação",
    "responsavel": "Petterson",
    "categoria": "Institucional",
@@ -8924,7 +8924,7 @@
   {
    "titulo": "[HAGUE] LENDO COMENTÁRIOS",
    "cliente": "HAGUE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8944,7 +8944,7 @@
   {
    "titulo": "[CUNHA] O QUE CHEGOU HOJE",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8964,7 +8964,7 @@
   {
    "titulo": "[CUNHA] CONVITE",
    "cliente": "CUNHA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -8984,7 +8984,7 @@
   {
    "titulo": "[PROMA] REAL VIDROS CONVITE",
    "cliente": "PROMA",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9004,7 +9004,7 @@
   {
    "titulo": "[EVOLVE] NOITE TRAMONTINA",
    "cliente": "EVOLVE",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9042,7 +9042,7 @@
   {
    "titulo": "[JARDIM] BLACK FRIDAY 02",
    "cliente": "JARDIM",
-   "status": "Executando",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9052,7 +9052,7 @@
    "complexidade": null,
    "prazo": "2026-10-27",
    "ed_ini": "2026-10-27T21:43:00.000-03:00",
-   "ed_fim": null,
+   "ed_fim": "2026-10-28T01:08:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-10-14",
@@ -9221,6 +9221,42 @@
    "gravado": "2026-10-27",
    "publicacao": "2026-11-03",
    "url": "https://app.notion.com/p/LAPIDATO-DEPOIMENTO-02-4061e7f422b98077a780cf158c75ab36"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] CASA 3 PEDRAS",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CASA-3-PEDRAS-4071e7f422b98020aad3f68d0a77352a"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] VISITAS P2",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-VISITAS-P2-4071e7f422b98067a07fee34dfa903f9"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO",
