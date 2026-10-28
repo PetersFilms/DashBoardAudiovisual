@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-27T19:43:44-03:00",
+ "gerado_em": "2026-10-27T22:53:20-03:00",
  "captacoes": [
   {
    "data": "2026-09-12",
@@ -189,15 +189,15 @@
   },
   {
    "data": "2026-10-27",
-   "hora": "09:30",
-   "titulo": "Captação - Lapidato",
-   "cliente": "LAPIDATO"
-  },
-  {
-   "data": "2026-10-27",
    "hora": "11:00",
    "titulo": "Captação - Evolve (depoimento)",
    "cliente": "EVOLVE (DEPOIMENTO)"
+  },
+  {
+   "data": "2026-10-27",
+   "hora": "16:30",
+   "titulo": "Captação - Lapidato",
+   "cliente": "LAPIDATO"
   },
   {
    "data": "2026-10-28",
