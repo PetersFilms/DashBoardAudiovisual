@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-30T13:20:58-03:00",
+ "gerado_em": "2026-10-30T18:12:04-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -9029,7 +9029,7 @@
    "responsavel": "Petterson",
    "categoria": null,
    "categorias": [],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-27",
    "ed_ini": "2026-10-29T14:31:00.000-03:00",
    "ed_fim": "2026-10-29T16:18:00.000-03:00",
@@ -9049,7 +9049,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-27",
    "ed_ini": "2026-10-27T21:43:00.000-03:00",
    "ed_fim": "2026-10-28T01:08:00.000-03:00",
@@ -9089,7 +9089,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-28",
    "ed_ini": null,
    "ed_fim": null,
@@ -9109,7 +9109,7 @@
    "categorias": [
     "Reels"
    ],
-   "complexidade": null,
+   "complexidade": "Básico",
    "prazo": "2026-10-28",
    "ed_ini": null,
    "ed_fim": null,
