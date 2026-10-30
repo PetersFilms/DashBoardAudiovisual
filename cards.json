@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-30T06:13:46-03:00",
+ "gerado_em": "2026-10-30T13:20:58-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -9221,6 +9221,46 @@
    "gravado": "2026-10-27",
    "publicacao": "2026-11-03",
    "url": "https://app.notion.com/p/LAPIDATO-DEPOIMENTO-02-4061e7f422b98077a780cf158c75ab36"
+  },
+  {
+   "titulo": "[LUME] VÍDEO 02",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LUME-V-DEO-02-4091e7f422b98117a200d0cf4950975c"
+  },
+  {
+   "titulo": "[LUME] VÍDEO 01",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LUME-V-DEO-01-4091e7f422b9818a9570c4f5d28a611d"
   },
   {
    "titulo": "[BFE] DEPOIMENTO EVOLVE",
