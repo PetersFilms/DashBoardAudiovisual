@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-30T18:12:04-03:00",
+ "gerado_em": "2026-10-30T22:11:22-03:00",
  "mes_ref": "2026-10",
  "meta_mes": 50,
  "meta_dist": {
@@ -9024,7 +9024,7 @@
   {
    "titulo": "[CHESS] DEPOIMENTO JARDIM",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": null,
    "responsavel": "Petterson",
    "categoria": null,
@@ -9042,7 +9042,7 @@
   {
    "titulo": "[JARDIM] BLACK FRIDAY 02",
    "cliente": "JARDIM",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9062,7 +9062,7 @@
   {
    "titulo": "[JARDIM] BLACK FRIDAY 01",
    "cliente": "JARDIM",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9082,7 +9082,7 @@
   {
    "titulo": "[JARDIM] WELLNESS 02",
    "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9091,7 +9091,7 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-28",
-   "ed_ini": null,
+   "ed_ini": "2026-10-30T21:18:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -9102,7 +9102,7 @@
   {
    "titulo": "[JARDIM] WELLNESS 01",
    "cliente": "JARDIM",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9111,8 +9111,8 @@
    ],
    "complexidade": "Básico",
    "prazo": "2026-10-28",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-10-30T17:02:00.000-03:00",
+   "ed_fim": "2026-10-30T18:28:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-10-14",
@@ -9143,7 +9143,7 @@
   {
    "titulo": "[LUME] CONFRATERNIZAÇÃO",
    "cliente": "LUME",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9163,7 +9163,7 @@
   {
    "titulo": "[LUME] CAFÉS E DOCES",
    "cliente": "LUME",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
