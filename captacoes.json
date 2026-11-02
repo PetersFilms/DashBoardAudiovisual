@@ -1,30 +1,6 @@
 {
- "gerado_em": "2026-11-01T20:14:59-03:00",
+ "gerado_em": "2026-11-02T00:08:56-03:00",
  "captacoes": [
-  {
-   "data": "2026-09-17",
-   "hora": "08:00",
-   "titulo": "Captação Bea - BC",
-   "cliente": "BEA"
-  },
-  {
-   "data": "2026-09-17",
-   "hora": "10:30",
-   "titulo": "Captação - evolve",
-   "cliente": "EVOLVE"
-  },
-  {
-   "data": "2026-09-17",
-   "hora": "13:00",
-   "titulo": "Captação Lapidato",
-   "cliente": "LAPIDATO"
-  },
-  {
-   "data": "2026-09-17",
-   "hora": "15:00",
-   "titulo": "Captação Chess",
-   "cliente": "CHESS"
-  },
   {
    "data": "2026-09-18",
    "hora": "08:30",
@@ -165,15 +141,15 @@
   },
   {
    "data": "2026-10-27",
-   "hora": "11:00",
-   "titulo": "Captação - Evolve (depoimento)",
-   "cliente": "EVOLVE (DEPOIMENTO)"
+   "hora": "09:30",
+   "titulo": "Captação - Lapidato",
+   "cliente": "LAPIDATO"
   },
   {
    "data": "2026-10-27",
-   "hora": "16:30",
-   "titulo": "Captação - Lapidato",
-   "cliente": "LAPIDATO"
+   "hora": "11:00",
+   "titulo": "Captação - Evolve (depoimento)",
+   "cliente": "EVOLVE (DEPOIMENTO)"
   },
   {
    "data": "2026-10-28",
