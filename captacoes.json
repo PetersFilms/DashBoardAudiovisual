@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-06T13:26:48-03:00",
+ "gerado_em": "2026-11-06T18:50:56-03:00",
  "captacoes": [
   {
    "data": "2026-09-22",
@@ -186,6 +186,12 @@
    "hora": "13:30",
    "titulo": "Captação - Pikolin",
    "cliente": "PIKOLIN"
+  },
+  {
+   "data": "2026-11-11",
+   "hora": "11:00",
+   "titulo": "Captação - HomenZ",
+   "cliente": "HOMENZ"
   },
   {
    "data": "2026-11-25",
