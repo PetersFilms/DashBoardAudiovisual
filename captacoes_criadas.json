@@ -658,7 +658,9 @@
    "card": "https://app.notion.com/p/PIKOLIN-CAPTA-O-4101e7f422b98173a0f9f0a5d8c5d758",
    "titulo": "[PIKOLIN] CAPTAÇÃO",
    "gravado": "2026-11-09",
-   "em": "2026-11-06 18:50"
+   "em": "2026-11-06 18:50",
+   "arquivado": "2026-11-09 14:56",
+   "motivo_arquivo": "evento cancelado/apagado na agenda"
   },
   {
    "chave": "2026-11-11|captacao - homenz",
@@ -666,6 +668,13 @@
    "titulo": "[HOMENZ] CAPTAÇÃO",
    "gravado": "2026-11-11",
    "em": "2026-11-06 18:50"
+  },
+  {
+   "chave": "2026-11-10|captacao - pikolin",
+   "card": "https://app.notion.com/p/PIKOLIN-CAPTA-O-4131e7f422b98130bcd2def0dc15dedb",
+   "titulo": "[PIKOLIN] CAPTAÇÃO",
+   "gravado": "2026-11-10",
+   "em": "2026-11-09 14:56"
   }
  ]
 }

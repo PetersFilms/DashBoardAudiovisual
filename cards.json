@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-09T04:22:30-03:00",
+ "gerado_em": "2026-11-09T14:56:13-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -1607,7 +1607,7 @@
   {
    "titulo": "[JARDIM] HIGHLIGHT",
    "cliente": "JARDIM",
-   "status": "Drive",
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": "Petterson",
    "categoria": "Highlight",
@@ -9120,7 +9120,7 @@
   {
    "titulo": "[GLAR] CORREÇÃO FIBRAVIVA",
    "cliente": "GLAR",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": null,
@@ -9138,7 +9138,7 @@
   {
    "titulo": "[GLAR] MINI PODCAST CORTE 2",
    "cliente": "GLAR",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "PodCast",
@@ -9179,7 +9179,7 @@
   {
    "titulo": "[GLAR] MINI PODCAST CORTE 1",
    "cliente": "GLAR",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "PodCast",
@@ -9198,6 +9198,24 @@
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-1-3e91e7f422b980688931ce6a2c55f13c"
   },
   {
+   "titulo": "[CHESS] DEPOIMENTO EVOLVE",
+   "cliente": "CHESS",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-11-06",
+   "ed_ini": "2026-11-04T21:51:00.000-03:00",
+   "ed_fim": "2026-11-04T23:10:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/CHESS-DEPOIMENTO-EVOLVE-4081e7f422b9801782c0e596806cc28f"
+  },
+  {
    "titulo": "[RICHARD] VÍDEO 01",
    "cliente": "RICHARD",
    "status": "À Fazer Peterson",
@@ -9206,7 +9224,7 @@
    "categoria": null,
    "categorias": [],
    "complexidade": "Básico",
-   "prazo": "2026-11-06",
+   "prazo": "2026-11-09",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9224,7 +9242,7 @@
    "categoria": null,
    "categorias": [],
    "complexidade": "Básico",
-   "prazo": "2026-11-06",
+   "prazo": "2026-11-09",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9242,7 +9260,7 @@
    "categoria": null,
    "categorias": [],
    "complexidade": null,
-   "prazo": "2026-11-06",
+   "prazo": "2026-11-09",
    "ed_ini": "2026-11-04T21:51:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
@@ -9252,58 +9270,78 @@
    "url": "https://app.notion.com/p/BFE-DEPOIMENTO-EVOLVE-4081e7f422b980749bf2cbdd407799f0"
   },
   {
-   "titulo": "[CHESS] DEPOIMENTO EVOLVE",
+   "titulo": "[LAPIDATO] DIAMOND",
+   "cliente": "LAPIDATO",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-11-10",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-07",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LAPIDATO-DIAMOND-4131e7f422b98152a9ffec68808bb692"
+  },
+  {
+   "titulo": "[BFE] VÍDEO 01",
+   "cliente": "BFE",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-11-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-04",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/BFE-V-DEO-01-4131e7f422b98137ad39f4bdf73fbc1c"
+  },
+  {
+   "titulo": "[BFE] VÍDEO 02",
+   "cliente": "BFE",
+   "status": "À Fazer Peterson",
+   "fase": null,
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-11-11",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-04",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/BFE-V-DEO-02-4131e7f422b9817e847ceb3be8aff8f3"
+  },
+  {
+   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
    "cliente": "CHESS",
-   "status": "Pré Aprovação",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": "2026-11-06",
-   "ed_ini": "2026-11-04T21:51:00.000-03:00",
-   "ed_fim": "2026-11-04T23:10:00.000-03:00",
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/CHESS-DEPOIMENTO-EVOLVE-4081e7f422b9801782c0e596806cc28f"
-  },
-  {
-   "titulo": "[EMPÓRIO DAS PEDRAS] CASA 3 PEDRAS",
-   "cliente": "EMPÓRIO DAS PEDRAS",
    "status": "À Fazer Peterson",
-   "fase": "Edição",
+   "fase": "Captação",
    "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
    "complexidade": null,
-   "prazo": "2026-11-06",
+   "prazo": "2026-11-12",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CASA-3-PEDRAS-4071e7f422b98020aad3f68d0a77352a"
-  },
-  {
-   "titulo": "[EMPÓRIO DAS PEDRAS] VISITA NOVEMBRO",
-   "cliente": "EMPÓRIO DAS PEDRAS",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
-   "complexidade": "Básico",
-   "prazo": "2026-11-09",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-VISITA-NOVEMBRO-40e1e7f422b9812a8451c53e4d3e98b4"
+   "publicacao": "2026-09-28",
+   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
   },
   {
    "titulo": "[LUME] VÍDEO 02",
@@ -9316,7 +9354,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-11-09",
+   "prazo": "2026-11-16",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9336,7 +9374,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-11-09",
+   "prazo": "2026-11-16",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9346,24 +9384,40 @@
    "url": "https://app.notion.com/p/LUME-V-DEO-01-4091e7f422b9818a9570c4f5d28a611d"
   },
   {
-   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
-   "cliente": "CHESS",
+   "titulo": "[EMPÓRIO DAS PEDRAS] CASA 3 PEDRAS",
+   "cliente": "EMPÓRIO DAS PEDRAS",
    "status": "À Fazer Peterson",
-   "fase": "Captação",
+   "fase": "Edição",
    "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
+   "categoria": null,
+   "categorias": [],
    "complexidade": null,
-   "prazo": "2026-11-10",
+   "prazo": "2026-11-17",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
    "gravado": null,
-   "publicacao": "2026-09-28",
-   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CASA-3-PEDRAS-4071e7f422b98020aad3f68d0a77352a"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] VISITA NOVEMBRO",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": "Básico",
+   "prazo": "2026-11-18",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-VISITA-NOVEMBRO-40e1e7f422b9812a8451c53e4d3e98b4"
   },
   {
    "titulo": "[GLAR] MINI PODCAST CORTE 5",
@@ -9429,6 +9483,24 @@
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-3-3ef1e7f422b980a38652d4bdd49c80d1"
   },
   {
+   "titulo": "[PIKOLIN] CAPTAÇÃO",
+   "cliente": "PIKOLIN",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-10",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/PIKOLIN-CAPTA-O-4131e7f422b98130bcd2def0dc15dedb"
+  },
+  {
    "titulo": "[HOMENZ] CAPTAÇÃO",
    "cliente": "HOMENZ",
    "status": null,
@@ -9445,24 +9517,6 @@
    "gravado": "2026-11-11",
    "publicacao": null,
    "url": "https://app.notion.com/p/HOMENZ-CAPTA-O-4101e7f422b98152869bd1923537785a"
-  },
-  {
-   "titulo": "[PIKOLIN] CAPTAÇÃO",
-   "cliente": "PIKOLIN",
-   "status": null,
-   "fase": "Captação",
-   "responsavel": null,
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": null,
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": "2026-11-09",
-   "publicacao": null,
-   "url": "https://app.notion.com/p/PIKOLIN-CAPTA-O-4101e7f422b98173a0f9f0a5d8c5d758"
   },
   {
    "titulo": "[GLAR] CAPTAÇÃO [] MINI PODCAST CORTE 5",
@@ -9521,7 +9575,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO [] MINI PODCAST CORTE 5",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9539,7 +9593,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO [] MINI PODCAST CORTE 4",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9557,7 +9611,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO [] MINI PODCAST CORTE 3",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9575,7 +9629,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO [] MINI PODCAST CORTE 2",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9593,7 +9647,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO [] MINI PODCAST CORTE 1",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9611,7 +9665,7 @@
   {
    "titulo": "[BEA FRUET] CAPTAÇÃO",
    "cliente": "BEA FRUET",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9683,7 +9737,7 @@
   {
    "titulo": "[RICHARD] CAPTAÇÃO",
    "cliente": "RICHARD",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9719,7 +9773,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9791,7 +9845,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO EVENTO  - CAPTAÇÃO",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9827,7 +9881,7 @@
   {
    "titulo": "[JARDIM] CAPTAÇÃO",
    "cliente": "JARDIM",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9845,7 +9899,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9863,7 +9917,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9881,7 +9935,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9917,7 +9971,7 @@
   {
    "titulo": "CAPTAÇÃO — Captação Sicredi",
    "cliente": null,
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9935,7 +9989,7 @@
   {
    "titulo": "[LUME] CAPTAÇÃO",
    "cliente": "LUME",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -9953,7 +10007,7 @@
   {
    "titulo": "[PIKOLIN] CAPTAÇÃO",
    "cliente": "PIKOLIN",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10079,7 +10133,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10097,7 +10151,7 @@
   {
    "titulo": "[HOMENZ] CAPTAÇÃO",
    "cliente": "HOMENZ",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10115,7 +10169,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10133,7 +10187,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO RISOTO",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10187,7 +10241,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO DIAMOND",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10205,7 +10259,7 @@
   {
    "titulo": "[LUME] CAPTAÇÃO",
    "cliente": "LUME",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10223,7 +10277,7 @@
   {
    "titulo": "[HAGUE] CAPTAÇÃO VÍDEOS E FOTOS",
    "cliente": "HAGUE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10241,7 +10295,7 @@
   {
    "titulo": "[HOMENZ] CAPTAÇÃO CLÍNICA",
    "cliente": "HOMENZ",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10295,7 +10349,7 @@
   {
    "titulo": "[DEZARI] CAPTAÇ",
    "cliente": "DEZARI",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10313,7 +10367,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10331,7 +10385,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10349,7 +10403,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10367,7 +10421,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10385,7 +10439,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10403,7 +10457,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10421,7 +10475,7 @@
   {
    "titulo": "CAPTAÇÃO — Captação Bea - BC",
    "cliente": null,
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10439,7 +10493,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10457,7 +10511,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10475,7 +10529,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO CLEAR DAY",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10493,7 +10547,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO CLEAR DAY",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10511,7 +10565,7 @@
   {
    "titulo": "[EVOLVE] CAPTAÇÃO",
    "cliente": "EVOLVE",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10529,7 +10583,7 @@
   {
    "titulo": "[CUNHA] CAPTAÇÃO",
    "cliente": "CUNHA",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10547,7 +10601,7 @@
   {
    "titulo": "[GLAR] CAPTAÇÃO",
    "cliente": "GLAR",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10691,7 +10745,7 @@
   {
    "titulo": "[LAPIDATO] CAPTAÇÃO",
    "cliente": "LAPIDATO",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10727,7 +10781,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10765,7 +10819,7 @@
   {
    "titulo": "[CHESS] CAPTAÇÃO",
    "cliente": "CHESS",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
@@ -10873,7 +10927,7 @@
   {
    "titulo": "[BU] CAPTAÇÃO MAUM",
    "cliente": "BU",
-   "status": null,
+   "status": "Aprovado/Finalizado",
    "fase": "Captação",
    "responsavel": null,
    "categoria": null,
