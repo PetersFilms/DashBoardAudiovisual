@@ -1,24 +1,6 @@
 {
- "gerado_em": "2026-11-08T21:14:56-03:00",
+ "gerado_em": "2026-11-09T04:22:29-03:00",
  "captacoes": [
-  {
-   "data": "2026-09-24",
-   "hora": "09:00",
-   "titulo": "Captação Dezari",
-   "cliente": "DEZARI"
-  },
-  {
-   "data": "2026-09-24",
-   "hora": "11:30",
-   "titulo": "Captação - Clínica HomenZ",
-   "cliente": "CLÍNICA HOMENZ"
-  },
-  {
-   "data": "2026-09-24",
-   "hora": "18:00",
-   "titulo": "Captação Chess",
-   "cliente": "CHESS"
-  },
   {
    "data": "2026-09-26",
    "hora": "09:00",
@@ -129,14 +111,14 @@
   },
   {
    "data": "2026-10-27",
-   "hora": "11:00",
-   "titulo": "✓ Captação - Evolve (depoimento)",
+   "hora": "09:30",
+   "titulo": "✓ Captação - Lapidato",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-10-27",
-   "hora": "16:30",
-   "titulo": "✓ Captação - Lapidato",
+   "hora": "11:00",
+   "titulo": "✓ Captação - Evolve (depoimento)",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
