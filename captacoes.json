@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-09T14:56:10-03:00",
+ "gerado_em": "2026-11-09T21:59:50-03:00",
  "captacoes": [
   {
    "data": "2026-09-26",
@@ -168,6 +168,12 @@
    "hora": "11:00",
    "titulo": "Captação - HomenZ",
    "cliente": "HOMENZ"
+  },
+  {
+   "data": "2026-11-14",
+   "hora": "15:00",
+   "titulo": "Captação - Inauguração Baby Dolly",
+   "cliente": "INAUGURAÇÃO BABY DOLLY"
   },
   {
    "data": "2026-11-25",
