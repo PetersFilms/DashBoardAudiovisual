@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-11T06:57:42-03:00",
+ "gerado_em": "2026-11-11T14:39:30-03:00",
  "captacoes": [
   {
    "data": "2026-09-29",
@@ -164,12 +164,6 @@
    "cliente": "HOMENZ"
   },
   {
-   "data": "2026-11-11",
-   "hora": "14:00",
-   "titulo": "Captação - Empório Das Pedras",
-   "cliente": "EMPÓRIO DAS PEDRAS"
-  },
-  {
    "data": "2026-11-14",
    "hora": "15:00",
    "titulo": "Captação - Inauguração Baby Dolly",
@@ -179,6 +173,12 @@
    "data": "2026-11-16",
    "hora": "14:00",
    "titulo": "Captação - Empório das Pedras",
+   "cliente": "EMPÓRIO DAS PEDRAS"
+  },
+  {
+   "data": "2026-11-18",
+   "hora": "14:00",
+   "titulo": "Captação - Empório Das Pedras",
    "cliente": "EMPÓRIO DAS PEDRAS"
   },
   {
