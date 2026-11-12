@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-12T10:25:11-03:00",
+ "gerado_em": "2026-11-12T18:13:14-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9272,15 +9272,15 @@
   {
    "titulo": "[LAPIDATO] DIAMOND",
    "cliente": "LAPIDATO",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": null,
    "responsavel": "Petterson",
    "categoria": null,
    "categorias": [],
    "complexidade": null,
    "prazo": "2026-11-10",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-11-12T10:47:00.000-03:00",
+   "ed_fim": "2026-11-12T13:48:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-11-07",
@@ -9501,6 +9501,24 @@
    "gravado": "2026-09-18",
    "publicacao": "2026-11-02",
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-3-3ef1e7f422b980a38652d4bdd49c80d1"
+  },
+  {
+   "titulo": "[EVOLVE] CAPTAÇÃO",
+   "cliente": "EVOLVE",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-26",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EVOLVE-CAPTA-O-4161e7f422b981d69281f9588ca87a34"
   },
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] CAPTAÇÃO",

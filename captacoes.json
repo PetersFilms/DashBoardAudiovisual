@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-12T10:25:09-03:00",
+ "gerado_em": "2026-11-12T18:13:12-03:00",
  "captacoes": [
   {
    "data": "2026-09-29",
@@ -105,14 +105,14 @@
   },
   {
    "data": "2026-10-27",
-   "hora": "09:30",
-   "titulo": "✓ Captação - Lapidato",
+   "hora": "11:00",
+   "titulo": "✓ Captação - Evolve (depoimento)",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-10-27",
-   "hora": "11:00",
-   "titulo": "✓ Captação - Evolve (depoimento)",
+   "hora": "16:30",
+   "titulo": "✓ Captação - Lapidato",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
@@ -136,20 +136,20 @@
   {
    "data": "2026-11-05",
    "hora": "13:15",
-   "titulo": "⏳ [GLAR] Mini Podcast Corte 1",
-   "cliente": "⏳ [GLAR] MINI PODCAST CORTE 1"
+   "titulo": "✓ [GLAR] Mini Podcast Corte 1",
+   "cliente": "✓ [GLAR] MINI PODCAST CORTE 1"
   },
   {
    "data": "2026-11-05",
    "hora": "14:00",
-   "titulo": "⏳ [GLAR] Mini Podcast Corte 2",
-   "cliente": "⏳ [GLAR] MINI PODCAST CORTE 2"
+   "titulo": "✓ [GLAR] Mini Podcast Corte 2",
+   "cliente": "✓ [GLAR] MINI PODCAST CORTE 2"
   },
   {
    "data": "2026-11-07",
    "hora": "10:00",
-   "titulo": "Captação Lapidato - Diamond",
-   "cliente": "LAPIDATO"
+   "titulo": "✓ Captação Lapidato - Diamond",
+   "cliente": "✓ CAPTAÇÃO LAPIDATO"
   },
   {
    "data": "2026-11-10",
@@ -186,6 +186,12 @@
    "hora": "11:30",
    "titulo": "Captação Cunha",
    "cliente": "CUNHA"
+  },
+  {
+   "data": "2026-11-26",
+   "hora": "18:30",
+   "titulo": "Captação - Evolve",
+   "cliente": "EVOLVE"
   },
   {
    "data": "2026-11-27",
