@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T07:15:40-03:00",
+ "gerado_em": "2026-11-13T15:15:09-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9316,8 +9316,8 @@
    "categoria": null,
    "categorias": [],
    "complexidade": null,
-   "prazo": "2026-11-11",
-   "ed_ini": "2026-11-12T19:28:00.000-03:00",
+   "prazo": "2026-11-13",
+   "ed_ini": "2026-11-13T11:30:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
@@ -9334,7 +9334,7 @@
    "categoria": null,
    "categorias": [],
    "complexidade": null,
-   "prazo": "2026-11-11",
+   "prazo": "2026-11-13",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9344,24 +9344,44 @@
    "url": "https://app.notion.com/p/BFE-V-DEO-02-4131e7f422b9817e847ceb3be8aff8f3"
   },
   {
-   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
-   "cliente": "CHESS",
+   "titulo": "[PIKOLIN] ADS 02",
+   "cliente": "PIKOLIN",
    "status": "À Fazer Peterson",
-   "fase": "Captação",
+   "fase": "Edição",
    "responsavel": "Petterson",
-   "categoria": "Reels",
+   "categoria": "Ad",
    "categorias": [
-    "Reels"
+    "Ad"
    ],
-   "complexidade": null,
-   "prazo": "2026-11-12",
+   "complexidade": "Intermediário",
+   "prazo": "2026-11-14",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
-   "gravado": null,
-   "publicacao": "2026-09-28",
-   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
+   "gravado": "2026-11-10",
+   "publicacao": "2026-11-14",
+   "url": "https://app.notion.com/p/PIKOLIN-ADS-02-4171e7f422b98056a792e71cd1cab5d3"
+  },
+  {
+   "titulo": "[PIKOLIN] ADS 01",
+   "cliente": "PIKOLIN",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": "Intermediário",
+   "prazo": "2026-11-14",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-10",
+   "publicacao": "2026-11-14",
+   "url": "https://app.notion.com/p/PIKOLIN-ADS-01-4171e7f422b9809e80ccfbcd81eadbab"
   },
   {
    "titulo": "[LUME] VÍDEO 02",
@@ -9374,7 +9394,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-11-16",
+   "prazo": "2026-11-15",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9394,7 +9414,7 @@
     "Reels"
    ],
    "complexidade": null,
-   "prazo": "2026-11-16",
+   "prazo": "2026-11-15",
    "ed_ini": null,
    "ed_fim": null,
    "alt_ini": null,
@@ -9438,6 +9458,26 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-VISITA-NOVEMBRO-40e1e7f422b9812a8451c53e4d3e98b4"
+  },
+  {
+   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
+   "cliente": "CHESS",
+   "status": "À Fazer Peterson",
+   "fase": "Captação",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-19",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-09-28",
+   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
   },
   {
    "titulo": "[GLAR] MINI PODCAST CORTE 5",
