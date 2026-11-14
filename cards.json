@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-14T09:39:34-03:00",
+ "gerado_em": "2026-11-14T15:34:38-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9310,7 +9310,7 @@
   {
    "titulo": "[BFE] VÍDEO 01",
    "cliente": "BFE",
-   "status": "Executando",
+   "status": "À Fazer Peterson",
    "fase": null,
    "responsavel": "Petterson",
    "categoria": null,
@@ -9366,7 +9366,7 @@
   {
    "titulo": "[PIKOLIN] ADS 01",
    "cliente": "PIKOLIN",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
@@ -9375,8 +9375,8 @@
    ],
    "complexidade": "Intermediário",
    "prazo": "2026-11-14",
-   "ed_ini": null,
-   "ed_fim": null,
+   "ed_ini": "2026-11-14T09:36:00.000-03:00",
+   "ed_fim": "2026-11-14T11:59:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-11-10",
