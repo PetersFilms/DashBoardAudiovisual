@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-16T07:18:58-03:00",
+ "gerado_em": "2026-11-16T17:43:42-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9272,7 +9272,7 @@
   {
    "titulo": "[LAPIDATO] DIAMOND",
    "cliente": "LAPIDATO",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": null,
    "responsavel": "Petterson",
    "categoria": null,
@@ -9290,7 +9290,7 @@
   {
    "titulo": "[CHOKOLATEN] MIME + CHOKOLATEN",
    "cliente": "CHOKOLATEN",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Reels",
@@ -9310,15 +9310,15 @@
   {
    "titulo": "[BFE] VÍDEO 01",
    "cliente": "BFE",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": null,
    "responsavel": "Petterson",
    "categoria": null,
    "categorias": [],
    "complexidade": null,
    "prazo": "2026-11-13",
-   "ed_ini": "2026-11-13T11:30:00.000-03:00",
-   "ed_fim": null,
+   "ed_ini": "2026-11-16T10:55:00.000-03:00",
+   "ed_fim": "2026-11-16T12:55:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-11-04",
@@ -9346,7 +9346,7 @@
   {
    "titulo": "[PIKOLIN] ADS 02",
    "cliente": "PIKOLIN",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
@@ -9366,7 +9366,7 @@
   {
    "titulo": "[PIKOLIN] ADS 01",
    "cliente": "PIKOLIN",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Ad",
