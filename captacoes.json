@@ -1,12 +1,6 @@
 {
- "gerado_em": "2026-11-16T17:43:41-03:00",
+ "gerado_em": "2026-11-17T00:16:58-03:00",
  "captacoes": [
-  {
-   "data": "2026-10-02",
-   "hora": "09:00",
-   "titulo": "Captação Lume",
-   "cliente": "LUME"
-  },
   {
    "data": "2026-10-06",
    "hora": "10:00",
@@ -136,14 +130,14 @@
   {
    "data": "2026-11-14",
    "hora": "15:00",
-   "titulo": "Captação - Inauguração Baby Dolly",
-   "cliente": "INAUGURAÇÃO BABY DOLLY"
+   "titulo": "✓ Captação - Inauguração Baby Dolly",
+   "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-11-16",
    "hora": "14:00",
-   "titulo": "Captação - Empório das Pedras",
-   "cliente": "EMPÓRIO DAS PEDRAS"
+   "titulo": "✓ Captação - Empório das Pedras",
+   "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-11-18",
