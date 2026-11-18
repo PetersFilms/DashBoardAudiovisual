@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-18T00:12:29-03:00",
+ "gerado_em": "2026-11-18T09:24:46-03:00",
  "captacoes": [
   {
    "data": "2026-10-06",
@@ -69,14 +69,14 @@
   },
   {
    "data": "2026-10-27",
-   "hora": "09:30",
-   "titulo": "✓ Captação - Lapidato",
+   "hora": "11:00",
+   "titulo": "✓ Captação - Evolve (depoimento)",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-10-27",
-   "hora": "11:00",
-   "titulo": "✓ Captação - Evolve (depoimento)",
+   "hora": "16:30",
+   "titulo": "✓ Captação - Lapidato",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
@@ -138,12 +138,6 @@
    "hora": "14:00",
    "titulo": "✓ Captação - Empório das Pedras",
    "cliente": "✓ CAPTAÇÃO"
-  },
-  {
-   "data": "2026-11-18",
-   "hora": "14:00",
-   "titulo": "Captação - Empório Das Pedras",
-   "cliente": "EMPÓRIO DAS PEDRAS"
   },
   {
    "data": "2026-11-19",
