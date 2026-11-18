@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-18T09:24:48-03:00",
+ "gerado_em": "2026-11-18T17:57:51-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9218,7 +9218,7 @@
   {
    "titulo": "[RICHARD] VÍDEO 01",
    "cliente": "RICHARD",
-   "status": "Pré Aprovação",
+   "status": "Aprovado/Finalizado",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": null,
@@ -9328,15 +9328,15 @@
   {
    "titulo": "[BFE] VÍDEO 02",
    "cliente": "BFE",
-   "status": "À Fazer Peterson",
+   "status": "Pré Aprovação",
    "fase": null,
    "responsavel": "Petterson",
    "categoria": null,
    "categorias": [],
    "complexidade": null,
    "prazo": "2026-11-13",
-   "ed_ini": "2026-11-17T15:57:00.000-03:00",
-   "ed_fim": null,
+   "ed_ini": "2026-11-18T15:19:00.000-03:00",
+   "ed_fim": "2026-11-18T16:12:00.000-03:00",
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-11-04",
@@ -9422,6 +9422,106 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/LUME-V-DEO-01-4091e7f422b9818a9570c4f5d28a611d"
+  },
+  {
+   "titulo": "[HOMENZ] AD 02",
+   "cliente": "HOMENZ",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": null,
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-16",
+   "ed_ini": "2026-11-14",
+   "ed_fim": "2026-11-15T15:17:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-11",
+   "publicacao": "2026-11-18",
+   "url": "https://app.notion.com/p/HOMENZ-AD-02-41c1e7f422b980e0a73ad955a16c7b41"
+  },
+  {
+   "titulo": "[HOMENZ] AD 05",
+   "cliente": "HOMENZ",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": null,
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-16",
+   "ed_ini": "2026-11-14",
+   "ed_fim": "2026-11-15T15:17:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-11",
+   "publicacao": "2026-11-18",
+   "url": "https://app.notion.com/p/HOMENZ-AD-05-41c1e7f422b980108229f5697d15cc4e"
+  },
+  {
+   "titulo": "[HOMENZ] AD 04",
+   "cliente": "HOMENZ",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": null,
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-16",
+   "ed_ini": "2026-11-14",
+   "ed_fim": "2026-11-15T15:17:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-11",
+   "publicacao": "2026-11-18",
+   "url": "https://app.notion.com/p/HOMENZ-AD-04-41c1e7f422b980cd801ee11b7e1e43f2"
+  },
+  {
+   "titulo": "[HOMENZ] AD 03",
+   "cliente": "HOMENZ",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": null,
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-16",
+   "ed_ini": "2026-11-14",
+   "ed_fim": "2026-11-15T15:17:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-11",
+   "publicacao": "2026-11-18",
+   "url": "https://app.notion.com/p/HOMENZ-AD-03-41c1e7f422b9809b92c9fa2bb17e5b09"
+  },
+  {
+   "titulo": "[HOMENZ] AD 01",
+   "cliente": "HOMENZ",
+   "status": "Aprovado/Finalizado",
+   "fase": "Edição",
+   "responsavel": null,
+   "categoria": "Ad",
+   "categorias": [
+    "Ad"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-16",
+   "ed_ini": "2026-11-14",
+   "ed_fim": "2026-11-15T15:17:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-11",
+   "publicacao": "2026-11-18",
+   "url": "https://app.notion.com/p/HOMENZ-AD-01-41c1e7f422b980f4a5e5c603e334caf4"
   },
   {
    "titulo": "[EMPÓRIO DAS PEDRAS] CASA 3 PEDRAS",
