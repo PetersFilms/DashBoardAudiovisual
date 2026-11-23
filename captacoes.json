@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-23T00:19:41-03:00",
+ "gerado_em": "2026-11-23T10:47:58-03:00",
  "captacoes": [
   {
    "data": "2026-10-13",
@@ -51,14 +51,14 @@
   },
   {
    "data": "2026-10-27",
-   "hora": "11:00",
-   "titulo": "✓ Captação - Evolve (depoimento)",
+   "hora": "09:30",
+   "titulo": "✓ Captação - Lapidato",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-10-27",
-   "hora": "16:30",
-   "titulo": "✓ Captação - Lapidato",
+   "hora": "11:00",
+   "titulo": "✓ Captação - Evolve (depoimento)",
    "cliente": "✓ CAPTAÇÃO"
   },
   {
@@ -124,8 +124,8 @@
   {
    "data": "2026-11-19",
    "hora": "15:00",
-   "titulo": "Captação - Hague",
-   "cliente": "HAGUE"
+   "titulo": "✓ Captação - Hague",
+   "cliente": "✓ CAPTAÇÃO"
   },
   {
    "data": "2026-11-25",

@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-23T00:19:42-03:00",
+ "gerado_em": "2026-11-23T10:48:00-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9384,46 +9384,6 @@
    "url": "https://app.notion.com/p/PIKOLIN-ADS-01-4171e7f422b9809e80ccfbcd81eadbab"
   },
   {
-   "titulo": "[LUME] VÍDEO 02",
-   "cliente": "LUME",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-11-15",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/LUME-V-DEO-02-4091e7f422b98117a200d0cf4950975c"
-  },
-  {
-   "titulo": "[LUME] VÍDEO 01",
-   "cliente": "LUME",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-11-15",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/LUME-V-DEO-01-4091e7f422b9818a9570c4f5d28a611d"
-  },
-  {
    "titulo": "[HOMENZ] AD 02",
    "cliente": "HOMENZ",
    "status": "Aprovado/Finalizado",
@@ -9524,24 +9484,6 @@
    "url": "https://app.notion.com/p/HOMENZ-AD-01-41c1e7f422b980f4a5e5c603e334caf4"
   },
   {
-   "titulo": "[EMPÓRIO DAS PEDRAS] CASA 3 PEDRAS",
-   "cliente": "EMPÓRIO DAS PEDRAS",
-   "status": "À Fazer Peterson",
-   "fase": "Edição",
-   "responsavel": "Petterson",
-   "categoria": null,
-   "categorias": [],
-   "complexidade": null,
-   "prazo": "2026-11-17",
-   "ed_ini": "2026-11-20T01:54:00.000-03:00",
-   "ed_fim": "2026-11-20T01:53:00.000-03:00",
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": null,
-   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CASA-3-PEDRAS-4071e7f422b98020aad3f68d0a77352a"
-  },
-  {
    "titulo": "[GRANADA] TORO HEAT GAMES",
    "cliente": "GRANADA",
    "status": "Pré Aprovação",
@@ -9578,29 +9520,9 @@
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-VISITA-NOVEMBRO-40e1e7f422b9812a8451c53e4d3e98b4"
   },
   {
-   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
-   "cliente": "CHESS",
-   "status": "À Fazer Peterson",
-   "fase": "Captação",
-   "responsavel": "Petterson",
-   "categoria": "Reels",
-   "categorias": [
-    "Reels"
-   ],
-   "complexidade": null,
-   "prazo": "2026-11-19",
-   "ed_ini": null,
-   "ed_fim": null,
-   "alt_ini": null,
-   "alt_fim": null,
-   "gravado": null,
-   "publicacao": "2026-09-28",
-   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
-  },
-  {
    "titulo": "[BABY DOLLY] INAUGURAÇÃO ESPAÇO PET",
    "cliente": "BABY DOLLY",
-   "status": "À Fazer Peterson",
+   "status": "Executando",
    "fase": "Edição",
    "responsavel": "Petterson",
    "categoria": "Highlight",
@@ -9608,14 +9530,92 @@
     "Highlight"
    ],
    "complexidade": "Intermediário",
-   "prazo": "2026-11-21",
-   "ed_ini": null,
+   "prazo": "2026-11-23",
+   "ed_ini": "2026-11-23T10:13:00.000-03:00",
    "ed_fim": null,
    "alt_ini": null,
    "alt_fim": null,
    "gravado": "2026-11-14",
    "publicacao": "2026-11-21",
    "url": "https://app.notion.com/p/BABY-DOLLY-INAUGURA-O-ESPA-O-PET-4181e7f422b9814fb6a1e5e52fda62dc"
+  },
+  {
+   "titulo": "[LUME] VÍDEO 01",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-23",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LUME-V-DEO-01-4091e7f422b9818a9570c4f5d28a611d"
+  },
+  {
+   "titulo": "[LUME] VÍDEO 02",
+   "cliente": "LUME",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-24",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/LUME-V-DEO-02-4091e7f422b98117a200d0cf4950975c"
+  },
+  {
+   "titulo": "[EMPÓRIO DAS PEDRAS] CASA 3 PEDRAS",
+   "cliente": "EMPÓRIO DAS PEDRAS",
+   "status": "À Fazer Peterson",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": "2026-11-24",
+   "ed_ini": "2026-11-20T01:54:00.000-03:00",
+   "ed_fim": "2026-11-20T01:53:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": null,
+   "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CASA-3-PEDRAS-4071e7f422b98020aad3f68d0a77352a"
+  },
+  {
+   "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
+   "cliente": "CHESS",
+   "status": "À Delegar",
+   "fase": "Captação",
+   "responsavel": "Petterson",
+   "categoria": "Reels",
+   "categorias": [
+    "Reels"
+   ],
+   "complexidade": null,
+   "prazo": "2026-11-26",
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": null,
+   "publicacao": "2026-09-28",
+   "url": "https://app.notion.com/p/CHESS-SE-SEU-V-DEO-PARECE-UM-AN-NCIO-3d71e7f422b9800ebda4f80a47fd7139"
   },
   {
    "titulo": "[GLAR] MINI PODCAST CORTE 5",
