@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-25T20:51:21-03:00",
+ "gerado_em": "2026-11-26T02:48:43-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9596,6 +9596,146 @@
    "gravado": null,
    "publicacao": null,
    "url": "https://app.notion.com/p/EMP-RIO-DAS-PEDRAS-CASA-3-PEDRAS-4071e7f422b98020aad3f68d0a77352a"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 04",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T22:09:00.000-03:00",
+   "ed_fim": "2026-11-25T22:22:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-04-4241e7f422b9810fbf8dd0e83aad7d62"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 03",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T21:56:00.000-03:00",
+   "ed_fim": "2026-11-25T22:09:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-03-4241e7f422b98112b6b0ee4b88ce390a"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 01",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T21:30:00.000-03:00",
+   "ed_fim": "2026-11-25T21:43:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-01-4241e7f422b98153bd18db2ad7853cb9"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 06",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T22:35:00.000-03:00",
+   "ed_fim": "2026-11-25T22:48:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-06-4241e7f422b981a1bc1fef3036b509b4"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 05",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T22:22:00.000-03:00",
+   "ed_fim": "2026-11-25T22:35:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-05-4241e7f422b981b2b0fbc45f77e250a7"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 07",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T22:48:00.000-03:00",
+   "ed_fim": "2026-11-25T23:00:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-07-4241e7f422b981b5aa56c800354370a3"
+  },
+  {
+   "titulo": "[CUNHA] BLACK CUNHA 02",
+   "cliente": "CUNHA",
+   "status": "Editado",
+   "fase": "Edição",
+   "responsavel": "Petterson",
+   "categoria": "Stories",
+   "categorias": [
+    "Stories"
+   ],
+   "complexidade": "Básico",
+   "prazo": "2026-11-26",
+   "ed_ini": "2026-11-25T21:43:00.000-03:00",
+   "ed_fim": "2026-11-25T21:56:00.000-03:00",
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-11-25",
+   "publicacao": "2026-11-26",
+   "url": "https://app.notion.com/p/CUNHA-BLACK-CUNHA-02-4241e7f422b981bb81a8e43909369622"
   },
   {
    "titulo": "[CHESS] SE SEU VÍDEO PARECE UM ANÚNCIO",
