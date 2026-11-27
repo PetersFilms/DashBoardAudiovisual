@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-26T21:14:54-03:00",
+ "gerado_em": "2026-11-27T06:13:42-03:00",
  "mes_ref": "2026-11",
  "meta_mes": 50,
  "meta_dist": {
@@ -9819,6 +9819,24 @@
    "gravado": "2026-09-18",
    "publicacao": "2026-11-02",
    "url": "https://app.notion.com/p/GLAR-MINI-PODCAST-CORTE-3-3ef1e7f422b980a38652d4bdd49c80d1"
+  },
+  {
+   "titulo": "[JARDIM] CAPTAÇÃO",
+   "cliente": "JARDIM",
+   "status": null,
+   "fase": "Captação",
+   "responsavel": null,
+   "categoria": null,
+   "categorias": [],
+   "complexidade": null,
+   "prazo": null,
+   "ed_ini": null,
+   "ed_fim": null,
+   "alt_ini": null,
+   "alt_fim": null,
+   "gravado": "2026-12-03",
+   "publicacao": null,
+   "url": "https://app.notion.com/p/JARDIM-CAPTA-O-4251e7f422b981999d4bdafaa9eb4a5b"
   },
   {
    "titulo": "[EVOLVE] CAPTAÇÃO AUTOMAÇÃO",
